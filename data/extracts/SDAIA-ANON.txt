@@ -1,0 +1,26 @@
+CURATED EXTRACT - Guideline for Personal Data Destruction, Anonymization and Pseudonymization
+Arabic title: الدليل الاسترشادي لإتلاف البيانات الشخصية وإخفاء الهوية والترميز
+Issuer: SDAIA. Published in Arabic only; no English edition located.
+Source: https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PersonalDataDestruction
+NOTE: Curated summary of verified content, not the official text.
+
+TECHNIQUES NAMED FOR ANONYMISATION:
+- Generalization: replacing a precise value with a broader category, for example replacing an exact age with an age band.
+- Aggregation: replacing an individual value with a grouped value, for example replacing a full date of birth with a birth year.
+- Masking: obscuring part or all of an attribute value.
+
+TECHNIQUES NAMED FOR PSEUDONYMISATION:
+- Strong encryption with encryption keys stored separately from the encrypted data.
+- Coding: replacing an identifying value such as a name with a reference number, with the mapping held separately.
+
+IMPACT ASSESSMENT. The guideline requires an assessment covering the possibility of re-identification.
+
+WHAT THE GUIDELINE DOES NOT CONTAIN (verified by inspection):
+- No k-anonymity requirement or parameter.
+- No l-diversity or t-closeness requirement.
+- No hashing algorithm specification.
+- No quantitative re-identification risk methodology.
+- No enumerated schedule of identifiers requiring removal.
+- No acceptable residual risk threshold.
+
+This absence is recorded as gap G4. The comparative benchmark is the US HHS HIPAA de-identification guidance, which specifies both an Expert Determination pathway with a "very small risk" standard and a Safe Harbor pathway enumerating eighteen specific identifiers.

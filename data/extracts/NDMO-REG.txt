@@ -1,0 +1,12 @@
+CURATED EXTRACT - National Data Governance Interim Regulations, Version 1, 1 June 2020
+Issuer: National Data Management Office (NDMO), under SDAIA
+Source (Ministry of Finance mirror): https://www.mof.gov.sa/en/generalservcies/open-data/Documents/PoliciesEn.pdf
+NOTE: Curated summary of verified provisions, not the official text.
+
+STRUCTURE. Contains five sub-regulations: Data Classification, Personal Data Protection, Data Sharing, Freedom of Information, and Open Data.
+
+DATA CLASSIFICATION. Four levels: Top Secret, Secret, Confidential (with sub-categories A, B and C), and Public.
+
+DATA LOCALISATION. Personal data shall be stored and processed within the Kingdom's territory. Offshore processing requires written regulatory approval coordinated with NDMO.
+
+DATA SHARING. Governs the conditions under which government entities may share data with each other and with third parties, including the classification-dependent controls that apply.

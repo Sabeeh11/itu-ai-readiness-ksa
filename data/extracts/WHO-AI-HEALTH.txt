@@ -1,0 +1,22 @@
+CURATED EXTRACT - Ethics and governance of artificial intelligence for health
+Issuer: World Health Organization. Published 28 June 2021. 150 pp. ISBN 9789240029200. CC BY-NC-SA 3.0 IGO.
+Source: https://www.who.int/publications/i/item/9789240029200
+NOTE: Curated summary of the guidance. The WHO link is a landing page rather than a direct PDF, so the full text is downloaded manually rather than by the fetch script.
+
+SIX CONSENSUS PRINCIPLES FOR THE USE OF ARTIFICIAL INTELLIGENCE IN HEALTH:
+
+1. PROTECTING HUMAN AUTONOMY. Humans should remain in control of health-care systems and medical decisions. Privacy and confidentiality should be protected, and patients must give valid informed consent through appropriate legal frameworks for data protection.
+
+2. PROMOTING HUMAN WELL-BEING AND SAFETY AND THE PUBLIC INTEREST. AI technologies should not harm people. Designers should satisfy regulatory requirements for safety, accuracy and efficacy for well-defined use cases or indications. Measures of quality control in practice and quality improvement in use of AI must be available.
+
+3. ENSURING TRANSPARENCY, EXPLAINABILITY AND INTELLIGIBILITY. AI should be intelligible or understandable to developers, users and regulators. Sufficient information should be published or documented before the design or deployment of an AI technology, and that information must be easily accessible and facilitate meaningful public consultation and debate on how the technology is designed and how it should or should not be used.
+
+4. FOSTERING RESPONSIBILITY AND ACCOUNTABILITY. Although AI technologies perform specific tasks, it is the responsibility of stakeholders to ensure that they are used under appropriate conditions and by appropriately trained people. Effective mechanisms should be available for questioning and for redress for individuals and groups adversely affected by decisions based on algorithms.
+
+5. ENSURING INCLUSIVENESS AND EQUITY. AI for health should be designed to encourage the widest possible equitable use and access, irrespective of age, sex, gender, income, race, ethnicity, sexual orientation, ability or other characteristics protected under human rights codes. Technologies should be monitored and evaluated to identify disproportionate effects on specific groups.
+
+6. PROMOTING ARTIFICIAL INTELLIGENCE THAT IS RESPONSIVE AND SUSTAINABLE. Designers, developers and users should continuously, systematically and transparently assess AI applications during actual use to determine whether they respond adequately and appropriately to expectations and requirements. Sustainability also requires attention to environmental consequences and to workforce disruption.
+
+GOVERNANCE. The guidance addresses governance across the public and private sectors, covering data governance, regulatory considerations, liability regimes, and the role of the private sector.
+
+STATUS. This guidance is non-binding. It is the most widely cited international reference on ethics of health AI and is used in this knowledge base as the international benchmark for the human-oversight, transparency, disclosure and equity concerns at the M, P, D and SINK nodes.

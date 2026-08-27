@@ -1,0 +1,15 @@
+CURATED EXTRACT - Law of Practicing Healthcare Professions
+Issuer: Royal Decree No. M/59 dated 11/4/1426H. Implementing Ministerial Resolution No. 4080489 dated 1/12/1439H.
+Source: https://www.moh.gov.sa/en/Ministry/Rules/Documents/Law-of-Practicing-Healthcare-Professions.pdf
+NOTE: Curated summary of verified provisions, not the official text.
+
+ARTICLE 21 - CONFIDENTIALITY. A health practitioner shall maintain the confidentiality of information obtained in the course of his practice. Disclosure is permitted only in the following closed set of circumstances:
+(a) reporting a death arising from a suspected criminal act to the competent authorities;
+(b) reporting communicable or epidemic disease as required;
+(c) defending against an accusation regarding the practitioner's competence;
+(d) where the patient has given written consent;
+(e) pursuant to a judicial order.
+
+ARTICLE 18 - DUTY TO EXPLAIN. The practitioner has a duty to explain the treatment and its consequences to the patient, or to a designated family member where appropriate.
+
+NOTE ON SCOPE. This is a professional-duty statute governing the conduct of individual practitioners. It is not a records management standard and does not specify technical or organisational controls for electronic health records. No separate Saudi statute governing electronic health records as such was located; the Implementing Regulations of the Health Law (2003) were inspected and contain no articles on medical records or patient data confidentiality. This absence is recorded as gap G3.

@@ -1,0 +1,12 @@
+CURATED EXTRACT - Cloud Cybersecurity Controls (CCC-1:2020), Edition 1
+Issuer: National Cybersecurity Authority (NCA)
+Source: https://cdn.nca.gov.sa/ar/ccc-en.pdf
+NOTE: Curated summary of verified provisions, not the official text.
+
+APPLICABILITY. Sets minimum cybersecurity requirements for Cloud Service Providers (CSPs) and Cloud Service Tenants (CSTs). Applies to government organisations, their affiliates, and operators of Critical National Infrastructure.
+
+DATA CLASSIFICATION. Four levels: Top Secret, Secret, Confidential, Public. Where a dataset contains items of mixed classification, the highest classification present governs the whole dataset.
+
+DATA RESIDENCY - HARD REQUIREMENT. Cloud Service Providers must provide cloud computing services from within the Kingdom of Saudi Arabia, including systems used for storage, processing, and disaster recovery centres, and including systems used for monitoring and support.
+
+The controls address identity and access management, data protection, cryptography, logging and monitoring, incident management, business continuity, and third-party risk. They contain no provisions specific to artificial intelligence or machine learning systems.

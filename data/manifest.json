@@ -1,0 +1,170 @@
+[
+  {
+    "id": "SDAIA-AIETHICS",
+    "provenance": "fetched",
+    "chars": 78415,
+    "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf?MOD=AJPERES"
+  },
+  {
+    "id": "PDPL",
+    "provenance": "extract",
+    "chars": 2070,
+    "url": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PDPL"
+  },
+  {
+    "id": "PDPL-IR",
+    "provenance": "extract",
+    "chars": 1602,
+    "url": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PDPL2"
+  },
+  {
+    "id": "SDAIA-CTRL-GUIDE",
+    "provenance": "fetched",
+    "chars": 44030,
+    "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/f579bc32-fda8-47bd-bc6f-66b8cb77985c/ENG-Guide+to+the+saudi+PDP+law+for+controllersprocessors.pdf?MOD=AJPERES"
+  },
+  {
+    "id": "SDAIA-ANON",
+    "provenance": "extract",
+    "chars": 1701,
+    "url": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PersonalDataDestruction"
+  },
+  {
+    "id": "NDMO-REG",
+    "provenance": "fetched",
+    "chars": 123926,
+    "url": "https://www.mof.gov.sa/en/generalservcies/open-data/Documents/PoliciesEn.pdf"
+  },
+  {
+    "id": "NDMO-STD",
+    "provenance": "fetched",
+    "chars": 191755,
+    "url": "https://dmo.ksu.edu.sa/sites/dmo.ksu.edu.sa/files/imce_images/policiesen001.pdf"
+  },
+  {
+    "id": "SFDA-MDS-G010",
+    "provenance": "fetched",
+    "chars": 34077,
+    "url": "https://www.sfda.gov.sa/sites/default/files/2023-01/MDS-G010ML.pdf"
+  },
+  {
+    "id": "SFDA-MDS-G027",
+    "provenance": "fetched",
+    "chars": 28521,
+    "url": "https://www.sfda.gov.sa/sites/default/files/2025-08/MDS-G027.pdf"
+  },
+  {
+    "id": "SFDA-MDS-G37",
+    "provenance": "fetched",
+    "chars": 10392,
+    "url": "https://www.sfda.gov.sa/sites/default/files/2019-10/MDS-G37.pdf"
+  },
+  {
+    "id": "SFDA-MDS-G38",
+    "provenance": "fetched",
+    "chars": 15346,
+    "url": "https://sfda.gov.sa/sites/default/files/2019-10/MDS-G38.pdf"
+  },
+  {
+    "id": "IS0303",
+    "provenance": "fetched",
+    "chars": 97498,
+    "url": "https://www.moh.gov.sa/en/Ministry/ehealthstd/Documents/eHealth%20Standards%20Files/Policies/IS0303%20Saudi%20Health%20Information%20Exchange%20Policies%20v1.0.pdf"
+  },
+  {
+    "id": "IS0304",
+    "provenance": "fetched",
+    "chars": 32823,
+    "url": "https://www.moh.gov.sa/en/Ministry/ehealthstd/Documents/eHealth%20Standards%20Files/Policies/IS0304%20Saudi%20Health%20Information%20Exchange%20Testing%20and%20Certification%20Policies%20v1.0.pdf"
+  },
+  {
+    "id": "NHIC-TELEHEALTH",
+    "provenance": "fetched",
+    "chars": 165007,
+    "url": "https://nhic.gov.sa/standards/Telehealth/Telehealth-Application-Guidelines.pdf"
+  },
+  {
+    "id": "MOH-TELEHEALTH-REG",
+    "provenance": "fetched",
+    "chars": 14522,
+    "url": "https://www.moh.gov.sa/en/Ministry/Rules/Documents/Legal-Regulations-for-Telehealth-Services.pdf"
+  },
+  {
+    "id": "LAW-HEALTH-PROF",
+    "provenance": "fetched",
+    "chars": 65514,
+    "url": "https://www.moh.gov.sa/en/Ministry/Rules/Documents/Law-of-Practicing-Healthcare-Professions.pdf"
+  },
+  {
+    "id": "NCA-CCC",
+    "provenance": "fetched",
+    "chars": 69703,
+    "url": "https://cdn.nca.gov.sa/ar/ccc-en.pdf"
+  },
+  {
+    "id": "NCA-ECC",
+    "provenance": "fetched",
+    "chars": 92866,
+    "url": "https://cdn.nca.gov.sa/api/files/public/upload/86e09090-44e4-481f-bc28-355673607654_ECC--2024-EN.pdf"
+  },
+  {
+    "id": "CST-IOT",
+    "provenance": "fetched",
+    "chars": 32533,
+    "url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/files/Guidelines_for_IoT_en"
+  },
+  {
+    "id": "HSTP",
+    "provenance": "fetched",
+    "chars": 100267,
+    "url": "https://www.vision2030.gov.sa/media/0wop2tds/hstp_eng.pdf"
+  },
+  {
+    "id": "MOH-EHALATI",
+    "provenance": "extract",
+    "chars": 1452,
+    "url": "https://www.moh.gov.sa/en/Ministry/Structure/Programs/Referral/Pages/FAQ.aspx"
+  },
+  {
+    "id": "WHO-AI-HEALTH",
+    "provenance": "metadata_only",
+    "chars": 0,
+    "url": "https://www.who.int/publications/i/item/9789240029200"
+  },
+  {
+    "id": "WHO-LMM",
+    "provenance": "metadata_only",
+    "chars": 0,
+    "url": "https://www.who.int/publications/i/item/9789240084759"
+  },
+  {
+    "id": "FGAI4H-DEL7.4",
+    "provenance": "fetched",
+    "chars": 155743,
+    "url": "https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-AI4H-2023-3-PDF-E.pdf"
+  },
+  {
+    "id": "FGAI4H-DEL5.5",
+    "provenance": "fetched",
+    "chars": 20440,
+    "url": "https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-AI4H-2023-8-PDF-E.pdf"
+  },
+  {
+    "id": "FGAI4H-DEL0",
+    "provenance": "fetched",
+    "chars": 54424,
+    "url": "https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-AI4H-2023-10-PDF-E.pdf"
+  },
+  {
+    "id": "HIPAA-DEID",
+    "provenance": "extract",
+    "chars": 2353,
+    "url": "https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html"
+  },
+  {
+    "id": "ITU-Y3172",
+    "provenance": "metadata_only",
+    "chars": 0,
+    "url": "https://www.itu.int/rec/T-REC-Y.3172/en"
+  }
+]

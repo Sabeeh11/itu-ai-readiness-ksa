@@ -1,0 +1,12 @@
+CURATED EXTRACT - Essential Cybersecurity Controls (ECC-2:2024), Version 2
+Issuer: National Cybersecurity Authority (NCA). Supersedes ECC-1:2018.
+Source: https://cdn.nca.gov.sa/api/files/public/upload/86e09090-44e4-481f-bc28-355673607654_ECC--2024-EN.pdf
+NOTE: Curated summary of verified findings, not the official text.
+
+STRUCTURE. Four domains - Cybersecurity Governance, Cybersecurity Defense, Cybersecurity Resilience, and Third-Party and Cloud Computing Cybersecurity. 28 subdomains. 108 main controls and 92 subcontrols.
+
+APPLICABILITY. Government entities and their affiliates, and private sector operators of Critical National Infrastructure.
+
+DATA LOCALISATION. Data localisation mandates present in ECC-1:2018 were removed from ECC-2:2024 and transferred to the National Data Management Office. Entities must consult NDMO regarding permissible data location.
+
+ARTIFICIAL INTELLIGENCE - VERIFIED ABSENCE. All four domains and all 108 main controls were inspected. ECC-2:2024 contains no controls, subcontrols, or provisions addressing artificial intelligence or machine learning systems. An AI system processing health data within a Saudi entity inherits generic cloud, data and application controls with no AI-specific cybersecurity requirement. This absence is recorded as gap G10.

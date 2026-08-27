@@ -1,0 +1,553 @@
+ 
+   i 
+ 
+Kingdom of Saudi Arabia 
+Ministry of Health 
+National eHealth Strategy and Change Management Office  
+(SCMO) 
+ 
+Enabling Standards-Based eHealth Interoperability  
+ 
+IS0304  
+Saudi Health Information Exchange Testing and Certification Policies 
+Version 1.0 
+February 22, 2015 
+ 
+ 
+Document Control Number: IS0304 Saudi Health Information Exchange Testing and 
+Certification Policies 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+   ii 
+THIS P AGE INTENTIONALLY LEFT BLANK 
+  
+ 
+   iii 
+TABLE OF CONTENTS 
+1. INTRODUCTION ................................................................................................................................................1 
+1.1 DOCUMENT PURPOSE ........................................................................................................ 1 
+1.2 SCOPE ............................................................................................................................... 1 
+1.3 HOW TO READ THIS DOCUMENT ...................................................................................... 1 
+1.3.1 Where to Find Information ................................................................................. 1 
+1.3.2 Document Conventions ....................................................................................... 2 
+1.4 METHODOLOGY ................................................................................................................ 2 
+2. SAUDI HEALTH INFORMATION EXCHANGE DEFINITIONS ................................................................3 
+3. SAUDI HEALTH INFORMATION EXCHANGE TESTING POLICY .........................................................5 
+3.1 PURPOSE ........................................................................................................................... 5 
+3.2 SCOPE/APPLICABILITY ...................................................................................................... 5 
+3.3 POLICY ............................................................................................................................. 5 
+3.4 POLICY MAINTENANCE ..................................................................................................... 7 
+4. SAUDI HEALTH INFORMATION EXCHANGE CERTIFICATION POLICY ..........................................8 
+4.1 PURPOSE ........................................................................................................................... 8 
+4.2 SCOPE/APPLICABILITY ...................................................................................................... 8 
+4.3 POLICY ............................................................................................................................. 8 
+4.4 POLICY MAINTENANCE ..................................................................................................... 9 
+5. SAUDI HEALTH INFORMATION EXCHANGE CERTIFICATION SURVEILLANCE POLICY ........ 10 
+5.1 PURPOSE ......................................................................................................................... 10 
+5.2 SCOPE/APPLICABILITY .................................................................................................... 10 
+5.3 POLICY ........................................................................................................................... 10 
+5.4 POLICY MAINTENANCE ................................................................................................... 11 
+6. REFERENCED DOCUMENTS ........................................................................................................................ 12 
+ 
+LIST OF TABLES 
+TABLE 2-1 DOCUMENT DEFINITIONS .............................................................................................................................. 3 
+TABLE 6-1 EXTERNAL REFERENCES ............................................................................................................................. 12 
+ 
+  
+ 
+   iv 
+CONFIDENTIALITY STATEMENT: 
+The Ministry of Health (MOH) of the Kingdom of Saudi Arabia grants to any user of this 
+document, perpetual, royalty-free, nontransferable, nonexclusive, license under its copyrights to 
+access and read the Saudi eHealth Specification. You may not reproduce or use this document or 
+any portion of it, without prior written consent from the MOH. The licenses covered are only to 
+those parts owned or controlled by the MOH itself. If parts of the Saudi eHealth Specification 
+include materials owned or controlled by other parties, licenses to use those products would have 
+to be obtained from that other party. 
+  
+The MOH offers the licensed material as-is and as-available, and makes no representations or 
+warranties of any kind concerning the licensed material, whether express, implied, statutory, or 
+other. This includes, without limitation, warranties of title, merchantability, fitness for a 
+particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence 
+or absence of errors, whether or not known or discoverable.  To the extent possible, in no event 
+will the authors and licensor be liable on any legal theory (including, without limitation, 
+negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, 
+exemplary, or other losses, costs, expenses, or damages arising out of this public license or use of 
+the licensed material, even if the licensor has been advised of the possibility of such losses, costs, 
+expenses, or damages. 
+ 
+Document Revision History 
+Version Date Type of update Prepared/Revised by 
+1.0 February 22, 2015 First Release 
+eHealth Strategy Management 
+Office – eHealth Standards 
+Department 
+ 
+Policy Approval Process 
+Subject: 
+Saudi Health Information Exchange Testing and 
+Certification Policies 
+ Approved By: 
+ 
+Approval Date:  Effective Date: Revision Date(s):  
+ 
+  
+ 
+  
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 1 
+1. INTRODUCTION 
+1.1 DOCUMENT PURPOSE 
+The purpose of the policies is to specify the requirements to assure that the interoperability 
+between eHealth products is managed with sufficient rigor and controls to assure that products 
+are conformant with the Saudi eHealth Interoperability Specifications. To achieve this objective 
+three policies are needed: 
+ Saudi Health Information Exchange Testing Policy 
+ Saudi Health Information Exchange Certification Policy 
+ Saudi Health Information Exchange Certification Surveillance Policy 
+Note: this document aligns with the Saudi e-Government Interoperability Standards (YEFI) to 
+expedite national adoption. 
+1.2 SCOPE 
+In Scope: 
+The scope of this document is the specification of testing and certification requirements to verify 
+that products use by Health Information Exchange Nodes (HIE Nodes) are conformant with the 
+Saudi eHealth Interoperability Specifications. 
+Out of Scope: 
+The following is a list of content and specifications that are specifically out of scope for this 
+document: 
+ Operational procedures for the implementation of these policies are to be defined by the 
+operations team that will be performing testing and certification. Such operational 
+procedures are out of scope of this document. 
+1.3 HOW TO READ THIS DOCUMENT 
+1.3.1 Where to Find Information 
+This document contains six normative sections, as well as informative appendices for the 
+readers’ convenience. The document is structured as follows: 
+Section 1: Contains an introduction to the Testing and Certification Policies document. 
+This section contains a summary of the document purpose and scope, as well as other 
+content to help orient the first time reader to the topic of the document and how it relates 
+to other specifications in the Saudi Health Information Exchange (SeHe) Platform. 
+Section 2: Lists the terms used in the document and their official definitions. 
+Sections 3 – 5: Specify the policies as defined for the Saudi Health Information 
+Exchange. 
+Section 6: Lists the Saudi eHealth reference documents, as well as the international 
+standards which underpin the definitions and policies. 
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 2 
+1.3.2 Document Conventions  
+Throughout this document the following conventions1 are used to specify requirement levels: 
+SHALL: the definition is an absolute requirement of the specification. 
+(NOTE: “SHALL …… IF KNOWN” MEANS THAT THE TAG MUST BE SENT. HOWEVER, IF THERE WERE NO 
+INFORMATION, THEN THIS TAG SHOULD BE SENT WITH A <NULLFLAVOR>) 
+SHALL NOT: the definition is an absolute prohibition of the specification. 
+SHOULD: there may exist valid reasons in particular circumstances to ignore a particular 
+item, but the full implications must be understood and carefully weighed before choosing 
+a different course. 
+SHOULD NOT: there may exist valid reasons in particular circumstances when the particular 
+behavior is acceptable or even useful but the full implications should be understood and 
+the case carefully weighed before implementing any behavior described with this label. 
+MAY or OPTIONAL: means that an item is truly optional. One vendor may choose to include 
+the item because a particular marketplace requires it or because the vendor feels that it 
+enhances the product while another vendor may omit the same item.  
+1.4 METHODOLOGY 
+These policies have been developed with input from various Saudi stakeholders, collected 
+through workshops and teleconferences.  
+ 
+                                                           
+1 Definitions based upon RFC 2119 
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 3 
+2. SAUDI HEALTH INFORMATION EXCHANGE DEFINITIONS  
+TABLE ‎2-1 DOCUMENT DEFINITIONS 
+TERM DEFINITION 
+Accreditation Third-party attestation related to a conformity assessment body conveying formal demonstration 
+of its competence to carry out specific conformity assessment tasks [ISO/IEC 17000] 
+Accreditation 
+body 
+Authoritative body that performs accreditation [ISO/IEC 17000] (e.g. of testing laboratories or 
+certification bodies) 
+Attestation Issue of a statement, based on a decision following review, that fulfillment of specified 
+requirements has been demonstrated [ISO/IEC 17000] 
+Audit Systematic and independent examination of accesses, additions, or alterations to electronic 
+health records to determine whether the activities were conducted, and the data were collected, 
+used, retained or disclosed according to organizational standard operating procedures, policies, 
+good clinical practice, and applicable regulatory requirement(s). [ISO 27789] 
+Audit Log Chronological sequence of audit records, each of which contains data about a specific event. 
+[ISO 27789] 
+Audit Record Record of a single specific event in the life cycle of an electronic health record. [ISO 27789] 
+Certificate of 
+Conformity 
+A document certified by a Certification Body that the supplied good or service meets the required 
+specifications 
+Certification 
+Body 
+Third-party conformity assessment body operating certification schemes [ISO/IEC 17065] 
+NOTE: A certification body can be non-governmental or governmental (with or without regulatory 
+authority). 
+Conformance 
+Criteria 
+Requirements that are to be fulfilled in order to claim that the tested system is compliant with the 
+specification 
+Conformance 
+Test Methods 
+Test procedures, test data, and test tools 
+Impartiality Presence of objectivity [ISO/IEC 17065] 
+NOTE 1: Objectivity is understood to mean that conflicts of interest do not exist, or are 
+resolved so as not to adversely influence the activities of the body.  
+NOTE 2: Other terms that are useful in conveying the element of impartiality are independence, 
+freedom from conflicts of interest, freedom from bias, freedom from prejudice, neutrality, fairness, 
+open-mindedness, even-handedness, detachment, and balance. 
+Mark of 
+Conformity 
+Protected mark issued by a body performing third-party conformity assessment, indicating that 
+an object of conformity assessment (product, process, person, system or body) is in conformity 
+with specified requirements [ISO/IEC 17030] 
+EXAMPLES Third-party marks of conformity can be: product certification marks, 
+quality/environment management system certification marks, environmental conformity marks, 
+etc. 
+NOTE 1 A protected mark is a mark legally protected against unauthorized use. 
+NOTE 2 The specified requirements are generally stated in ―normative‖ documents such as 
+International Standards regional or national standards, regulations and specifications. 
+May or Optional Indicates that an item is truly optional. One vendor may choose to include the item because a 
+particular marketplace requires it or because the vendor feels that it enhances the product while 
+another vendor may omit the same item. 
+Product A homegrown system or a system that is delivered by a vendor that may be installed in one or 
+more location.  
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 4 
+TERM DEFINITION 
+Revocation Cancellation of the statement of conformity [ISO/IEC 17000],  
+Note: initiated by the Certification Body] 
+Saudi Health 
+Exchange 
+(SeHE)  
+The Saudi organization known as SeHE that delivers capabilities to enable the electronic sharing 
+of health-related information and health-related services across the country of Saudi Arabia. 
+Saudi 
+Certification 
+Scheme 
+The certification scheme is derived and consistent with the Saudi Health Information Exchange 
+Testing and Certification Policies. It operationalizes them at a level which the certification body 
+can use to establish its processes. The certification scheme is used by the accrediting body to 
+accredit the certification body in accordance with ISO/IEC 17065. 
+Certification system related to specified products, to which the same specified requirements, 
+specific rules and procedures apply [ISO/IEC 17065] 
+Saudi Testing 
+Scheme 
+The testing scheme is derived and consistent with the Saudi Health Information Exchange 
+Testing and Certification Policies. It operationalizes them at a level which the testing laboratory 
+can use to establish its processes. The testing scheme is used by the accrediting body to 
+accredit the testing laboratory in accordance with ISO/IEC 17025. 
+ [ISO/IEC 17025] General requirements for the competence of testing and calibration laboratories 
+Scheme Owner Person or organization responsible for developing and maintaining a specific certification scheme 
+[ISO/IEC 17065]  
+NOTE The scheme owner can be the certification body itself, a governmental authority, a trade 
+association, a group of certification bodies or others. 
+Scope of 
+Certification 
+Range or characteristics of objects of conformity assessment covered by the certification  
+Security Combination of availability, confidentiality, integrity, and accountability. [ENV 13608-1] 
+Security and 
+Privacy Audit 
+Audit focused on assuring conformance to security and privacy practices and procedures. 
+Shall  Whenever occurs in this policy, SHALL means the action must be taken. 
+Should  Whenever occurs in this policy, SHOULD means it is a recommendation that an action ought to 
+be done, but it is not required. 
+Suspension Temporary invalidation of the statement of conformity for all or part of the specified scope of 
+attestation [ISO/IEC 17000] 
+Test Script Steps that define the actions and pass/fail criteria. 
+Testing 
+Laboratory 
+The organization and physical set of facilities that perform the conformance tests 
+Vendor The party responsible for developing a homegrown system or for developing or reselling a 
+commercial product. 
+Withdrawal Cancellation of the statement of conformity [ISO/IEC 17000],  
+Note: initiated by the vendor of the Product 
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 5 
+3. SAUDI HEALTH INFORMATION EXCHANGE TESTING POLICY 
+3.1 PURPOSE 
+The purpose of this policy is to specify the requirements to assure that the interoperability 
+between Products that are expected to be used as HIE Nodes is managed with sufficient rigor and 
+controls. The purpose of these controls is to assure that tested products conform to the Saudi 
+eHealth Interoperability Specifications. 
+ 
+3.2 SCOPE/APPLICABILITY 
+This policy applies to the testing scope, process and methods performed by a testing laboratory 
+that will assess conformance of eHealth Products to the Saudi eHealth Interoperability 
+Specifications. It also applies to any Vendor seeking certification of their Product. 
+This Policy is intended to be primarily applied to the testing of the interoperability of Products to 
+be deployed as HIE Nodes connected to the Saudi eHealth Exchange (SeHE) Platform. 
+3.3 POLICY 
+1. Conformance Criteria and Test Scripts are used for testing: 
+1.1. Conformance Criteria SHALL be derived from one or more Saudi eHealth Core 
+Interoperability Specifications 
+1.2. Test Scripts SHALL be derived from Conformance Criteria  
+1.3. Both Conformance Criteria and Test Scripts:  
+1.3.1. SHALL be developed, issued for public review, published, and maintained by a 
+body a by the Ministry of Health 
+1.3.2. SHOULD be subject to use in pilot testing prior to authorization for use in 
+operational testing, and 
+1.3.3. SHALL be approved for use in the Saudi eHealth Certification Program as specified 
+by the Certification Policy. 
+2. Testing may be conducted by (Party seeking testing): 
+2.1. an independent body (third party (3rd party)) 
+2.2. a purchaser or organization with user interest (second party (2nd party)) 
+2.3. a Vendor (first party (1st party))  
+3. A party seeking testing of its product SHALL select to test for conformance: 
+3.1. to one or more published Saudi eHealth Core Interoperability Specifications that 
+have been approved for testing, and 
+3.2. by selecting one or more specific Use Case actors and corresponding options, if any, 
+for each Core Interoperability Specification which the party is seeking testing for one 
+of its Products. 
+4. Testing SHALL follow quality management practices as defined by ISO/IEC 17025 General 
+requirements for the competence of testing and calibration laboratories, with additional 
+requirements specified by the Saudi Testing Scheme for: 
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 6 
+4.1. human factors, 
+4.2. accommodation and environmental conditions, 
+4.3. test and calibration methods and method validation, 
+4.4. equipment, 
+4.5. measurement traceability,  
+4.6. sampling, 
+4.7. the handling of test and calibration items, 
+4.8. assuring the quality of test and calibration results, and 
+4.9. reporting the results. 
+5. The Saudi Testing Scheme used in conjunction with ISO/IEC 17025 SHALL be approved by 
+the same entity that is responsible for approving the Interoperability Specifications.  
+6. The following types of test laboratory are permissible: 
+6.1. One of these testing laboratories SHALL be MOH-eHealth Center of Excellence (COE) 
+test laboratory, conditional upon its accreditation. 
+6.2. Other testing laboratories SHALL be authorized by the Council of Health Services 
+(CHS). 
+6.3. The testing laboratory MAY conduct all testing activity or MAY choose to sub-contract 
+the testing under the ISO/IEC 17025 General requirements for the competence of 
+testing and calibration laboratories sub-contracting condition. 
+7. Accreditation of Test Laboratories 
+7.1. Testing SHALL be conducted by a testing laboratory accredited under ISO/IEC 17025 
+General requirements for the competence of testing and calibration laboratories, 
+7.2. Testing Laboratories SHALL be accredited by an  accreditation body that is a 
+member in good standing of the International Laboratory Accreditation Cooperation 
+(ILAC), 
+7.3. Accreditation for test laboratories SHALL verify conformance to additional 
+requirements specified by the Saudi Testing Scheme: 
+8. Execution of tests: 
+8.1.  SHALL use the published Test Scripts related to the Core Interoperability Specification 
+to which conformance is being assessed 
+8.2. SHALL be conducted in-person (product undergoing test collocated with the tester) at a 
+test-laboratory authorized facility in the event that the test lab determines that in-
+person testing is needed to assure the validity of the test results, and 
+8.3. MAY be conducted remotely (e.g. with tester via a Web Meeting) as determined by the 
+test laboratory. 
+9. Detailed Test Results and evidence documentation of testing sessions SHALL include all of the 
+following: 
+9.1. a copy of test messages and/or exchanged documents used to demonstrate 
+conformance, 
+9.2. screenshots captured during the test session, 
+9.3. recorded Web Meeting session, 
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 7 
+9.4. time stamps associated with all retained messages, documents, screenshots and other 
+evidence, 
+9.5. record of validator output where test tools include a validation report, and 
+9.6. communications log that includes the content of exchanges between tester and party 
+seeking testing along with timestamps.  
+10. Detailed Test Results evidence SHALL be archived for at least the duration of the certification 
+validity period by the testing laboratory and communicated to the Certification Body. 
+11. Tests SHALL be verified by at least one test monitor. The test laboratory MAY determine that 
+results require verification by multiple monitors. 
+12. The Test Report Summary SHALL include reference to test samples, steps undertaken to 
+demonstrate compliance with a requirement, and the supporting evidence that the testing 
+session was conducted in accordance with specified test scripts. The test report summary 
+SHALL use a template approved by the body that publishes the test scripts. 
+13. The Test Report Summary SHALL be made public should the tests be used as the basis for an 
+approved certification. 
+14. A party seeking testing of its product SHALL declare the Product, name, and version that will 
+be tested.  
+15. A party seeking testing of its product MAY distinguish modules within its Product. In this case, 
+the party seeking testing of its product SHALL declare the name and version of each of the 
+modules that will be tested. 
+16. A testing laboratory MAY offer incremental testing for compliance to conformance criteria 
+with requirements that overlap those for which the party seeking testing has already 
+demonstrated conformance. The test laboratory SHALL apply the necessary level of rigor (e.g. 
+selective re-testing) based upon the design evidence provided by the party seeking testing of 
+its product.  
+3.4 POLICY MAINTENANCE 
+The Saudi Ministry of Health (MOH) is responsible for monitoring and maintenance of this 
+policy.  
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 8 
+4. SAUDI HEALTH INFORMATION EXCHANGE CERTIFICATION 
+POLICY 
+4.1 PURPOSE 
+The purpose of this policy is to specify the requirements for issuing an authoritative Certificate 
+of Conformity attesting that the Products that are expected to be used as HIE Nodes conform to 
+the Saudi eHealth Interoperability Specifications. 
+4.2 SCOPE/APPLICABILITY 
+This policy applies to the Certification Body that will be used as a source for certification 
+attestation of Products performing eHealth information exchange and to any party seeking 
+certification under the Saudi eHealth Testing and Certification Policy. 
+This Policy is intended to be first applied to the interoperability of products connected to the 
+Saudi eHealth Exchange (SeHE) Platform. 
+4.3 POLICY 
+1. The Saudi eHealth Certification Body meets the following criteria: 
+1.1. It SHALL be a single national entity.  
+1.2. It SHALL be authorized by CHS. 
+1.3. It MAY be governmental, commercial, not-for-profit, or subcontracted to one of these.  
+2. Products that MAY be certified include: 
+2.1.  Any IT Product – irrespective of care setting – that needs to exchange health 
+information in conformance with the Saudi eHealth Interoperability Specifications.  
+2.2. Any Product that will be installed on systems performing eHealth information 
+exchange with the Saudi eHealth Exchange (SeHE) Platform. 
+3. The Scope of Certification SHALL be determined by CHS by identifying (1) one or more Core 
+Interoperability Specifications and for each Core Interoperability Specification (2) the 
+specific Use Case Actors that are within the scope of certification. This is published in the 
+Saudi eHealth Certification Scheme. 
+4. The Saudi eHealth Certification Scheme SHALL be developed and maintained by the same 
+body as the one designated by CHS to develop and maintain the Saudi Testing Scheme. 
+5. A party seeking certification of its products  SHALL select within the currently published 
+Scope of Certification: 
+5.1. to one or more published Saudi eHealth Core Interoperability Specifications that 
+have been approved for testing, and, 
+5.2. by selecting one or more specific Use Case actors and corresponding options, if any, 
+for each Core Interoperability Specification for which the party is seeking testing for 
+one of its Products. 
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 9 
+6. The Saudi eHealth Certification Body SHALL process the testing reports provided by any of 
+the testing laboratories authorized per the Testing Policy and validate their content to issue or 
+not the Certificate of Conformity.  
+7. The certification SHALL be carried out by a person who has not been involved in the 
+determination testing activities.  
+8. The Certificate of Conformity SHALL be provided to the party seeking certification by the 
+designated Saudi eHealth Certification Body. 
+9. The Certificate of Conformity SHALL be valid for a period of four (4) years from the date of 
+issue.  
+10. A Mark of Conformity MAY be used by the party having received the Certificate of 
+Conformity in its literature, promotional material, and product packaging according to the 
+constraints established by the Certification Scheme. 
+11. Accreditation for the Certification Body SHALL: 
+11.1. be based on ISO/IEC 17065 Conformity assessment — Requirements for bodies 
+certifying products, processes and services, with additional requirements specified 
+by the Saudi eHealth Certification Scheme, and 
+11.2. be conducted by an accreditation body designated by CHS. 
+12. The accreditation process SHALL begin with an initial assessment based upon operational 
+plans prior to beginning certification operations, followed by a follow-up assessment to be 
+delivered within Six (6) months of beginning certification operations. 
+4.4 POLICY MAINTENANCE 
+The Saudi Ministry of Health (MOH) is responsible for monitoring and maintenance of this 
+policy.  
+ 
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 10 
+5. SAUDI HEALTH INFORMATION EXCHANGE CERTIFICATION 
+SURVEILLANCE POLICY 
+5.1 PURPOSE 
+The purpose of this policy is to specify the requirements for monitoring and reassessment of 
+certified Products to assure continued validity of their conformance to the Saudi eHealth 
+Interoperability Specifications. 
+5.2 SCOPE/APPLICABILITY 
+This policy applies to the Certification Body that will be used as a source for monitoring and 
+reassessment of certification of Products performing eHealth information exchange and for any 
+party that has products certified under the Saudi eHealth Testing and Certification Policy. 
+5.3 POLICY 
+1. Certified eHealth products SHALL be re-certified: 
+1.1. following every major product version update,  
+1.2. following every product minor version update or release, based upon assessment 
+conducted by the Certification Body and as advised by the testing laboratory to 
+determine if functionality is assessed to have been sufficiently changed from the 
+previous version or release, and 
+1.3. following major updates to a Core Interoperability Specification, based upon 
+assessment conducted by the Certification Body and as advised by the testing 
+laboratory. 
+2. The party seeking testing MAY apply for a re-testing waiver with documented justification as 
+to how the Product updates do not impact the aspects of the product that have been certified.  
+3. A Certificate of Conformity issued to specific version of a product remains valid for four (4) 
+years. Upon request of the Party seeking certification, a surveillance MAY be conducted by the 
+Certification Body, and if approved, MAY result in extending the validity for another four (4) 
+years.  
+4. Suspension/Withdrawal 
+4.1. In the event that a request for certification withdrawal is made by the vendor of the 
+certified product, certification SHALL remain valid for installed products only for the 
+remaining certificate validity. 
+4.2. In the event that a request for certification withdrawal is due to cause, the 
+organization or individual initiating the request SHALL submit the evidence with 
+explicit reference to a specific test case. 
+4.3. Once a request for certification withdrawal is received by the Certification Body, the 
+Certification Body SHALL either accept or reject the validity of the problem identified 
+in the request within one month of the date of receipt.  
+4.4. Once a Certification Body has accepted the validity of a problem identified in a 
+request for certification withdrawal, the decision to suspend or withdraw the 
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 11 
+certificate SHALL be communicated to the supplier within three (3) months of the date 
+the problem was determined to be valid. 
+4.5. The maximum time for a suspension SHALL be six (6) months. During this time, the 
+supplier SHALL either be re-certified, or the certificate SHALL be withdrawn. 
+5. A problem report MAY be filed by a party that has acquired or plans to acquire the product, by 
+another vendor, or by a third party. 
+6. A Problem Report SHALL be handled according to the following criteria:  
+6.1.1. Investigation of validity SHALL be made by the Certification Body.  
+6.1.2. Per laws, legal action against abuse of the problem reporting process MAY be 
+taken. 
+6.1.3. Suppliers SHALL be notified of any report that is under investigation regarding 
+their product. 
+6.1.4. The source of the report SHALL be kept confidential until the validity of the report 
+is confirmed.  
+6.2. Once the validity of a report is confirmed, the source of the report and vendor 
+impacted SHALL be notified and SHALL be engaged in the investigation. 
+6.3. If the validity of a report is not confirmed, the source of the report and vendor 
+impacted SHALL be notified. 
+6.4. Based on the conclusion of the investigation, a determination SHALL be made by the 
+Certification Body on the basis of the Saudi eHealth Certification Scheme, if the 
+problem justifies: 
+6.4.1. A suspension (e.g., non-intentional error introduced in the product that needs to be 
+fixed) 
+6.4.2. A revocation (e.g., test falsified). 
+6.4.3. No impact on the status of the Certificate of Conformity but an advice to the 
+supplier (e.g., correction to the product), or to the entity responsible for the 
+Conformance Test Methods. 
+6.5. If a decision is made by the Certification Body to suspend or to revoke the 
+certification, the source of the report and the vendor impacted SHALL be notified Sixty 
+(60) days prior to public notice. 
+6.6. Revocation or suspensions of Certificates of Conformity SHALL be published. 
+5.4 POLICY MAINTENANCE 
+The Saudi Ministry of Health (MOH) is responsible for monitoring and maintenance of this 
+policy. 
+ IS0304 Saudi Health Information Exchange Testing and Certification Policies 
+ 12 
+6. REFERENCED DOCUMENTS 
+TABLE ‎6-1 EXTERNAL REFERENCES 
+DOCUMENT NAME/ 
+STANDARD 
+DOCUMENT DESCRIPTION 
+ISO/IEC 17000 Conformity assessment 
+— Vocabulary and general principles 
+Specifies general terms and definitions relating to conformity 
+assessment, including the accreditation of conformity assessment 
+bodies, and to the use of conformity assessment to facilitate trade 
+ISO/IEC 17025 General requirements for 
+the competence of testing and calibration 
+laboratories 
+Specifies the general requirements for the competence to carry out 
+tests and/or calibrations, including sampling. It covers testing and 
+calibration performed using standard methods, non-standard 
+methods, and laboratory-developed methods. 
+ISO/IEC 17030 - Conformity assessment 
+— General requirements for third-party 
+marks of conformity 
+Provides general requirements for third-party marks of conformity, 
+including their issue and use 
+ISO/IEC 17065 Conformity assessment 
+— Requirements for bodies certifying 
+products, processes and services 
+Specifies the requirements for the competence, consistent operation 
+and impartiality of product, process and service certification bodies. 
+ 

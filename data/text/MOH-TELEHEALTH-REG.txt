@@ -1,0 +1,206 @@
+SaudiMOH Saudi_MohSaudiMOH937 MOHPortalwww.moh.gov.sa
+Legal Regulations for
+Telehealth Services
+Ministry of Health-Saudi Arabia
+This Document valid till March 2022
+Clinical Governance Directorate – DHCOE
+Legal Regulations for Telehealth Services
+SaudiMOH Saudi_MohSaudiMOH937 MOHPortalwww.moh.gov.sa
+1
+
+SaudiMOH Saudi_MohSaudiMOH937 MOHPortalwww.moh.gov.sa
+2
+Abstract
+The Royal Order (no. 47455) issued on 9/8/1441 AH, makes an exception to the 
+provisions of Article 13 of Law of Practicing Health Professions issued by Royal De-
+cree No. (M/59) on 4/11/1426 AH, that the health practitioner may conduct exami -
+nations or treatment through the services of telehealth in homes and workplaces, 
+in accordance with the regulations set by the Ministry of Health. Accordingly, these 
+regulations are made pursuant to the direction to the Ministry of Health to set the 
+regulations relating to telehealth.
+1. Definitions 
+ (1) The following words and phrases, unless the context otherwise requires, shall have the follow-
+ing meanings:
+	(a)	Credentialing	 is	the	process	of	obtaining,	verifying,	and	assessing	the	qualification	of	a	health	
+care professional to provide care or services in or for a health care facility.
+ (b) Health care facility is an institution or an organization licensed to provide health care diagnosis 
+and treatment services within the Kingdom of Saudi Arabia. 
+ (c) Health care professional is an individual licensed to provide health care diagnosis and treatment 
+or services related thereto within the Kingdom of Saudi Arabia and includes physicians, dentists, 
+nurses, and other health practitioners licensed to practice the health profession in accordance with 
+Law of Practicing Health Professions.
+ (d) Ministry of health is the Ministry of Health of the Kingdom of Saudi Arabia.
+ (e) Permitted telehealth services are the services allowed to be provided as a telehealth service 
+within the scope of the facility’s license and includes clinical services. 
+	(f)	 Privileging	is	the	process	by	which	a	specific	scope	and	content	of	a	patent	care	services	are	
+authorized for a health care professional by a health care facility based on the individual’s creden-
+tials and performance. 
+ (g) Tele-assistance is the use of telecommunications technology to give support or aid to a patient 
+or another health care professional and it includes the synchronous remote medical support pro -
+vided by a health care professional to assist another health care professional to render a medical 
+service.
+ (h) Tele-consultation is the use of telecommunications technology to meet a doctor who is spe -
+cially trained to advice the patient or other doctors about an illness or its treatment and includes 
+remote medical opinion requested by a patient to a health care professional and seeking of medical 
+opinion other than the medical opinion provided by a previous health care professional.
+SaudiMOH Saudi_MohSaudiMOH937 MOHPortalwww.moh.gov.sa
+3
+	(i)	 Tele-diagnosis	is	use	of	telecommunications	technology	for	the	identification	of	the	nature	of	an	
+illness or other problem by examination of symptoms.
+ (j) Telehealth is the use of telecommunications technology to deliver health-related services and 
+information that support patient care, administrative activities, and health education. 
+ (k) Telehealth Centre is the Centre for Excellence in Digital Health, Ministry of Health, Kingdom of 
+Saudi Arabia. 
+ (l) Telehealth services includes tele-screening, tele-triage, tele-consultation, tele-diagnosis, tele-
+assistance, tele-treatment, and tele-monitoring
+ (m) Tele-monitoring means the remote medical monitoring of a patient based on the medical and 
+health data collected by a patient or a health care professional or a device. 
+ (n) Tele-screening is the use of telecommunications technology to conduct tests or examinations 
+to discover illness or injury in a patient.
+ (o) Tele-treatment is the use of telecommunications technology to cure a person of an illness or 
+injury.
+ (p) Tele-triage is the use of telecommunication technology for the assignment of degrees of ur -
+gency to wounds and illnesses to decide the order of treatment of a large number of patients or 
+casualties.
+2. Objective
+ (1) The object of these regulations shall be to set the standards for all telehealth services and to 
+monitor compliance with the standards by health care facilities and health care professionals within 
+the Kingdom of Saudi Arabia.
+3. Scope and Applicability
+ (1) These regulations shall be applicable to all health care facilities and health care professionals 
+associated with health care facilities, licensed by Ministry of Health to provide telehealth services.
+ (2) These regulations shall be in force until 31st December 2021. 
+4. Practice of Telehealth Services
+ (1) Telehealth services shall be practised only by health care facilities that are licensed by the Min-
+istry of Health. 
+ (2) All health care facilities should have telehealth services for rendering care.
+ (3) The health care facilities should comply with all the laws and regulations issued by Ministry of 
+Health from time to time.
+SaudiMOH Saudi_MohSaudiMOH937 MOHPortalwww.moh.gov.sa
+4
+ (4) An entity providing telehealth services which is not licensed as a health care facility in the King-
+dom of Saudi Arabia shall obtain a licence to be allowed to practice telehealth from the Telehealth 
+Centre. 
+ (5) All legal requirements applied to a health care facility shall be applied to an entity providing 
+telehealth services.
+5. Requirements for providing medical care in Tele-health
+ (1) A health care facility involved in telehealth services shall comply with the Ministry of Health re -
+quirements for licensure and other requirements necessary for its operation, while licenses will be 
+granted as per the below:
+ a) Public sector: Pre-approvals shall be obtained from Digital Health Centre of Excellence prior 
+activating Tele-health services
+ b) Private sector:  Licenses are granted before Tele-health services activation through the Licens-
+ing Department of the Ministry of Health in line with the requirements of Digital Health Center of 
+Excellence. 
+ (2) A health care facility shall employ the minimum number of physicians for the provision of tele -
+health services as per the Ministry of Health policy for licensing health facilities.
+ (3) A health care facility shall install equipment, devices and technologies approved by Ministry of 
+Health needed for the delivery of telehealth services including software and peripheral devices.
+ (4) A health care facility shall have a written contract with another health care facility where the 
+telehealth service provision entails two or more entities.
+ (5) The contract should detail out the roles and responsibilities of each party and should be in 
+alignment with the law and regulations of the Kingdom of Saudi Arabia.
+ (6) The health care facility shall maintain a record of all physicians and other health care profession-
+als engaged in telehealth services.
+ (7) The health care facility shall be responsible to ensure that the partnering health facility, which is 
+not subject to the jurisdiction of the Kingdom of Saudi Arabia, is made aware of all the applicable 
+laws and regulations for telehealth services and assure compliance across both jurisdictions.
+ (8) The health care facility shall have in place policies relating to telehealth service description with 
+scope	of	services	available,	patient	identification,	selection	and	risk	assessment	and	patient	con-
+sent.
+6. Requirements for health care professionals 
+ (1) Telehealth services related to diagnosis and treatment shall be led by a physician.
+ (2) Telehealth services may be practiced by all types of health care professionals for which they are 
+SaudiMOH Saudi_MohSaudiMOH937 MOHPortalwww.moh.gov.sa
+5
+credentialed and privileged.
+ (3) All legal requirements applicable to health care professionals practising within the jurisdiction of 
+the Kingdom of Saudi Arabia shall be applicable to the practice of telehealth.
+ (4) Health care professionals shall be allowed to practice telehealth services across all types of 
+health care providers in the Kingdom of Saudi Arabia.
+ (5) Health care professionals practicing telehealth services may be remunerated for the practice.
+7. Credentialing and Privileging 
+ (1) The practice of telehealth shall be restricted to the healthcare professionals who are creden -
+tialed to practice within the jurisdiction of the Kingdom of Saudi Arabia.
+ (2) The licensed physicians, nurses and allied health professionals must be privileged to provide 
+telehealth services as per the Ministry of Health requirements for Clinical Privileging.
+ (3) Telehealth services must comply with laws and regulations of KSA and work within the scope of 
+their license, speciality and granted privileges.
+ (4) Physicians providing telehealth services shall comply with the professional licensure require -
+ments.
+ (5) Nurses and other health care professionals may provide telehealth services related to diagnosis 
+and treatment under the direction and clinical supervision of the treating physician.
+ (6) A healthcare facility licensed by the Ministry of Health for providing telehealth services shall 
+privilege	its	staff	to	provide	telehealth	services	by	speciality	and	document	it	in	the	staff’s	records.
+ (7) The health care facility providing telehealth services shall be accredited from an internationally 
+recognised accreditation organisation for telehealth services within 18 months or such extended 
+time period as may be prescribed by the Telehealth Centre, from the date of commencement of 
+telehealth services.
+8. Insurance Coverage 
+ (1) Provision shall be made for the health insurance coverage to include telehealth services.
+ (2) Private health insurance shall provide coverage of telehealth services with at least a parity of 
+public coverage and funding in telemedicine services.
+9. Liability and Malpractice
+ (1) In a telehealth service involving two or more healthcare professionals, each healthcare profes -
+sional shall be responsible based on their individual contribution.  
+ (2) Liability shall be decided on a case-to-case basis after due investigation.
+SaudiMOH Saudi_MohSaudiMOH937 MOHPortalwww.moh.gov.sa
+6
+ (3) The health care facility shall ensure malpractice insurance is in place throughout the duration of 
+the telehealth service. 
+ (4) Telehealth services rendered by a healthcare professional shall be covered by malpractice in -
+surance.
+ 10. Telehealth Centre
+ (1) The Telehealth Centre shall support, monitor, and evaluate the implementation and develop -
+ment of telehealth services in the Kingdom of Saudi Arabia.
+ (2) The Telehealth Centre shall set the standard for telehealth services, monitoring compliance with 
+the standards by health care facilities and professionals and conducting evaluations relating to 
+telehealth services.
+ (3) Health care facilities and professionals practising telehealth in the Kingdom of Saudi Arabia 
+shall declare themselves to Telehealth Centre through an online form and update it annually.
+ (4) Health care facilities shall provide an annual report to the Telehealth Centre on the status of 
+implementation and impact of telehealth services in the Kingdom of Saudi Arabia. 
+ (5) Health care facilities shall use medical devices in telehealth services approved by the Saudi 
+Food and Drug Authority. Devices not regulated by the Saudi Food and Drug Authority shall be ap-
+proved by the Telehealth Centre on a case-to-case basis after due investigation.
+ (6) If two or more healthcare facilities provide a collaborated telehealth service, they shall enter into 
+a written agreement and a copy of the same shall be submitted to the Telehealth Centre.
+11. Health information and Identity
+ (1) The health care facility shall provide for secure and private workspace to safeguard patient 
+privacy which includes privacy of personal information, privacy of personal communications and 
+privacy of consulting space.  
+ (2) Telehealth services shall be compliant with the health information exchange policy as applicable 
+within the Kingdom of Saudi Arabia, including all relevant data security, privacy requirements and 
+interoperability frameworks.
+	(3)	Health	 care	facility	and	professionals	shall	have	sufficient	evidence	to	identity	the	patient	before	
+and during the telehealth service.
+ (4) Healthcare professionals shall have access to all relevant patient health and medical informa -
+tion relevant to the practice of telehealth services.
+12. Patient rights and Dispute Resolution
+	(1)	The	 health	care	facility	offering	telehealth	services	shall	obtain	informed	consent	before	the	
+commencement of the telehealth service from the patient and the same shall be signed by patient 
+SaudiMOH Saudi_MohSaudiMOH937 MOHPortalwww.moh.gov.sa
+7
+and	available	online	for	verification.
+ (2) Informed consent signed shall be valid for telehealth services rendered by the health care facil-
+ity.
+ (3) The standard informed consent form shall include telehealth services.
+ (4) The health care facility shall make a provision for patients to receive relevant education on tele-
+health services.
+ (5) Patients shall be given the right to refuse or cancel any participation in telehealth services at any 
+time without the need to provide any reason.
+ (6) The health care facility shall make a provision for patients to make a compliant about a tele -
+health service which shall be shared with the Telehealth Centre at regular intervals.
+ (7) Any user of telehealth services can register a complaint using the provisions provided by the 
+health care facility.
+	(8)	The	 health	care	facility	shall	file	quarterly	reports	to	the	Telehealth	Centre	with	details	about	the	
+number	of	complaints	filed,	the	types	of	complaints,	the	process	by	which	the	complaints	were	
+redressed and the outcome of the complaints.
+	(9)	The	 Telehealth	Centre	may	directly	receive	complaints	from	the	users	of	telehealth	services	filed	
+in the prescribed manner.
+13. Permitted Services
+ (1) Permitted telehealth services include scheduling appointments, medical assessment, medical 
+advice, consultation, treatment, referral, peer-to-peer sessions, therapy, laboratory testing, diag -
+nostics, surgery, monitoring chronic conditions, counselling, prescription of medicines, dispensing 
+of medicines and exchange of medical reports.
+ (2) The list of permitted services shall be revised by the Telehealth Centre from time to time.

@@ -1,0 +1,14 @@
+CURATED EXTRACT - Guide to the Saudi Personal Data Protection Law for Controllers and Processors v1.0 (December 2023)
+Issuer: SDAIA
+Source: https://dgp.sdaia.gov.sa/wps/wcm/connect/f579bc32-fda8-47bd-bc6f-66b8cb77985c/ENG-Guide+to+the+saudi+PDP+law+for+controllersprocessors.pdf?MOD=AJPERES
+NOTE: Curated summary of verified provisions, not the official text.
+
+ANONYMISATION. The Guide defines anonymisation as the removal of direct and indirect identifiers in a way that permanently makes it impossible to identify the data subject. Data that has been anonymised to this standard falls outside the scope of the Personal Data Protection Law. The anonymisation process itself, being an operation performed on personal data, remains within scope.
+
+The Guide does not enumerate which attributes constitute direct or indirect identifiers, does not state a re-identification risk threshold, and does not describe a method by which permanence of anonymisation may be demonstrated or audited.
+
+PSEUDONYMISATION. Pseudonymised data remains personal data and remains within scope of the Law.
+
+HEALTH DATA AND MARKETING. Health data may not be used for marketing purposes even where the data subject has given consent.
+
+CONTROLLER AND PROCESSOR DUTIES. Controllers must establish a lawful basis, maintain records of processing activities, conduct impact assessments for high-risk processing, notify breaches, and honour data subject rights including access, correction, and destruction.

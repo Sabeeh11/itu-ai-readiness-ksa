@@ -1,0 +1,888 @@
+{
+  "corpus_name": "Saudi + International Health AI Governance Corpus",
+  "compiled": "2026-08-26",
+  "note": "Every entry is a real, publicly available document. 'fetchable' indicates whether the PDF can be downloaded programmatically; SDAIA's main host blocks automated access, so mirrors are used where available.",
+  "documents": [
+    {
+      "id": "SDAIA-AIETHICS",
+      "title": "AI Ethics Principles v1.0",
+      "issuer": "Saudi Data & AI Authority (SDAIA)",
+      "year": 2023,
+      "jurisdiction": "SA",
+      "binding": false,
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/4c56ed1c-1b82-447d-ac29-638f5f99c12e/ai-principles-EN.pdf?MOD=AJPERES",
+      "fetchable": true,
+      "nodes": [
+        "SRC",
+        "PP",
+        "M",
+        "P",
+        "D"
+      ],
+      "concerns": [
+        "fairness",
+        "privacy",
+        "transparency",
+        "accountability",
+        "human_oversight",
+        "reliability"
+      ],
+      "governs": [
+        "human_oversight",
+        "bias_evaluation",
+        "ai_disclosure"
+      ]
+    },
+    {
+      "id": "PDPL",
+      "title": "Personal Data Protection Law",
+      "issuer": "Royal Decree M/19 (2021), amended M/148 (2023); administered by SDAIA",
+      "year": 2023,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PDPL",
+      "fetchable": false,
+      "nodes": [
+        "SRC",
+        "PP",
+        "D"
+      ],
+      "concerns": [
+        "lawful_basis",
+        "sensitive_data",
+        "data_subject_rights",
+        "cross_border_transfer",
+        "breach_notification"
+      ],
+      "governs": [
+        "lawful_basis",
+        "consent",
+        "data_residency"
+      ]
+    },
+    {
+      "id": "PDPL-IR",
+      "title": "PDPL Implementing Regulations (Article 26 governs health data)",
+      "issuer": "SDAIA",
+      "year": 2023,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PDPL2",
+      "fetchable": false,
+      "nodes": [
+        "SRC",
+        "PP"
+      ],
+      "concerns": [
+        "health_data",
+        "minimum_necessary",
+        "access_segregation",
+        "processing_documentation"
+      ],
+      "governs": [
+        "minimum_necessary",
+        "data_provenance",
+        "consent"
+      ]
+    },
+    {
+      "id": "SDAIA-CTRL-GUIDE",
+      "title": "Guide to the Saudi Personal Data Protection Law for Controllers and Processors v1.0",
+      "issuer": "SDAIA",
+      "year": 2023,
+      "jurisdiction": "SA",
+      "binding": false,
+      "url": "https://dgp.sdaia.gov.sa/wps/wcm/connect/f579bc32-fda8-47bd-bc6f-66b8cb77985c/ENG-Guide+to+the+saudi+PDP+law+for+controllersprocessors.pdf?MOD=AJPERES",
+      "fetchable": true,
+      "nodes": [
+        "PP",
+        "SRC"
+      ],
+      "concerns": [
+        "anonymisation",
+        "indirect_identifiers",
+        "marketing_prohibition"
+      ],
+      "governs": [
+        "anonymisation",
+        "indirect_identifiers",
+        "marketing_prohibition"
+      ],
+      "governs_without_method": [
+        "anonymisation"
+      ]
+    },
+    {
+      "id": "SDAIA-ANON",
+      "title": "Guideline for Personal Data Destruction, Anonymization and Pseudonymization (Arabic)",
+      "issuer": "SDAIA",
+      "year": 2023,
+      "jurisdiction": "SA",
+      "binding": false,
+      "url": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PersonalDataDestruction",
+      "fetchable": false,
+      "nodes": [
+        "PP"
+      ],
+      "concerns": [
+        "anonymisation",
+        "pseudonymisation",
+        "masking",
+        "generalisation"
+      ],
+      "governs": [
+        "anonymisation",
+        "reidentification_risk"
+      ]
+    },
+    {
+      "id": "NDMO-REG",
+      "title": "National Data Governance Interim Regulations v1",
+      "issuer": "National Data Management Office (NDMO) / SDAIA",
+      "year": 2020,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://www.mof.gov.sa/en/generalservcies/open-data/Documents/PoliciesEn.pdf",
+      "fetchable": true,
+      "nodes": [
+        "SRC",
+        "PP",
+        "D",
+        "C"
+      ],
+      "concerns": [
+        "data_classification",
+        "data_sharing",
+        "data_residency",
+        "open_data"
+      ],
+      "governs": [
+        "data_residency",
+        "data_sharing",
+        "data_provenance"
+      ]
+    },
+    {
+      "id": "NDMO-STD",
+      "title": "Data Management and Personal Data Protection Standards v1.5",
+      "issuer": "NDMO",
+      "year": 2021,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://dmo.ksu.edu.sa/sites/dmo.ksu.edu.sa/files/imce_images/policiesen001.pdf",
+      "fetchable": true,
+      "nodes": [
+        "SRC",
+        "C",
+        "PP",
+        "D"
+      ],
+      "concerns": [
+        "data_quality",
+        "metadata",
+        "interoperability",
+        "data_operations",
+        "data_security"
+      ],
+      "governs": [
+        "data_sharing",
+        "data_provenance",
+        "input_validation"
+      ]
+    },
+    {
+      "id": "SFDA-MDS-G010",
+      "title": "Guidance on AI and ML Technologies Based Medical Devices (MDS-G-010)",
+      "issuer": "Saudi Food and Drug Authority (SFDA)",
+      "year": 2022,
+      "jurisdiction": "SA",
+      "binding": true,
+      "scope_limit": "Applies only to systems meeting the medical device definition",
+      "url": "https://www.sfda.gov.sa/sites/default/files/2023-01/MDS-G010ML.pdf",
+      "fetchable": true,
+      "nodes": [
+        "M",
+        "P",
+        "SRC",
+        "PP"
+      ],
+      "concerns": [
+        "dataset_composition",
+        "model_validation",
+        "clinical_validation",
+        "human_oversight",
+        "post_market_monitoring"
+      ],
+      "governs": [
+        "dataset_composition",
+        "model_validation",
+        "benchmarking",
+        "human_oversight",
+        "bias_evaluation"
+      ]
+    },
+    {
+      "id": "SFDA-MDS-G027",
+      "title": "Guidance on Digital Health Products (MDS-G-027)",
+      "issuer": "SFDA",
+      "year": 2025,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://www.sfda.gov.sa/sites/default/files/2025-08/MDS-G027.pdf",
+      "fetchable": true,
+      "nodes": [
+        "M",
+        "SINK",
+        "D"
+      ],
+      "concerns": [
+        "device_classification",
+        "samd",
+        "telemedicine",
+        "wearables"
+      ],
+      "governs": [],
+      "scope_limit": "Applies only to digital health products meeting the medical device definition"
+    },
+    {
+      "id": "SFDA-MDS-G37",
+      "title": "Guidance to Post-Market Cybersecurity of Medical Devices (MDS-G37)",
+      "issuer": "SFDA",
+      "year": 2019,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://www.sfda.gov.sa/sites/default/files/2019-10/MDS-G37.pdf",
+      "fetchable": true,
+      "nodes": [
+        "C",
+        "D"
+      ],
+      "concerns": [
+        "cybersecurity",
+        "vulnerability_management",
+        "lifecycle"
+      ],
+      "governs": [
+        "cybersecurity"
+      ],
+      "scope_limit": "Applies only to systems meeting the medical device definition"
+    },
+    {
+      "id": "SFDA-MDS-G38",
+      "title": "Guidance to Pre-Market Cybersecurity of Medical Devices (MDS-G38)",
+      "issuer": "SFDA",
+      "year": 2019,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://sfda.gov.sa/sites/default/files/2019-10/MDS-G38.pdf",
+      "fetchable": true,
+      "nodes": [
+        "C",
+        "SRC"
+      ],
+      "concerns": [
+        "cybersecurity",
+        "risk_assessment"
+      ],
+      "governs": [
+        "cybersecurity"
+      ],
+      "scope_limit": "Applies only to systems meeting the medical device definition"
+    },
+    {
+      "id": "IS0303",
+      "title": "Saudi Health Information Exchange Policies (IS0303)",
+      "issuer": "Saudi Health Council / National Health Information Center (NHIC)",
+      "year": 2016,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://www.moh.gov.sa/en/Ministry/ehealthstd/Documents/eHealth%20Standards%20Files/Policies/IS0303%20Saudi%20Health%20Information%20Exchange%20Policies%20v1.0.pdf",
+      "fetchable": true,
+      "nodes": [
+        "SRC",
+        "PP",
+        "P",
+        "D"
+      ],
+      "concerns": [
+        "consent",
+        "opt_out",
+        "treatment_relationship",
+        "break_glass",
+        "audit_trail",
+        "deidentification_approval",
+        "permitted_purposes",
+        "marketing_prohibition"
+      ],
+      "governs": [
+        "consent",
+        "audit_trail",
+        "override",
+        "permitted_purposes",
+        "marketing_prohibition",
+        "reidentification_risk",
+        "medical_confidentiality"
+      ],
+      "governs_without_method": [
+        "reidentification_risk"
+      ]
+    },
+    {
+      "id": "IS0304",
+      "title": "Saudi Health Information Exchange Testing and Certification Policies (IS0304)",
+      "issuer": "MOH National eHealth Strategy and Change Management Office",
+      "year": 2015,
+      "jurisdiction": "SA",
+      "binding": true,
+      "scope_limit": "Certifies interoperability conformance only, not model performance",
+      "url": "https://www.moh.gov.sa/en/Ministry/ehealthstd/Documents/eHealth%20Standards%20Files/Policies/IS0304%20Saudi%20Health%20Information%20Exchange%20Testing%20and%20Certification%20Policies%20v1.0.pdf",
+      "fetchable": true,
+      "nodes": [
+        "C",
+        "M"
+      ],
+      "concerns": [
+        "conformance_testing",
+        "certification",
+        "surveillance"
+      ],
+      "governs": [
+        "accuracy_certification"
+      ]
+    },
+    {
+      "id": "NHIC-TELEHEALTH",
+      "title": "Telehealth Application Guidelines",
+      "issuer": "NHIC / Saudi Health Council",
+      "year": null,
+      "jurisdiction": "SA",
+      "binding": false,
+      "currency_warning": "No version number or date printed in the document",
+      "url": "https://nhic.gov.sa/standards/Telehealth/Telehealth-Application-Guidelines.pdf",
+      "fetchable": true,
+      "nodes": [
+        "C",
+        "D",
+        "SINK"
+      ],
+      "concerns": [
+        "infrastructure_reliability",
+        "data_residency",
+        "disaster_recovery",
+        "encryption",
+        "rbac"
+      ],
+      "governs": [
+        "infrastructure_reliability",
+        "availability",
+        "data_residency"
+      ]
+    },
+    {
+      "id": "MOH-TELEHEALTH-REG",
+      "title": "Legal Regulations for Telehealth Services",
+      "issuer": "MOH Directorate of Clinical Governance",
+      "year": 2020,
+      "jurisdiction": "SA",
+      "binding": true,
+      "currency_warning": "Document states validity through 31 December 2021; no successor located",
+      "url": "https://www.moh.gov.sa/en/Ministry/Rules/Documents/Legal-Regulations-for-Telehealth-Services.pdf",
+      "fetchable": true,
+      "nodes": [
+        "P",
+        "SINK"
+      ],
+      "concerns": [
+        "licensing",
+        "informed_consent",
+        "liability",
+        "patient_rights"
+      ],
+      "governs": []
+    },
+    {
+      "id": "LAW-HEALTH-PROF",
+      "title": "Law of Practicing Healthcare Professions (Art. 18 duty to explain; Art. 21 confidentiality)",
+      "issuer": "Royal Decree M/59",
+      "year": 2005,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://www.moh.gov.sa/en/Ministry/Rules/Documents/Law-of-Practicing-Healthcare-Professions.pdf",
+      "fetchable": true,
+      "nodes": [
+        "SRC",
+        "D",
+        "P",
+        "SINK"
+      ],
+      "concerns": [
+        "disclosure_exceptions",
+        "duty_to_explain",
+        "medical_confidentiality",
+        "patient_consent"
+      ],
+      "governs": [
+        "medical_confidentiality",
+        "duty_to_explain",
+        "consent",
+        "permitted_purposes"
+      ],
+      "scope_note": "A professional-duty statute binding individual practitioners. It is not a records-management or systems standard and specifies no technical or organisational controls."
+    },
+    {
+      "id": "NCA-CCC",
+      "title": "Cloud Cybersecurity Controls (CCC-1:2020)",
+      "issuer": "National Cybersecurity Authority (NCA)",
+      "year": 2020,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://cdn.nca.gov.sa/ar/ccc-en.pdf",
+      "fetchable": true,
+      "nodes": [
+        "C",
+        "D",
+        "M"
+      ],
+      "concerns": [
+        "cloud_security",
+        "data_residency",
+        "data_classification",
+        "disaster_recovery"
+      ],
+      "governs": [
+        "data_residency",
+        "availability",
+        "cybersecurity",
+        "infrastructure_reliability"
+      ],
+      "ai_coverage_note": "Inspected for AI-specific provisions; none present.",
+      "scope_note": "Applies to government entities, their affiliates, and operators of Critical National Infrastructure. A private healthcare provider is within scope only where it qualifies as CNI."
+    },
+    {
+      "id": "NCA-ECC",
+      "title": "Essential Cybersecurity Controls (ECC-2:2024)",
+      "issuer": "NCA",
+      "year": 2024,
+      "jurisdiction": "SA",
+      "binding": true,
+      "url": "https://cdn.nca.gov.sa/api/files/public/upload/86e09090-44e4-481f-bc28-355673607654_ECC--2024-EN.pdf",
+      "fetchable": true,
+      "nodes": [
+        "C",
+        "D"
+      ],
+      "concerns": [
+        "cybersecurity_governance",
+        "resilience",
+        "third_party"
+      ],
+      "governs": [
+        "cybersecurity",
+        "availability"
+      ],
+      "ai_coverage_note": "Inspected for AI-specific provisions; none present.",
+      "scope_note": "Applies to government entities, their affiliates, and operators of Critical National Infrastructure. A private healthcare provider is within scope only where it qualifies as CNI."
+    },
+    {
+      "id": "CST-IOT",
+      "title": "Guidelines for IoT, First Edition",
+      "issuer": "Communications, Space & Technology Commission (CST)",
+      "year": 2023,
+      "jurisdiction": "SA",
+      "binding": false,
+      "url": "https://www.cst.gov.sa/-/media/cst-website-app/data/media/files/Guidelines_for_IoT_en",
+      "fetchable": true,
+      "nodes": [
+        "SRC",
+        "C",
+        "PP"
+      ],
+      "concerns": [
+        "device_verification",
+        "input_validation",
+        "interoperability",
+        "retention"
+      ],
+      "governs": [
+        "input_validation",
+        "infrastructure_reliability"
+      ]
+    },
+    {
+      "id": "HSTP",
+      "title": "Health Sector Transformation Program Delivery Plan",
+      "issuer": "Vision 2030 HSTP",
+      "year": 2021,
+      "jurisdiction": "SA",
+      "binding": false,
+      "url": "https://www.vision2030.gov.sa/media/0wop2tds/hstp_eng.pdf",
+      "fetchable": true,
+      "nodes": [
+        "SRC",
+        "SINK"
+      ],
+      "concerns": [
+        "strategy_alignment",
+        "ehr_unification",
+        "ai_decision_support"
+      ],
+      "governs": []
+    },
+    {
+      "id": "MOH-EHALATI",
+      "title": "Ehalati Referral Program: referral urgency categories and time standards",
+      "issuer": "Ministry of Health",
+      "year": null,
+      "jurisdiction": "SA",
+      "binding": false,
+      "url": "https://www.moh.gov.sa/en/Ministry/Structure/Programs/Referral/Pages/FAQ.aspx",
+      "fetchable": false,
+      "nodes": [
+        "SRC",
+        "D"
+      ],
+      "concerns": [
+        "referral_time_standards",
+        "urgency_categories",
+        "care_hierarchy"
+      ],
+      "governs": []
+    },
+    {
+      "id": "WHO-AI-HEALTH",
+      "title": "Ethics and governance of artificial intelligence for health",
+      "issuer": "World Health Organization",
+      "year": 2021,
+      "jurisdiction": "INTL",
+      "binding": false,
+      "url": "https://www.who.int/publications/i/item/9789240029200",
+      "fetchable": false,
+      "nodes": [
+        "SRC",
+        "M",
+        "P",
+        "D",
+        "SINK"
+      ],
+      "concerns": [
+        "ai_ethics",
+        "human_oversight",
+        "transparency",
+        "equity",
+        "accountability"
+      ],
+      "governs": [
+        "human_oversight",
+        "ai_disclosure",
+        "bias_evaluation",
+        "patient_communication"
+      ]
+    },
+    {
+      "id": "WHO-LMM",
+      "title": "Ethics and governance of AI for health: Guidance on large multi-modal models",
+      "issuer": "WHO",
+      "year": 2024,
+      "jurisdiction": "INTL",
+      "binding": false,
+      "url": "https://www.who.int/publications/i/item/9789240084759",
+      "fetchable": false,
+      "nodes": [
+        "M",
+        "SINK",
+        "D"
+      ],
+      "concerns": [
+        "generative_ai",
+        "disclosure",
+        "hallucination",
+        "human_oversight"
+      ],
+      "governs": [
+        "ai_disclosure",
+        "patient_communication",
+        "human_oversight"
+      ]
+    },
+    {
+      "id": "FGAI4H-DEL7.4",
+      "title": "FG-AI4H DEL7.4: Clinical evaluation of AI for health",
+      "issuer": "ITU-T / WHO Focus Group on AI for Health",
+      "year": 2023,
+      "jurisdiction": "INTL",
+      "binding": false,
+      "url": "https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-AI4H-2023-3-PDF-E.pdf",
+      "fetchable": true,
+      "nodes": [
+        "M",
+        "P"
+      ],
+      "concerns": [
+        "model_validation",
+        "clinical_validation",
+        "algorithmic_audit",
+        "deployment_monitoring"
+      ],
+      "governs": [
+        "model_validation",
+        "benchmarking",
+        "accuracy_certification"
+      ]
+    },
+    {
+      "id": "FGAI4H-DEL5.5",
+      "title": "FG-AI4H DEL5.5: Data handling",
+      "issuer": "ITU-T / WHO FG-AI4H",
+      "year": 2023,
+      "jurisdiction": "INTL",
+      "binding": false,
+      "url": "https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-AI4H-2023-8-PDF-E.pdf",
+      "fetchable": true,
+      "nodes": [
+        "SRC",
+        "PP",
+        "C",
+        "M"
+      ],
+      "concerns": [
+        "data_lifecycle",
+        "encryption",
+        "rbac",
+        "audit_logging",
+        "test_data_confidentiality"
+      ],
+      "governs": [
+        "audit_trail",
+        "data_provenance",
+        "input_validation"
+      ]
+    },
+    {
+      "id": "FGAI4H-DEL0",
+      "title": "FG-AI4H DEL0: Overview of the FG-AI4H deliverables",
+      "issuer": "ITU-T / WHO FG-AI4H",
+      "year": 2023,
+      "jurisdiction": "INTL",
+      "binding": false,
+      "url": "https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-AI4H-2023-10-PDF-E.pdf",
+      "fetchable": true,
+      "nodes": [
+        "M"
+      ],
+      "concerns": [
+        "standards_index"
+      ],
+      "governs": []
+    },
+    {
+      "id": "HIPAA-DEID",
+      "title": "Guidance Regarding Methods for De-identification of PHI (Safe Harbor + Expert Determination)",
+      "issuer": "US HHS Office for Civil Rights",
+      "year": 2012,
+      "jurisdiction": "INTL",
+      "binding": false,
+      "role": "Benchmark against which Saudi gap G4 is measured",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html",
+      "fetchable": false,
+      "nodes": [
+        "PP"
+      ],
+      "concerns": [
+        "deidentification_method",
+        "identifier_schedule",
+        "reidentification_risk"
+      ],
+      "governs": [
+        "deidentification_method",
+        "indirect_identifiers",
+        "reidentification_risk",
+        "anonymisation"
+      ]
+    },
+    {
+      "id": "ITU-Y3172",
+      "title": "ITU-T Y.3172: Architectural framework for machine learning in future networks including IMT-2020",
+      "issuer": "ITU-T Study Group 13",
+      "year": 2019,
+      "jurisdiction": "INTL",
+      "binding": false,
+      "url": "https://www.itu.int/rec/T-REC-Y.3172/en",
+      "fetchable": false,
+      "nodes": [
+        "SRC",
+        "C",
+        "PP",
+        "M",
+        "P",
+        "D",
+        "SINK"
+      ],
+      "concerns": [
+        "pipeline_architecture",
+        "ml_sandbox",
+        "mlfo",
+        "multilevel_distribution"
+      ],
+      "governs": []
+    },
+    {
+      "id": "CBAHI-NHS",
+      "title": "CBAHI National Hospital Standards",
+      "issuer": "Saudi Central Board for Accreditation of Healthcare Institutions (CBAHI)",
+      "year": null,
+      "jurisdiction": "SA",
+      "binding": true,
+      "scope_limit": "Accreditation criteria assessed by periodic survey, not a published machine-checkable content specification",
+      "url": "https://portal.cbahi.gov.sa/english/accreditation-programs/hospital-accreditation-program",
+      "fetchable": false,
+      "nodes": [
+        "SRC",
+        "D"
+      ],
+      "concerns": [
+        "transfer_documentation",
+        "accreditation"
+      ],
+      "governs": [],
+      "note": "Imposes patient-transfer documentation requirements as accreditation criteria. Included because it is the strongest challenge to gap G11 and the claim must survive it."
+    }
+  ],
+  "node_concerns": {
+    "SRC": [
+      "consent",
+      "medical_confidentiality",
+      "lawful_basis",
+      "data_provenance",
+      "referral_content_standard"
+    ],
+    "C": [
+      "infrastructure_reliability",
+      "availability",
+      "data_residency",
+      "cybersecurity",
+      "input_validation"
+    ],
+    "PP": [
+      "anonymisation",
+      "deidentification_method",
+      "reidentification_risk",
+      "minimum_necessary",
+      "indirect_identifiers"
+    ],
+    "M": [
+      "model_validation",
+      "dataset_composition",
+      "benchmarking",
+      "accuracy_certification",
+      "bias_evaluation"
+    ],
+    "P": [
+      "human_oversight",
+      "override",
+      "advisory_vs_blocking",
+      "threshold_justification",
+      "audit_trail"
+    ],
+    "D": [
+      "permitted_purposes",
+      "data_sharing",
+      "data_residency",
+      "marketing_prohibition",
+      "ai_security"
+    ],
+    "SINK": [
+      "ai_disclosure",
+      "patient_communication",
+      "language_accessibility",
+      "impairment_accessibility",
+      "duty_to_explain"
+    ]
+  },
+  "known_gaps": {
+    "G1": {
+      "node": "M",
+      "statement": "No Saudi health-sector AI governance policy for non-device AI",
+      "corpus_level": true
+    },
+    "G2": {
+      "node": "P",
+      "statement": "No general human-in-the-loop or override obligation outside the medical-device route"
+    },
+    "G3": {
+      "node": "SRC",
+      "statement": "No Saudi statute on electronic health records as such",
+      "corpus_level": true
+    },
+    "G4": {
+      "node": "PP",
+      "statement": "Anonymisation and re-identification risk assessment are mandated with no published method"
+    },
+    "G5": {
+      "node": "M",
+      "statement": "No Saudi regime validates or benchmarks health-AI model performance"
+    },
+    "G6": {
+      "node": "SINK",
+      "statement": "No governance of AI output disclosure or communication"
+    },
+    "G7": {
+      "node": "C",
+      "statement": "Governing telehealth instrument lapsed 31 Dec 2021 with no successor"
+    },
+    "G9": {
+      "node": "SINK",
+      "statement": "Nothing addresses Arabic dialect variation or accessibility in health AI"
+    },
+    "G10": {
+      "node": "D",
+      "statement": "AI is entirely absent from the national cybersecurity baseline"
+    },
+    "G11": {
+      "node": "SRC",
+      "statement": "No national standard defines what a complete referral document must contain"
+    }
+  },
+  "concern_queries": {
+    "consent": "patient consent opt out authorisation to access health information treatment relationship",
+    "medical_confidentiality": "confidentiality of patient information disclosure practitioner duty secrecy",
+    "lawful_basis": "lawful basis for processing personal data legitimate purpose legal ground",
+    "data_provenance": "documentation of processing stages record of data origin source of health data",
+    "referral_content_standard": "required content of a referral document minimum dataset provisional diagnosis investigation results completeness",
+    "infrastructure_reliability": "reliability availability of infrastructure network bandwidth tier disaster recovery uptime",
+    "availability": "service availability continuity disaster recovery business continuity uptime",
+    "data_residency": "data stored and processed within the Kingdom geographical boundaries localisation cross border transfer",
+    "cybersecurity": "cybersecurity controls threat risk assessment encryption vulnerability",
+    "input_validation": "validation of input data quality checks verification of device data",
+    "anonymisation": "anonymisation removal of direct and indirect identifiers permanently impossible to identify data subject",
+    "deidentification_method": "method for de-identification identifier schedule safe harbor expert determination technique",
+    "reidentification_risk": "re-identification risk assessment residual risk threshold likelihood of identifying an individual",
+    "minimum_necessary": "minimum necessary processing data minimisation restrict to what is required for the service",
+    "indirect_identifiers": "indirect identifiers quasi identifiers combination of attributes identifying an individual",
+    "model_validation": "analytical and clinical validation of the model sensitivity specificity external test data",
+    "dataset_composition": "reference dataset composition prevalence ratio multi centre demographic alignment sample size",
+    "benchmarking": "benchmark reference dataset national test set performance comparison",
+    "accuracy_certification": "certification of model accuracy accredited assessment body conformity assessment performance",
+    "bias_evaluation": "bias fairness subgroup performance demographic representativeness",
+    "human_oversight": "human oversight human in the loop enhance users performance not replace clinician review",
+    "override": "override of automated decision clinician may reject the recommendation break glass",
+    "advisory_vs_blocking": "advisory recommendation non blocking automated rejection enforcement of model output",
+    "threshold_justification": "justification of operational threshold alert level cited clinical guideline",
+    "audit_trail": "audit trail logging of access and processing events review of access records",
+    "permitted_purposes": "permitted purposes treatment healthcare operations public health secondary use",
+    "data_sharing": "sharing of data between entities disclosure agreements classification",
+    "marketing_prohibition": "prohibition on use of health data for marketing advertising",
+    "ai_security": "security controls specific to artificial intelligence and machine learning systems",
+    "ai_disclosure": "disclosure that artificial intelligence contributed to the output transparency to the user",
+    "patient_communication": "communication of findings to the patient explanation of results",
+    "language_accessibility": "local language support arabic dialect vocabulary variation",
+    "impairment_accessibility": "accessibility for users with hearing impairment mobility constraints special needs",
+    "duty_to_explain": "duty to explain treatment and consequences to the patient or family"
+  },
+  "field_definitions": {
+    "binding": "Creates a legal obligation on a healthcare provider operating in the Kingdom of Saudi Arabia.",
+    "scope_limit": "A limit in the instrument's own stated scope that excludes a non-device clinical AI system deployed in a Saudi hospital. Where present, the instrument cannot govern a concern for this system.",
+    "scope_note": "A narrower applicability caveat recorded for transparency; does not by itself remove the instrument from scope.",
+    "governs": "Concerns from node_concerns that this instrument actually governs. Curated legal judgement, open to challenge.",
+    "governs_without_method": "Concerns where this instrument imposes a duty but publishes no method by which compliance can be demonstrated or audited. Produces a METHOD GAP."
+  }
+}

@@ -1,0 +1,18 @@
+CURATED EXTRACT - Saudi Health Information Exchange Policies (IS0303 v1.0, 2016)
+Issuer: Saudi Health Council / National Health Information Center (NHIC)
+Source: https://www.moh.gov.sa/en/Ministry/ehealthstd/Documents/eHealth%20Standards%20Files/Policies/IS0303%20Saudi%20Health%20Information%20Exchange%20Policies%20v1.0.pdf
+NOTE: This is a curated summary of verified provisions, not the official text. Run src/fetch_corpus.py on an unrestricted network to replace it with the full document.
+
+SCOPE. Applies to healthcare organisations, healthcare providers, business associates and system service providers participating in the Saudi Health Information Exchange (SeHE).
+
+SECTION 3 - PERMITTED PURPOSES. Access to and disclosure of health information through the exchange is permitted for treatment, healthcare operations, and public health purposes. Research and education uses are permitted only under the secondary use policy. Use of health information for marketing studies is prohibited. Use for legal investigations is prohibited absent a court order.
+
+SECTION 5 - SENSITIVE HEALTH INFORMATION. Certain categories of health information receive heightened protection. Subjects of care may request disclosure reports listing who has accessed their information.
+
+SECTION 8 - CONSENT AND ACCESS CONTROL. Subjects of care may opt out of participation in the health information exchange. Access to a subject's health information requires an existing treatment relationship between the accessing provider and the subject. Emergency "break-glass" access is permitted where a treatment relationship cannot be established in time, but every break-glass access must generate an audit trail entry and must be subject to subsequent review. Role-based access control is required.
+
+SECTION 11 - DE-IDENTIFICATION AND SECONDARY USE. Release of de-identified health information requires: (a) approval by an ethics committee; (b) a re-identification risk assessment conducted before the data extract is produced; and (c) a data use agreement containing assurances that the recipient will not attempt re-identification. The policy requires the risk assessment but does not specify a methodology, threshold, or identifier schedule for conducting it.
+
+FEEDBACK. Receiving facilities are expected to return feedback reports to referring facilities.
+
+DATA RESIDENCY. This policy does not address data residency or cross-border transfer.

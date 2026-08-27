@@ -1,0 +1,13 @@
+CURATED EXTRACT - Guidance Regarding Methods for De-identification of Protected Health Information under the HIPAA Privacy Rule
+Issuer: Office for Civil Rights, US Department of Health and Human Services. Published 7 September 2012; last modified 3 February 2025.
+Source: https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html
+ROLE IN THIS KNOWLEDGE BASE: comparative benchmark against which Saudi gap G4 is measured. Not binding in Saudi Arabia.
+NOTE: Curated summary of verified content, not the official text.
+
+TWO PERMITTED METHODS:
+
+METHOD 1 - EXPERT DETERMINATION. A person with appropriate knowledge of and experience with generally accepted statistical and scientific principles and methods for rendering information not individually identifiable determines that the risk is very small that the information could be used, alone or in combination with other reasonably available information, by an anticipated recipient to identify an individual who is a subject of the information. The determination and the methods and results justifying it must be documented.
+
+METHOD 2 - SAFE HARBOR. Removal of eighteen enumerated identifiers of the individual and of relatives, employers and household members, together with an absence of actual knowledge that the residual information could be used alone or in combination to identify the individual. The eighteen identifiers are: names; geographic subdivisions smaller than a state; all elements of dates except year, and all ages over 89; telephone numbers; fax numbers; email addresses; social security numbers; medical record numbers; health plan beneficiary numbers; account numbers; certificate or licence numbers; vehicle identifiers and serial numbers including licence plates; device identifiers and serial numbers; web URLs; IP addresses; biometric identifiers including finger and voice prints; full face photographic images and comparable images; and any other unique identifying number, characteristic or code.
+
+NOTE ON USE IN THIS KNOWLEDGE BASE. This instrument is not binding in Saudi Arabia. It is indexed as a comparative benchmark: a published example of what an identifier schedule and a risk standard look like when a jurisdiction issues them. Any conclusion drawn from comparing it with the Saudi position is stated in the submission report, not here. The corpus holds what instruments say; the analysis is kept separate from it.

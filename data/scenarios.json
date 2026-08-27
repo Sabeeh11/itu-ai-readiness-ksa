@@ -1,0 +1,114 @@
+{
+  "scenarios": [
+    {
+      "id": "S1",
+      "title": "Baseline deployment",
+      "kind": "operational",
+      "steps": [
+        "The referral completeness and appropriateness screening system is deployed across primary care centres in one health cluster.",
+        "Referring clinicians receive non-blocking prompts naming the fields missing from a draft referral before submission.",
+        "After six months, the proportion of referrals arriving with a provisional diagnosis, examination findings and investigation results has risen."
+      ],
+      "question": "Which instruments govern each node of this pipeline as deployed?",
+      "nodes": [
+        "SRC",
+        "C",
+        "PP",
+        "M",
+        "P",
+        "D",
+        "SINK"
+      ],
+      "expected_finding": "Coverage is real but uneven. Obligations at SRC and C are binding and largely complete. Obligations at M and SINK are either scope-limited to medical devices or entirely absent, and PP carries the headline method gap. 17 of 35 concerns are governed by a binding, in-scope instrument; one further concern is governed by a duty for which no method of compliance is published."
+    },
+    {
+      "id": "S2",
+      "title": "The re-identification that nobody can adjudicate",
+      "kind": "controversy",
+      "steps": [
+        "A referral letter's free-text history reads: 'Patient is the brother of the mayor of [a town of 4,000 people] and was seen after the municipal council meeting.'",
+        "The de-identification stage removes the patient name, national ID, phone number, address, date of birth and medical record number. No direct identifier remains.",
+        "The sentence about the mayor's brother is not a direct identifier and is retained. The de-identified text is passed to the model, which runs in a cloud region.",
+        "A privacy officer asks whether this text was lawfully de-identified before it left the facility."
+      ],
+      "question": "Was this text lawfully anonymised, and by what test?",
+      "nodes": [
+        "PP"
+      ],
+      "concerns": [
+        "anonymisation",
+        "deidentification_method",
+        "reidentification_risk",
+        "indirect_identifiers"
+      ],
+      "expected_finding": "Unanswerable on the current record. SDAIA's Guide requires removal of direct AND indirect identifiers 'in a way that permanently makes it impossible to identify the Data Subject'. IS0303 s11 requires a re-identification risk assessment before release - and that duty is binding and in scope, which is exactly the point: the obligation exists, and no instrument publishes an identifier schedule, a risk threshold, or a method by which it could be discharged. The operator cannot demonstrate compliance and the regulator cannot audit it. Under HIPAA Safe Harbor this sentence would survive the eighteen-identifier test too, which is why HHS pairs Safe Harbor with an 'actual knowledge' clause and an Expert Determination alternative. Saudi Arabia has neither. Gap G4, a method gap rather than an absence of law."
+    },
+    {
+      "id": "S3",
+      "title": "Automating an existing inequity",
+      "kind": "controversy",
+      "steps": [
+        "After eight months of operation, an audit compares appropriateness flag rates by originating facility type.",
+        "Referrals originating from small rural primary care centres are flagged as potentially inappropriate at roughly three times the rate of referrals from urban teaching hospitals.",
+        "Investigation shows the model was trained on historical referral acceptance decisions. Rural referrals were historically rejected more often - but predominantly for incomplete documentation, not for clinical inappropriateness.",
+        "The model has learned to treat documentation poverty as clinical inappropriateness. Rural patients now face an additional review step and further delay.",
+        "Published national data already shows a persistent regional acceptance gap: Eastern region 95.65% versus Central 85.43% in 2023-24, a gap that survived a system-wide sixteen-point improvement."
+      ],
+      "question": "What obligation required anyone to detect this before deployment, and what requires it to be fixed now?",
+      "nodes": [
+        "M",
+        "P"
+      ],
+      "concerns": [
+        "bias_evaluation",
+        "dataset_composition",
+        "model_validation",
+        "human_oversight"
+      ],
+      "expected_finding": "Nothing binding. SDAIA's AI Ethics Principles name Fairness, but are non-binding and sector-neutral. SFDA MDS-G-010 requires demographic alignment of reference datasets and multi-centre sourcing - but applies only to systems meeting the medical device definition, which a documentation screening tool does not. No Saudi instrument requires subgroup performance reporting for non-device health AI. The system would have amplified a documented national inequity with no regulatory tripwire anywhere in its path."
+    },
+    {
+      "id": "S4",
+      "title": "The competitor who does not ask",
+      "kind": "judge_curveball",
+      "steps": [
+        "A commercial vendor offers a rival product to the same health cluster.",
+        "Their product automatically rejects any referral scoring below a completeness threshold, returning it to the referring clinician without human review.",
+        "The threshold was chosen by the vendor. It is not published and cites no clinical source.",
+        "A patient with an atypical presentation, poorly documented but clinically urgent, is auto-rejected twice before a clinician ever sees the referral."
+      ],
+      "question": "Is this lawful in Saudi Arabia today?",
+      "nodes": [
+        "P",
+        "M",
+        "SINK"
+      ],
+      "concerns": [
+        "human_oversight",
+        "override",
+        "advisory_vs_blocking",
+        "threshold_justification",
+        "ai_disclosure"
+      ],
+      "expected_finding": "Yes. Nothing prohibits it. Outside the medical-device route there is no Saudi obligation for human-in-the-loop, no obligation to make AI enforcement advisory rather than blocking, no obligation to justify an operational threshold against a published clinical source, and no obligation to disclose that AI made the decision. Our own system imposes all four constraints voluntarily. A competitor that imposes none is equally compliant. This is gap G2 stated at its sharpest: good practice in Saudi health AI is currently optional, and the market does not reward it."
+    },
+    {
+      "id": "S5",
+      "title": "The referral that was complete by whose standard?",
+      "kind": "controversy",
+      "steps": [
+        "A referring clinician disputes a completeness score, arguing the referral contained everything clinically necessary for the receiving specialty.",
+        "The receiving coordinator disagrees.",
+        "Both ask what the national standard for referral content actually is."
+      ],
+      "question": "Against what published standard is completeness measured?",
+      "nodes": [
+        "SRC"
+      ],
+      "concerns": [
+        "referral_content_standard"
+      ],
+      "expected_finding": "No published minimum referral dataset exists. MOH publishes referral urgency categories and response-time standards through Ehalati, but not content standards. CBAHI accreditation standards impose patient-transfer documentation requirements, but as criteria assessed by periodic survey rather than a specification a system can apply programmatically. Any completeness model must therefore derive its own criteria - the unsourced-threshold problem. Gap G11."
+    }
+  ]
+}

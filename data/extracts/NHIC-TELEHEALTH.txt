@@ -1,0 +1,13 @@
+CURATED EXTRACT - Telehealth Application Guidelines
+Issuer: National Health Information Center (NHIC) / Saudi Health Council
+CURRENCY WARNING: No version number or publication date is printed in the document.
+Source: https://nhic.gov.sa/standards/Telehealth/Telehealth-Application-Guidelines.pdf
+NOTE: Curated summary of verified provisions, not the official text.
+
+INFRASTRUCTURE RELIABILITY. Equipment must be reliable and must work well over the locally available network and bandwidth. Tier 3 to Tier 4 infrastructure is recommended for critical cases. Disaster recovery specifications apply. Display calibration requirements apply to diagnostic imaging modalities. Interoperability across modalities is required.
+
+DATA RESIDENCY. Data storage should be hosted within Saudi Arabia's geographical boundaries. Cloud computing compliance obligations apply.
+
+SECURITY. Encryption protocols are required. Role-based access control is required. Compliance with the Personal Data Protection Law is required.
+
+SCOPE. Covers eight categories of telehealth service, together with cross-border provisions, and addresses emerging technologies including artificial intelligence and blockchain.

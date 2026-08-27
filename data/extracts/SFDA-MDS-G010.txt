@@ -1,0 +1,24 @@
+CURATED EXTRACT - Guidance on Artificial Intelligence and Machine Learning Technologies Based Medical Devices
+Document number MDS-G-010-V1/230103, Version 1.0, 29 November 2022
+Issuer: Saudi Food and Drug Authority (SFDA)
+Source: https://www.sfda.gov.sa/sites/default/files/2023-01/MDS-G010ML.pdf
+NOTE: Curated summary of verified provisions, not the official text.
+
+SCOPE. Sets out Marketing Authorization (MDMA) requirements for AI and ML based medical devices, defined as devices that diagnose, manage or predict diseases by analyzing medical data. Systems that do not meet the medical device definition fall outside this guidance.
+
+REFERENCE DATASET REQUIREMENTS:
+- The ratio of normal to abnormal cases in the reference dataset must reflect the true prevalence of the condition in the intended population.
+- Data must be sourced from multiple centres to capture heterogeneity.
+- The dataset must be demographically aligned with the target population.
+- Sample size must be justified.
+- Datasets used for clinical testing must not be publicly available.
+
+VALIDATION EVIDENCE. Three components are required:
+1. Valid clinical association between the model output and the clinical condition.
+2. Analytical and technical validation demonstrating the software correctly processes input data to produce accurate output.
+3. Clinical validation reporting sensitivity, specificity, positive predictive value and negative predictive value.
+Performance must be demonstrated in clinically relevant conditions within real workflows, not solely under bench conditions.
+
+HUMAN OVERSIGHT. Devices should enhance users' performance, not replace them. Operational controls for human oversight are required. Interface design must avoid biasing the user's decision.
+
+POST-MARKET. Continuous monitoring of safety, effectiveness and performance within the quality management system; adverse event reporting; real-world performance analysis feeding software modification decisions.

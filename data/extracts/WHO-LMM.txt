@@ -1,0 +1,21 @@
+CURATED EXTRACT - Ethics and governance of artificial intelligence for health: Guidance on large multi-modal models
+Issuer: World Health Organization. Released 18 January 2024. 98 pp. ISBN 978-92-4-008475-9.
+Source: https://www.who.int/publications/i/item/9789240084759
+NOTE: Curated summary of the guidance. The WHO link is a landing page rather than a direct PDF.
+
+SCOPE. Addresses large multi-modal models (LMMs) - generative AI systems that accept multiple types of input, including text, and produce outputs not limited to the input type. Builds on and extends the six principles of the 2021 WHO guidance.
+
+FIVE BROAD APPLICATION AREAS IDENTIFIED IN HEALTH:
+1. Diagnosis and clinical care, such as responding to patients' written queries.
+2. Patient-guided use, such as investigating symptoms and treatment.
+3. Clerical and administrative tasks, such as documenting and summarising patient visits within electronic health records.
+4. Medical and nursing education, including providing trainees with simulated patient encounters.
+5. Scientific research and drug development, including identifying new compounds.
+
+RISKS ADDRESSED. Generation of false, inaccurate, biased or incomplete statements which may harm people who rely on them; training on data of poor quality or on data that is biased by race, ethnicity, ancestry, sex, gender identity or age; automation bias, where a health professional or a patient overlooks errors that would otherwise have been identified; cybersecurity risks to patient information and to the trustworthiness of algorithms.
+
+KEY RECOMMENDATIONS. Engagement of a range of stakeholders including potential users and affected communities in all stages of development and deployment. Transparency about the data used and the intended purpose. Mandatory post-release auditing and impact assessments, including for data protection and human rights, disaggregated by user type. Assignment of liability so that users harmed by an LMM are adequately compensated or have other forms of redress. Government investment in, or provision of, public infrastructure, and use of laws and policies to ensure that LMMs used in health care meet ethical obligations and human rights standards.
+
+DISCLOSURE. The guidance addresses whether and how the involvement of an AI system in producing health information should be disclosed to clinicians and to patients.
+
+STATUS. Non-binding. Used in this knowledge base as the international reference for the AI-disclosure and generative-model concerns at the M, D and SINK nodes, where no Saudi instrument was located.

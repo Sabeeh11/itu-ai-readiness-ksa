@@ -1,0 +1,18 @@
+CURATED EXTRACT - Personal Data Protection Law (PDPL)
+Issuer: Royal Decree No. M/19 dated 9/2/1443H (2021), amended by Royal Decree No. M/148 dated 5/9/1444H (2023). Administered by SDAIA. 43 articles.
+Source: https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PDPL
+NOTE: Curated summary of verified provisions, not the official text.
+
+LAWFUL BASIS FOR PROCESSING. Processing of personal data requires a lawful basis. Consent is the primary basis; the Law also recognises processing necessary to serve actual interests of the data subject where contact is impossible, processing pursuant to another law or prior agreement to which the data subject is party, and processing by a public entity for security purposes or to satisfy judicial requirements.
+
+SENSITIVE PERSONAL DATA. Health data is expressly classified as sensitive personal data and attracts heightened controls. Credit data, genetic data, biometric data, and data revealing ethnic origin, religious or political belief are likewise sensitive.
+
+DATA SUBJECT RIGHTS. The data subject has the right to be informed of the legal basis and purpose of collection, the right of access to their personal data, the right to obtain a copy in a readable and clear format, the right to request correction, and the right to request destruction of personal data no longer required.
+
+CROSS-BORDER TRANSFER. Transfer of personal data outside the Kingdom is restricted and is governed by a dedicated regulation requiring, among other things, a transfer risk assessment and appropriate safeguards such as standard contractual clauses.
+
+BREACH NOTIFICATION. Controllers must notify the competent authority of personal data breaches, and must notify data subjects where the breach may cause harm.
+
+SCOPE EXCLUSION. The Law does not apply to data that has been anonymised such that the data subject can no longer be identified by any means.
+
+PENALTIES. The Law provides for administrative penalties and, for disclosure or publication of sensitive data with intent to harm or for personal benefit, criminal penalties.

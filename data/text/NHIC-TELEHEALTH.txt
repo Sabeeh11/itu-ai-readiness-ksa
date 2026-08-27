@@ -1,0 +1,2831 @@
+Telehealth Application
+Guidelines
+Preface                                                                                                                       3
+Introduction                                                                                                             5
+Glossary                                                                                                                       8
+Abbreviations                                                                                                           10  
+Initiation of virtual practice                                                                                       12
+Health Information and Identity:                                                                             13
+Liability and Malpractice:                                                                                       17
+Patients’ Rights and Dispute Resolution:                                                                   20
+Clinical service continuity of Care                                                                                  23
+Insurance coverage:                                                                                                 23
+Technical aspects of telehealth:                                                                             23
+Telehealth Data Management:                                                                                       25
+Scope of Virtual practice                                                                                       31
+◦  Service & application                                                                                       31
+◦  Tele-consultation                                                                                                 31
+◦  Tele-diagnosis                                                                                                 31
+◦  Remote patient monitoring                                                                             31
+◦  Tele-management                                                                                                 31
+◦  Tele-surgery                                                                                                 31
+◦  Tele-assistance                                                                                                 31
+◦  Tele-expertise                                                                                                 31
+◦  Tele-education                                                                                                 31
+◦  Cross-border access                                                                                       31
+◦  Emerging technology                                                                                       31
+Service and application:                                                                                                 31
+Tele-consultation:                                                                                                           34
+Tele-Diagnosis:                                                                                                           38
+Remote patient monitoring:                                                                                       42
+Tele-management:                                                                                                 44
+Tele-Surgery:                                                                                                           47
+Tele-assistance:                                                                                                           51
+Tele-expertise:                                                                                                           54
+Tele-education:                                                                                                           57
+Cross-border access:                                                                                                 60
+Emerging Technologies in Telehealth:                                                                   64
+Appendix:                                                                                                                         66
+Telehealth Application
+Guidelines
+Telehealth Application Guidelines
+Table of Content
+Contents
+Intellectual Property Rights
+All rights are reserved to the National health information Center (NHIC), Saudi Health 
+Council. No part of this publication may be reproduced or transmitted in any form or 
+by any means without permission in writing from NHIC. 
+Acknowledgment
+The development of this guideline was greatly supported by the following 
+organizations/ individuals:
+The Saudi Health Council (SHC).
+Scientiﬁc committee advisors of the National health information Center, Riyadh, Saudi 
+Arabia.
+The national committee of clinical guidelines for telehealth.
+Code of ethics for patient privacy and conﬁdentiality
+The NHIC aims to provide quality, knowledge and integrated services to the Saudi 
+health system assuring to meet the standards of global best practices. NHIC supports 
+the privacy and conﬁdentiality of health information by providing standards and 
+regulations and best practices in the ﬁeld of digital health.
+Telehealth Application Guidelines
+3
+
+Introduction
+Telehealth is “the use of electronic information and communication technologies to 
+support virtual clinical healthcare practice, patient and professional health-related 
+education, public health and health administration” (1 ).  It allows long-distance patient 
+and clinician contact, care, advice, education, intervention, monitoring, and remote care 
+pathway delivery (2 ). When in rural settings, lack of transport, a lack of mobility, 
+conditions due to outbreaks, epidemics or pandemics, decreased funding, or a lack of 
+staﬀ, restricted access to care, telehealth may bridge the gap(3 ) as well as provide 
+distance-learning; meetings, supervision, and presentations between practitioners; 
+online information and health data management and healthcare system integration(4). 
+In the light of the global and local acceleration of the adoption of telehealth technology, 
+which has proven to facilitate the provision of healthcare to everyone regardless of 
+geographical location and assisted in preventing the spread of diseases mainly during 
+the covid-19 pandemic. This adoption has shown a great value to everyone including 
+healthcare professionals, healthcare facilities and patients. However, it has raised a 
+great risk regarding the safety of the provision of healthcare and required the 
+intervention to organize the practice to ensure the overall safety of patients and the 
+privacy of their health information.
+Therefore, this document comes as an integral document to organize the practice of 
+telehealth in the Kingdom of Saudi Arabia to provide safe and eﬃcient telehealth 
+practice. It aims to create guidelines for the practice of telehealth for healthcare 
+professionals, virtual hospitals and mobile apps. Accordingly, it covers the requirements 
+for telehealth services, the basic steps when using telehealth services, patient rights and 
+technical requirements of telehealth services. In addition, this document is not 
+considered as a clinical guideline for any speciﬁc specialty nor a disease, but it aims to 
+help Healthcare professional (HCP) using telehealth technologies to provide the best 
+care to patients.
+Telehealth Application Guidelines
+5
+Selecting patients for telehealth:  
+Physicians should determine which patients are suitable for telehealth based on 
+available resources, technology and the urgency of medical 
+care. Physicians providing telehealth consultation services should determine whether a 
+telehealth consultation is the most appropriate type of consultation for each patient. 
+The decision to use telehealth incorporates the following factors: 
+Clinical: continuity of care, shared care, and the best model of care for the patient. 
+Practical: availability of appropriate technology and patient-end support. The quality of 
+the technology at the remote site will play a signiﬁcant role in the information gained 
+during the clinical consultation. 
+Note: all content provided in this document are subject to evolve for their improvement 
+in line with scientiﬁc literature or suggested comments. These guidelines are subject to 
+review and update on a yearly basis. Any changes will be communicated by the NHIC.
+Telehealth Application Guidelines
+6
+Glossary
+Telehealth
+(1)
+Telemedicine
+ A telehealth
+ solution
+ provider
+(TSoP)
+ A telehealth
+ service
+ provider
+(TSeP)
+ licensed
+ Health care
+ professional
+The use of electronic information and communication technologies to support 
+long-distance virtual clinical healthcare practice, patient and professional 
+health-related education, public health and health administration.
+the use of medical information exchanged from one site to another 
+via electronic communications to improve patients' health status.
+A digital enabler to virtual care services. The tool may be a hardware and/or a 
+software, and may be a medical device.
+An entity providing a remote clinical health service.
+Anyone authorized to practice health professions. This includes the following 
+categories: physicians and dentists, pharmacology specialists, health 
+technicians (in radiology, nursing, anesthesia, laboratory, pharmacy, optics, 
+epidemiology, prostheses, physiotherapy, dental care and installation, CT 
+imaging, nuclear therapy, laser, and operations), psychologists,  social 
+workers, nutritionists, public health, midwifery, ambulance, speech and 
+hearing treatment, occupational rehabilitation, occupational therapy, medical 
+physics, and other health professions that are An agreement between the 
+Ministry of Health, ministry of human resources and social development and 
+the Saudi Commission for Health Specialties.
+A healthcare professional who delivers care and services to the sick and ailing 
+either directly as doctors and nurses or indirectly as aides, helpers, laboratory 
+technicians.
+An adult who is considered legally responsible for the care and custody of a 
+minor or another adult determined to be unable to provide self-care or 
+otherwise incompetent.
+A Legal documented process regulates the conduct of medical relationship 
+between the patient and the healthcare professional.
+health worker
+ Medical
+Guardian
+ Informed
+consent
+Glossary
+Te r m Definition
+Glossary
+Telehealth Application Guidelines
+8
+ Biomedical
+ device as per
+ FDA/SFDA
+standards
+ licensed
+organization
+ Physiologic
+monitoring
+ Remote
+ patient
+ monitoring
+The FDA categorizes medical devices into one of three classes – Class I, II, 
+or III – based on their risks and the regulatory controls necessary to 
+provide a reasonable assurance of safety and eﬀectiveness. 
+Class I: Common, low risk devices with low complexity
+Class II: moderate risk, partially implanted devices with more complexity
+Class III: high-risk, fully implanted devices.
+Telemedicine or telehealth organization that is licensed for the purpose of 
+administering services in the scope of telemedicine or telehealth.
+Is the use of digital technologies to monitor and capture medical and other 
+health data from patients and electronically transmit this information to 
+healthcare professionals for assessment and, when necessary, 
+recommendations and instructions.
+The use of synchronous or asynchronous electronic information and 
+communication technology to collect personal health information and medical 
+data from a patient at an originating site that is transmitted to a healthcare 
+professional at a distant site for use in the treatment and management of 
+medical conditions that require frequent monitoring.
+The asynchronous transmission of a patient's medical information from a 
+healthcare professional at an originating site to a healthcare professional at a 
+distant site.
+The evaluation of all processes and procedures in case of any dispute that 
+requires review if the medical practice is following the best practice. 
+Unidentiﬁed use of data for any purpose such as research, analysis, AI, data 
+mining.
+refers to anything that is “on premise” or “on-prem” such as a hard drive, ﬂash 
+drive, local ﬁle server, or Network Attached Storage drive (NAS drive)
+A HCP in a tele-assistance encounter, who provides a technical assistance 
+remotely.
+A HCP in a tele- expertise encounter, who provides an expert medical opinion 
+remotely.
+Patient prioritization and categorization according to medical and 
+management needs, such as illness/injury, severity/complexity, prognosis and 
+resource availability and referral to specialized care as indicated by case.
+A medical diagnostic testing outside a clinical laboratory can be near or at the 
+patient site of care.
+Store-and-
+ forward
+ technology
+Medico-legal
+ Secondary
+use of data
+ Local data
+storage
+ The assisting
+HCP
+Expert HCP
+ Triage of
+patients
+Point-of-car
+e testing
+Glossary
+Telehealth Application Guidelines
+9
+Artiﬁcial Intelligence 
+Computerized Tomography
+Council of Health Insurance 
+Chronic Obstructive Pulmonary Disease
+Chest X-Ray
+Data Loss Prevention 
+Health Catalyst Data Operating System
+Electrocardiogram
+Electronic Medical Records
+Far End Camera Control
+Electronic Health Record
+Food and Drug Administration/ Saudi Food and Drug Authority
+Healthcare professional (referred to consulted/consulting, accepting/referring) 
+this has been speciﬁed within the document.
+Intensive Care Unit
+AI
+CT
+CHI
+COPD
+CXR
+DLP
+DOSTM
+ECG
+EMR
+EHR
+FECC
+FDA/SFDA
+HCP
+CST Communications, Space & Technology Commission
+Kingdom of Saudi Arabia
+National Data Management Office
+National Health Information Center
+Magnetic Resonance Imaging
+Ministry of Health
+Medical Record Number
+Saudi Health Information Exchange
+Service Level Agreement
+Remote Patient Monitoring
+Tele-Assistance
+Tele-Consultation
+A telehealth service provider
+A telehealth solution provider
+Vendor Neutral Archive
+The Saudi Commission for Health Specialties
+picture archiving and communication system
+Point-of-care testing
+ICU
+KSA
+NDMO
+NHIC
+MRI
+MoH
+MRN
+SeHe
+SLA
+RPM
+TLA
+TLC
+TSeP
+TSoP
+VNA
+SCFHS
+PACS
+POCT
+Abbreviations
+Telehealth Application Guidelines
+10
+
+Initiation of virtual practice
+Health information and identity
+Liability and malpractice
+Patient rights and dispute resolution
+Clinical service continuity of care
+Insurance coverage
+Technical aspects of telehealth
+Telehealth data management
+Telehealth Application Guidelines
+12
+Health Information and Identity:
+Provider-Patient Relationship:
+It is crucial that a valid patient-physician relationship must be established before the 
+provision of telemedicine services, through (5–13):
+The provider agrees to undertake diagnosis and treatment of the patient, and the 
+patient, or a medical guardian for the patient, agrees to be treated- whether or not there 
+has been an in-person encounter between the patient and the provider.
+The Provider Must:
+Verify and authenticate the patient’s identity by checking at admission, registration & 
+presentation at every encounter.
+Use a patient identiﬁcation across all health information systems in order to support 
+patient uniﬁed records.
+Treat a patient via telemedicine and conﬁrm key identiﬁers, to ensure the proper 
+medico-legal documentation, medical notes and electronic systems used match the 
+patient in process of an intended care.
+Conﬁdence of the HCP in assessing the patient condition and establishing the medical 
+diagnosis without the need for in-house physical examination that could not be 
+achieved with the virtual physical examination and investigation solutions. 
+Check the patient’s identity and match it with their intended care throughout their 
+continuity of care. Also, ensure this has been correctly documented.
+Follow key essential approved identiﬁers that can be used to ensure the right patient is 
+matched with the right procedure. These include:
+Name (family and given names) , Governmental ID, Date of birth ,Gender
+Medical record number, or Individual healthcare identiﬁer
+7.   Conﬁrming that telehealth/telemedicine services are appropriate for that   patient’s 
+individual situation and medical needs.
+8. Evaluating the indication, appropriateness and safety of any prescription in 
+keeping with best practice guidelines and any formulary limitations that apply to the 
+electronic interaction.
+9. Documenting the clinical evaluation and prescription.
+Telehealth Application Guidelines
+13
+Introduction
+Telehealth is “the use of electronic information and communication technologies to 
+support virtual clinical healthcare practice, patient and professional health-related 
+education, public health and health administration” (1 ).  It allows long-distance patient 
+and clinician contact, care, advice, education, intervention, monitoring, and remote care 
+pathway delivery (2 ). When in rural settings, lack of transport, a lack of mobility, 
+conditions due to outbreaks, epidemics or pandemics, decreased funding, or a lack of 
+staﬀ, restricted access to care, telehealth may bridge the gap(3 ) as well as provide 
+distance-learning; meetings, supervision, and presentations between practitioners; 
+online information and health data management and healthcare system integration(4). 
+In the light of the global and local acceleration of the adoption of telehealth technology, 
+which has proven to facilitate the provision of healthcare to everyone regardless of 
+geographical location and assisted in preventing the spread of diseases mainly during 
+the covid-19 pandemic. This adoption has shown a great value to everyone including 
+healthcare professionals, healthcare facilities and patients. However, it has raised a 
+great risk regarding the safety of the provision of healthcare and required the 
+intervention to organize the practice to ensure the overall safety of patients and the 
+privacy of their health information.
+Therefore, this document comes as an integral document to organize the practice of 
+telehealth in the Kingdom of Saudi Arabia to provide safe and eﬃcient telehealth 
+practice. It aims to create guidelines for the practice of telehealth for healthcare 
+professionals, virtual hospitals and mobile apps. Accordingly, it covers the requirements 
+for telehealth services, the basic steps when using telehealth services, patient rights and 
+technical requirements of telehealth services. In addition, this document is not 
+considered as a clinical guideline for any speciﬁc specialty nor a disease, but it aims to 
+help Healthcare professional (HCP) using telehealth technologies to provide the best 
+care to patients.
+Healthcare Professional (HCP) Identity:
+HCP should disclose his or her identity and applicable credential(s) to the patient; and 
+obtain appropriate informed consent after any relevant disclosures regarding the 
+delivery models and treatment methods or limitations, including any special informed 
+consents regarding the use of telehealth technologies. 
+Informed consent in telehealth practice:
+A Legal documented process regulates the conduct of medical relationship between the 
+patient and the healthcare professional or the treatment of the healthcare facility 
+according to the laws, regulations and medical requirements. Informed consent 
+documentation aims to explain the elements of the treatment agreement conducted 
+between the patients and the HCP or the healthcare facility. Further, it guarantees the 
+compliance of the parties with the non-emergency treatment agreement and resolves 
+the conﬂict between the parties to the agreement by explaining the rights, duties, and 
+obligations of each party towards the medical procedure taken and determined in 
+advance. Moreover, it explains the method, mechanism, outcome, and possible 
+complications of the procedure.
+Informing the patient about telehealth & obtaining the consent:
+Before conducting a telehealth consultation when applicable, physicians should ensure 
+patients understand how the consultation will proceed. This may include: 
+1. Providing the patient with plain language information about the intended telehealth 
+service. 
+2. Informing patients of the other available care options. 
+3. Informing patients of any out-of-pocket charges for telehealth consultations, 
+compared to other available options, if applicable.
+HCP may need to liaise with the patient-end health worker or related caregiver to ensure 
+the patient is suﬃciently informed. In cases where there is no health worker at the 
+patient end, the HCP will need to ensure that the patient has been given adequate 
+information regarding the telehealth consultation. 
+Telehealth Application Guidelines
+14
+Seeking patient consent:
+1. HCPs should verify that patients have consented to participate in the telehealth 
+consultation. 
+2. In cases where the patient is not competent and does not have the capacity to give 
+consent, consent should be obtained in the same way as in a face-to-face 
+consultation.
+3. The HCP or patient-end health worker may have to arrange for consent to be given 
+by a family member or friend who has the requisite legal authority (for example, 
+enduring guardianship) to give consent on the patient’s behalf. 
+4. In cases where a recording is to be used for education or assessment purposes, the 
+patient should be informed of this and give consent to how the recording is to be 
+used. The patient should be told the reasons why the consultation is recorded, how 
+it will be stored and for how long.
+5. Patient verbal and written consent is documented.
+Privacy and conﬁdentiality of health information:
+In compliance with the Saudi personal data protection law which is based on ten 
+governance principles (Appendix A)(14). Telehealth consultations should be private and 
+conﬁdential, and physicians should have processes in place to facilitate this as per 
+standard face-to-face consultations. The patient’s privacy and conﬁdentiality should be 
+maintained at all times. The patient’s privacy is protected by considering what risks 
+there are to privacy when using telehealth, and developing procedures to manage such 
+risks. 
+Telehealth Application Guidelines
+15
+Requirements of Telehealth Data Management:
+1. Activate data governance (operating model) that insures data sharing across 
+organizations are done securely and safely. This should comply with national data 
+protection laws and regulations in case of a national scope. Otherwise, all relevant laws 
+and regulations in case of multi-jurisdictional telehealth scope. 
+2. Provide data analysis means that enhance telehealth care.
+3. Provide immediate access to data at the bedside or in Emergency department. 
+4. Decentralized and hybrid systems of healthcare data management improve 
+treatment between medical centers with fully synchronized medical records.
+5. Cloud computing systems and other emerging technologies allow clinics and 
+hospitals to oﬄoad the majority of their data into a centralized hub that can be more 
+secure and less expensive. This should be in compliance with NCA and NDMO policies 
+regarding data storage and cloud computing
+6. Automated cloud data allows for automatic policy-based cleanings, which allows 
+for the deletion of irrelevant data to keep more space free.
+7. Improved data management helps in reduction of patient costs and leads to a 
+better business and private decisions making.
+8. Creation of a more streamlined information’s exchange and enhancing patient 
+service and security
+9. Ensuring the quality and interoperability of information. 
+Data Management Best Practices for Hospitals and Medical Facilities:
+Implementing accurate data management systems is imperative to ensure the eﬃcient 
+storage and transfer of patients' information. Data management best practices also 
+improve the conﬁdentiality, reliability and comprehensiveness of this information.
+To reap the beneﬁts of exceptional data governance, hospitals and medical facilities must 
+work together to better manage, organize, protect and transfer information between 
+patients and providers. 
+The following are few key ways via which healthcare facilities (hospitals or clinics) can best 
+practice medical data management.
+Telehealth Application Guidelines
+16
+Liability and Malpractice:
+Responsibility/Liability in the course of telehealth is a shared responsibility between the 
+healthcare facility, the HCP and the patient-end health worker. Each healthcare 
+professional shall be responsible based on their individual contribution to make 
+appropriate management and legal decisions.
+The legal basis and requirements relating the medico-legal professional responsibility is 
+subject to the decision on a case-to-case after thorough review. 
+Responsibility/Liability:
+1. The healthcare facility should be licensed to perform Telehealth services.
+2. The healthcare facility shall ensure presence of governing policy and guidelines is in 
+place throughout the duration of the telehealth service.
+3. All HCP involved in telehealth practice must be fully educated and aware about the 
+policy and guidelines that cover the telehealth services governing guidelines on 
+national basis and within the healthcare facility.
+4. The HCP liability will be assessed based on provided information during 
+consultation.
+5. In a telehealth service involving two or more healthcare professionals, each 
+healthcare professional shall be responsible based on their individual contribution. 
+(Provider to provider model).
+6. The patient’s site referring HCP is fully responsible to treat the patient within his 
+clinical capacity and provide the best available healthcare service at that moment. In 
+certain cases, when further medical opinion becomes essential, telehealth service 
+might support to provide a higher optimum care. 
+7. The accepting HCP should accept the professional responsibility in providing the 
+intended healthcare service to the referring HCP .
+8. The HCP should access all information needed before proceeding with telehealth 
+consultation.
+Telehealth Application Guidelines
+17
+9. In a telehealth service involving two or more healthcare professionals, each 
+healthcare professional shall be responsible based on their individual contribution
+•  The responsibility is divided based on each HCP contribution 
+•  The responsibility is subject to the limit of practice
+•  The responsibility is subject to the privileges Specialty, level of privilege and level 
+of credentials and speciﬁc case situation.
+•  The accepting HCP is responsible to make the appropriate clinical decision, 
+treatment plan and the appropriate care pathway based on the accessibility of the 
+information.
+•  The referring HCP is responsible to conduct the consulted HCP clinical decision, 
+treatment plan and the appropriate care pathway based on his/her clinical capacity 
+and the availability of the resources.
+•  Medical documentation should be followed.
+10. If Store-and-forward “asynchronous” consult used, liability will be fully on the 
+consulted doctor except in second opinion situations. Patient consent does not declare 
+the doctor from liability associated with medical malpractice.
+11. In a direct and live services “synchronous” (doctor-to-patient) are provided (no 
+third party or assistance at the referring site), the consulting doctor accepts full 
+responsibility (and potential liability) for the patient’s care.  
+Telehealth Application Guidelines
+18
+Credentialing and privileging:
+1. The practice of telehealth shall be restricted to the healthcare professionals who are 
+credentialed to practice within the jurisdiction of the Kingdom of Saudi Arabia (18). 
+2. The registered and classiﬁed physicians, nurses and allied health professionals must be 
+privileged to provide telehealth services. 
+3. Privileging is an internal process implemented within a healthcare facility for the 
+purpose of verifying and integrating the training and experience of the healthcare 
+professional within the scope of telehealth services oﬀered by the facility.
+4. The originating site may choose to use the credentialing and privileging decision from 
+the distant site to make a ﬁnal privileging decision. If this option is chosen, the 
+organization must ensure the delineation of privileges granted at the originating site 
+only reﬂect those services that will be provided to that entity.
+5. Telehealth services must comply with laws and regulations of KSA and work within the 
+scope of their license, specialty and granted privileges. 
+6. Healthcare professionals providing telehealth services shall comply with the 
+professional registration and classiﬁcation requirements. 
+7. Nurses and other healthcare professionals may provide telehealth services related to 
+diagnosis and treatment based on their credentials and privileges given to them by the 
+credentialing and privileging committee within their healthcare facility. 
+8. A healthcare facility licensed by the MoH for providing telehealth services shall privilege 
+its staﬀ to provide telehealth services by specialty and document it in the staﬀ’s 
+records. 
+9. The healthcare facility providing telehealth services is preferred to be accredited by a 
+recognized accreditation organization for telehealth services. 
+10. The license of a telehealth service or solution can be revoked in case of medical 
+errors. This decision should be preceded by the responsible licensing entity evaluation 
+and investigation.
+Telehealth Application Guidelines
+19
+Patients’ Rights and Dispute Resolution:
+Patient’s Bill of Rights:
+1. The patient has the right to considerate and respectful care.
+2. The patient has the right to and is encouraged to obtain from physicians and other direct 
+caregivers relevant, current, and understandable information concerning diagnosis, 
+treatment, and prognosis.
+3. Except in emergencies when the patient lacks decision-making capacity and the need 
+for treatment is urgent, the patient is entitled to the opportunity to discuss and request 
+information related to the speciﬁc procedures and/or treatments, the risks involved, the 
+possible length of recuperation, and the medically reasonable alternatives and their 
+accompanying risks and beneﬁts.
+4. Patients have the right to know the identity of physicians, nurses, and others involved in 
+their care, as well as when those involved are students, residents, or other trainees.
+5. The patient has the right to know the immediate and long-term ﬁnancial implications of 
+treatment choices, insofar as they are known.
+6. The patient has the right to make decisions about the plan of care prior to and during the 
+course of treatment and to refuse a recommended treatment or plan of care to the extent 
+permitted by law and hospital policy and to be informed of the medical consequences 
+of this action. In case of such refusal, the patient is entitled to other appropriate care and 
+services that the hospital provides or transfer to another hospital. The hospital should 
+notify patients of any policy that might aﬀect patient choice within the institution.
+7. The patient has the right to every consideration of privacy. Case discussion, 
+consultation, examination, and treatment should be conducted to protect each patient’s 
+privacy.
+8. The patient has the right to expect that all communications and records pertaining to 
+his/her care will be treated as conﬁdential by the hospital as required by law. The patient 
+has the right to expect that the hospital will emphasize the conﬁdentiality of this 
+information when it releases it to any other parties entitled to review information in these 
+records.
+Telehealth Application Guidelines
+20
+9. The patient has the right to review the records pertaining to his/her medical care and to 
+have the information explained or interpreted as necessary, except when restricted by law.
+10. The patient has the right to expect that, within its capacity and policies, a hospital will 
+make a reasonable response to the request of a patient for appropriate and medically 
+indicated care and services. The hospital must provide evaluation, service, and/or referral 
+as indicated by the urgency of the case. When medically appropriate and legally 
+permissible, or when a patient has so requested, a patient may be transferred to another 
+facility. The institution to which the patient is to be transferred must ﬁrst have accepted the 
+patient for transfer. The patient must also have the beneﬁt of complete information and 
+explanation concerning the need for, risks, beneﬁts, and alternatives to such a transfer.
+11. The patient has the right to ask and be informed of the existence of business 
+relationships among the hospital, educational institutions, other health care providers, or 
+payers that may inﬂuence the patient’s treatment and care.
+12. The patient has the right to consent to or decline to participate in proposed research 
+studies or human experimentation aﬀecting care and treatment or requiring direct patient 
+involvement and to have those studies fully explained prior to consent. A patient who 
+declines to participate in research or experimentation is entitled to the most eﬀective care 
+that the hospital can otherwise provide.
+13. The patient has the right to expect reasonable continuity of care when appropriate and 
+to be informed by physicians and other caregivers of available and realistic patient care 
+options when hospital care is no longer appropriate.
+14. The patient has the right to be informed of hospital policies and practices that relate to 
+patient care, treatment, and responsibilities. The patient has the right to be informed of 
+available resources for resolving disputes, grievances, and conﬂicts, such as ethics 
+committees, patient representatives, or other mechanisms available in the institution. The 
+patient has the right to be informed of the hospital’s charges for services and available 
+payment methods (19–23).
+Telehealth Application Guidelines
+21
+Patient Rights in Telehealth Settings:
+1. An informed patient consent shall be recorded, preferably online, before any 
+telehealth activity.
+2. The consent template in appendix (B) is deﬁned by the NHIC. 
+3. Patients may refuse and/or cancel any participation in a telehealth activity, at any 
+time, without the need to justify. 
+4. Patients may request a telehealth activity. 
+5. Patients should receive relevant education on telehealth if needed. 
+6. A protocol shall be deﬁned by the healthcare facility in case of technical incidents 
+stopping an activity. 
+7. A protocol shall be deﬁned by the healthcare facility in case of a medical emergency 
+occurring during an activity.
+8. Patients should receive continuity of care (24).
+Telehealth Application Guidelines
+22
+Clinical service continuity of Care: 
+Facilities must have business continuity plan that is activated in case of clinical or 
+technical disruption to ensure the continuity of care to all patients and guarantee an 
+alternative plan (B) to be ready.
+Insurance coverage:
+1. The malpractice insurance of HCPs shall include telehealth practice.
+2. Health insurance coverage of telehealth activities shall be applied in accordance with 
+the regulations on health insurance coverage of CHI in KSA.
+Technical aspects of telehealth:
+Basic requirement of telehealth:
+The information and communications technology used for telehealth should be ﬁt for the 
+clinical purpose of the consultation (26–29). Speciﬁcally: 
+• The equipment is reliable and works well over the locally available network and 
+bandwidth. 
+• The equipment is compatible with equipment used by the patient-end health worker. 
+• The equipment and network secured, and privacy and conﬁdentiality during the 
+consultation can be ensured.
+• The equipment is of a high enough quality to facilitate good communication between 
+all participants and accurate transfer of clinical information. 
+• Exchange of data shall be governed by the same overarching guidelines on privacy, 
+security and accurate representation of truth e.g. high-quality imagery of diagnostic 
+studies, body parts, etc. 
+Telehealth Application Guidelines
+23
+
+Telehealth Data Management:
+Health Data Management in general is the process of developing and executing plans, 
+policies, initiatives, and practices to enable entities to manage and govern their data. 
+This is mainly to achieve the aspired value, with data considered an organizational asset. 
+Furthermore, managing data would enable an organization to track and inventory data 
+like a physical asset (30–45).
+While, Telehealth Data Management in particular means having a data-operating system 
+in place that serves as the foundation for getting data controlled under a discrete 
+authority (regardless of the database structure, whether centralized, decentralized, or 
+hybrid). This is to ensure the conﬁdentiality, integrity and availability of such data used for 
+telehealth purposes and that, ﬁrst, this data is available a timely manner for authorized 
+HCP and used in across any organization (e.g. hospital or clinic) participating or willing 
+to participate in telehealth services. Second, unauthorized HCP and users are not 
+granted access to such data. Finally, only authorized users can update this data to make 
+sure it is complete and accurate. 
+Health data includes, but is not limited to the following:
+•   Patient demographics
+•   Hospitalization    
+• Medical notes
+•   Laboratory test results
+•   Procedures and surgeries
+•  Imaging, like x-rays, computerized tomography (CT), and magnetic resonance 
+imaging (MRI)
+•  Laboratory tests 
+•  Treatments and Prescriptions
+•   Diagnosis
+•   Referrals and other communication
+•  Physiologic monitoring data
+•   Provider information
+•   Patient insurance
+• Administrative information
+Telehealth Application Guidelines
+25
+Requirements of Telehealth Data Management:
+1. Activate data governance (operating model) that insures data sharing across 
+organizations are done securely and safely. This should comply with national data 
+protection laws and regulations in case of a national scope. Otherwise, all relevant 
+laws and regulations in case of multi-jurisdictional telehealth scope. 
+2. Provide data analysis means that enhance telehealth care.
+3. Provide immediate access to data at the bedside or in Emergency department. 
+4. Decentralized and hybrid systems of healthcare data management improve treatment 
+between medical centers with fully synchronized medical records.
+5. Cloud computing systems and other emerging technologies allow clinics and 
+hospitals to oﬄoad the majority of their data into a centralized hub that can be more 
+secure and less expensive. This should be in compliance with NCA and NDMO 
+policies regarding data storage and cloud computing
+6. Automated cloud data allows for automatic policy-based cleanings, which allows for 
+the deletion of irrelevant data to keep more space free.
+7. Improved data management helps in reduction of patient costs and leads to a better 
+business and private decisions making.
+8. Creation of a more streamlined information’s exchange and enhancing patient service 
+and security
+9. Ensuring the quality and interoperability of information. 
+Data Management Best Practices for Hospitals and Medical Facilities:
+Implementing accurate data management systems is imperative to ensure the eﬃcient 
+storage and transfer of patients' information. Data management best practices also 
+improve the conﬁdentiality, reliability and comprehensiveness of this information.
+To reap the beneﬁts of exceptional data governance, hospitals and medical facilities 
+must work together to better manage, organize, protect and transfer information 
+between patients and providers. 
+The following are few key ways via which healthcare facilities (hospitals or clinics) can 
+best practice medical data management.
+Telehealth Application Guidelines
+26
+Technology Use:
+• Electronic health records (EHRs) are preferred to be accessible in order to reduce 
+treatment errors that result from gaps in knowledge regarding past medical history, 
+allergies, or medications, especially when multiple providers are treating patients.
+• Hospitals and clinics adopting telehealth services are advised to implement EHRs, 
+since they are often the most accessible. The widespread adoption fosters the 
+creation of more uniﬁed data management systems.
+• If EHR cannot be implemented then using scanned standardized manual records, 
+reports and data can facilitate the use of Telehealth via proper communication 
+channels including video and audio conferencing. 
+Data Standardization:
+• Ensure consistent data shared between systems.
+• Standardize capturing, deﬁning and transmitting data for interoperability.
+• Promoting consistent or comprehensive data requires unifying the hospital systems 
+as possible with the ability to access the EHR or manual record for any patient at any 
+place in the Kingdom by an authorized healthcare professional using his/her national 
+identiﬁcation number (ID).
+• Medical institutions can focus on achieving standardized data within their facilities by 
+implementing a single shared data management system and server.
+Seamless Information Exchange Enabling:
+• Streamlining information transfer should follow standardization of data input. Both 
+app-centric format and more of patient-centric view should be streamlined in order to 
+ensure up-to-date deployment and security of the application whether desktop or 
+mobile, in-house or cloud. This will facilitate the seamless exchange of clinical 
+information to stakeholders, health providers and patients.
+• Implementing systems like vendor-neutral archives provide interoperability among 
+departments and allow harmonious data and imaging exchange.
+• A Vendor Neutral Archive (VNA) stores images generated by medical devices and 
+scanners using a standard format. It enables interoperability between the systems 
+that store the images in the Picture Archiving and Communication Systems (PACS). 
+Medical staﬀ can view images from across the organization and remotely using 
+multiple screens or devices.
+Telehealth Application Guidelines
+27
+A Comprehensive View Formation:
+• After creating more standardized data and facilitating its exchange, medical 
+institutions should improve the information’s reliability, thus forming a comprehensive 
+360-degree view of both providers and patients. This complete picture helps 
+organizations understand where healthcare professionals practice and what patients 
+they see.
+• It is essential to link information from various proﬁles including name, address and 
+National/Iqama ID, Mobile number and Hospital Medical Record Number (MRN) to 
+the same provider. This practice ensures no one overlooks pieces of information and 
+data is consistent between proﬁles.
+• Patients’ contact information need continuous updating and consolidation. For 
+example, if a physician overlooks a vital piece of information, like an allergy, this could 
+result in medical malpractice and adverse reactions in the patient. Thus, it is best to 
+prompt patients to provide updated data whenever possible. 
+Sensitive Data Protection:
+• Data breaches compromise sensitive data and can be very costly for providers.
+• Appropriate data management practices include setting policies to ensure this 
+protection, such as a mobile device policy, which governs what data users can store 
+on apps and mobile gadgets. 
+• Organizations should also secure wireless networks, encrypt portable devices and 
+educate staﬀ members about diﬀerent violations.
+• Data Backup is critical to ensure organizations can recover from various types of data 
+losses. 
+• Data Protection using data loss prevention (DLP), storage with built-in data 
+protection, ﬁrewalls, encryption, and endpoint protection. 
+• With the Health Catalyst Data Operating System (DOS™) Solution, data is pulled in 
+from a wide variety of source systems, providing a single control point where 
+individual access rights can be granted. From there, the organization can establish 
+data governance and track data lineage as data is enriched and spread to the edges 
+of the organization.
+• Individual organizations such as hospitals or health systems usually provide access to 
+their data to their internal staﬀ.  Larger collaborations for example in the execution of 
+Telehealth programs can provide mediated or collaborative access to clinical data 
+repositories for eligible authorized participating individuals. 
+Telehealth Application Guidelines
+28
+Data Storage Considerations: 
+• Medical data is sensitive and must adhere to national data protection laws and 
+regulations in case of a national scope. Otherwise, all relevant laws and regulations in 
+case of multi-jurisdictional telehealth scope.
+• Data storage should be hosted within Saudi Arabia’s geographical boundaries.
+• Data storage should be able to meet and have the future capability for scalability in 
+both data storage and connectivity.
+• Backup of high availability in disaster recovery
+• Recommendation should be at least tier 3 tier 4  for remote patient management of 
+critical cases.
+• In cases of connectivity sudden interruption, the point of care devices should be able 
+to store the data locally and be able to forward the data once the connection is 
+restored. 
+• Best practice is when a telehealth network covers a wide geographical area uses 
+cloud service through a cloud service provider approved by CST and compliant with 
+the data security and privacy act of health care information.
+• Accessibility for integration with national health platform services.
+• Data security and privacy on a cloud is a joint responsibility of both cloud service 
+provider and the healthcare facility.
+• Data custody and ownership should follow the policy and procedures of the national 
+guidelines and acts in case of a national scope. Otherwise, a consensus needs to be 
+reached all relevant laws and regulations in case of multi-jurisdictional telehealth 
+scope. 
+Telehealth Application Guidelines
+29
+
+o Service & application
+o Tele-consultation
+o Tele-diagnosis
+o Remote patient monitoring
+o Tele-management
+o Tele-surgery
+o Tele-assistance
+o Tele-expertise
+o Tele-education
+o Cross-border access
+o Emerging technolog y
+Scope of Virtual practice
+Telehealth Application Guidelines
+31
+Service and application:
+Getting patient set up with telehealth technology:
+Telehealth services in emergency can be provided based on the following criteria:
+Medical indication for telehealth:
+1. Telehealth in emergency cases can deliver consultation to the patient in an emergency 
+whenever a specialty consult is needed in a timely manner.
+2. Whenever a requirement to have an access to a certiﬁed and an experienced staﬀ to 
+assess in deciding a reliable and eﬀective further treatment plan. 
+3. In the case of a patient who may require a transfer to another advanced facility for 
+further care plan.
+Requirements to conduct telemedicine services:
+1. A suitable technology platform that provide a real-time video call, vital signs evidence, 
+performing a remote applicable diagnostic exams such as ECG, REAL TIME US.
+2. In emergency cases, the biomedical device should meet the international standards 
+of FDA of biomedical devices classiﬁcation as class II.
+3. Capability of continuity of care can provided through tele-monitoring.  
+4. The emergency telemedicine services should be initiated/ conducted through a 
+technology platform that is locally hosted in Saudi Arabia.
+5. The telemedicine platform should provide the HCP the clinical documentation 
+capability. 
+6. Provide the capability of remote physiological monitoring and recording. 
+7. This information should be archived, retrieved and audited when needed according to 
+the national regulation and information archiving law.
+Telehealth Application Guidelines
+32
+Patient Management 
+• If the condition can be appropriately managed via telemedicine, then the HCP may 
+take a professional judgment to either:
+◦ Provide teleconsultation and guidance related to speciﬁc clinical condition
+◦ Request additional information such as lab diagnostics and others.
+◦ Provide speciﬁc treatment by prescribing medication via approved prescribing 
+channels.
+◦ Exchange patient information via telehealth means safely and securely according to 
+the national health exchange platform.
+◦ Patients shall not be subject to ‘ﬁrst experience’ interventions. An exception can be 
+made with complete informed consent of the patient or their representative in extreme 
+circumstances where it is the only way to save a life or prevent permanent damage.
+ 
+Services allowed to be provided through telehealth:
+1. Triage of patients.
+2. Diagnosis.
+3. Video sighting of clinical signs.
+4. Tele-mental health services.
+5. Tele-monitoring.
+6. Tele-prescription.
+7. Tele-pathology & Tele-radiology:
+◦  Pathology requests can be sent to any healthcare professional.
+◦        Ordering and interpretation of patient lab results.
+8. Tele-Referral where applicable and relevant for the case.
+9.  Follow up care and case management.
+10. Issuance of sick leave.
+11.  Patient and family education and counselling.
+12. Any other tele-consultation medical services approved by the healthcare facility. 
+Examples may include provision of rehabilitation, speech and physical therapy.
+Telehealth Application Guidelines
+33
+Tele-consultation:
+Deﬁnition:
+Teleconsultation (TLC) is a remote medical consultation between a patient and a HCP 
+(46).
+Description:
+Teleconsultation: the patient can call the HCP or vice versa, based on a booking such as 
+in a virtual clinic or Tele-clinic. In addition, the patient can call the HCP instantly for any 
+support needed such as in tele-triaging or via call centers that support chronic disease 
+patients at home by HCP . 
+Teleconsultation includes the following encounters:
+• Tele-triaging: Initial teleconsultation by patients using various channels for a new 
+instant medical need, who has no previous registration or unknown medical history. 
+During the teleconsultation, the patient requires an evaluation with instructions for 
+measures that can be taken initially, and/or directions based on the urgency level to 
+the suitable healthcare service such as calling an ambulance, immediate visit to the 
+emergency department, primary HCP or visiting a specialized HCP .
+• Tele-clinic: tele-consultation mainly for the ﬁrst visit of the patient to a remote 
+specialized HCP (if it’s not done in-person), where the patient have to visit a near-by 
+clinic equipped for the tele-consultation devices including all the accessories needed 
+for the patient evaluation and with a presence of assistance to apply/use these 
+instruments, to achieve a proper specialized evaluation. 
+• Virtual-clinic: a remote consultation between a patient and a HCP anywhere using 
+video conference technology, which may utilize an integrated accessories and 
+instruments for clinical evaluations. This consultation can be planned with a booking 
+such as a patient with chronic disease follow-up or home healthcare follow-up or 
+instantly based on the patient’s needs such as patient having a new complain, 
+whether the patient is seeking support on the same primary condition or consulting 
+for a newly emerged clinical problem.
+Telehealth Application Guidelines
+34
+Examples:
+• Tele-triaging: artiﬁcial intelligence can be one of the useful channels that can provide 
+or augment this service. After the required SFDA approval. 
+• Tele-clinic: patient consulting a remote cardiologist from a nearby clinic with the 
+presence of a physician/nurse (based on the need). 
+• Virtual clinic: 
+Minimum requirements:
+• Medico-legal:
+◦ The HCP should conﬁrm that the settings of the session are appropriate to conduct 
+the consultation.
+◦ The HCP should conﬁrm that the patient has a proper daylight exposure for a proper 
+clinical evaluation.
+◦ In case of mentally retarded patients, a family caregiver should be attending the 
+session.
+◦ The HCP should know the limitations of the remote clinical evaluation using the 
+attached accessories and should decide whether the patient needs a physical visit or 
+not.
+◦ The HCP should give the patient medication needed and/or directions to the proper 
+service he needs.
+◦ The HCP should give the patient instructions according to the possibility of the 
+progression of the patient’s case. 
+The HCP should give the patient instructions about the medication usage and assure 
+that the patient and/or the caregiver understands and perform it properly. For example, 
+the use of insulin injections and Salbutamol inhaler.
+Virtual clinic
+ examples
+Booked
+ consultation
+Instant 
+consultation
+Follow-up
+Chronic disease for a regular 
+follow-up
+instant consultation to a 
+related pre-existing condition 
+(chronic disease)
+Additional booking for a new 
+clinical condition related or 
+unrelated to the pre-existing 
+condition
+instant consultation to an 
+unrelated complain to the 
+pre-existing condition
+New condition
+Telehealth Application Guidelines
+35
+Technology Use:
+• Electronic health records (EHRs) are preferred to be accessible in order to reduce 
+treatment errors that result from gaps in knowledge regarding past medical history, 
+allergies, or medications, especially when multiple providers are treating patients.
+• Hospitals and clinics adopting telehealth services are advised to implement EHRs, 
+since they are often the most accessible. The widespread adoption fosters the 
+creation of more uniﬁed data management systems.
+• If EHR cannot be implemented then using scanned standardized manual records, 
+reports and data can facilitate the use of Telehealth via proper communication 
+channels including video and audio conferencing. 
+Data Standardization:
+• Ensure consistent data shared between systems.
+• Standardize capturing, deﬁning and transmitting data for interoperability.
+• Promoting consistent or comprehensive data requires unifying the hospital systems 
+as possible with the ability to access the EHR or manual record for any patient at any 
+place in the Kingdom by an authorized healthcare professional using his/her national 
+identiﬁcation number (ID).
+• Medical institutions can focus on achieving standardized data within their facilities by 
+implementing a single shared data management system and server.
+Seamless Information Exchange Enabling:
+• Streamlining information transfer should follow standardization of data input. Both 
+app-centric format and more of patient-centric view should be streamlined in order to 
+ensure up-to-date deployment and security of the application whether desktop or 
+mobile, in-house or cloud. This will facilitate the seamless exchange of clinical 
+information to stakeholders, health providers and patients.
+• Implementing systems like vendor-neutral archives provide interoperability among 
+departments and allow harmonious data and imaging exchange.
+• A Vendor Neutral Archive (VNA) stores images generated by medical devices and 
+scanners using a standard format. It enables interoperability between the systems 
+that store the images in the Picture Archiving and Communication Systems (PACS). 
+Medical staﬀ can view images from across the organization and remotely using 
+multiple screens or devices.
+• Setup:
+◦ The systems and devices used should comply with the Saudi personal protection 
+law and any national privacy requirements by the National Data Management Oﬃce 
+(NDMO) and the cyber security authority.
+◦ Access to the session between the patient and the HCP should require two-factor 
+authentication.
+◦ In all tele-consultations except tele-triaging, the HCP is preferred to be able to have 
+an access to the patient’s historical data and previous documentations.
+◦ HCP is preferred to be able to have access to the patient’s medical records, in cases 
+of frequent follow-ups, in order to review the previous medical history and 
+documentations and continuously update on the same medical record. 
+◦ The instructions for the bandwidth required should be given to both parties using 
+teleconsultation.
+◦ The session should be encrypted.
+◦ Recording the tele-consultation sessions is not required, except in certain 
+medico-legal needs. Such as, some of the mental health cases, criminal related 
+evaluations.
+Telehealth Application Guidelines
+36
+• Technical:
+◦ Tele-clinic: For each specialized tele-clinic, connected devices and accessories 
+should be available at the bedside.
+◦ Virtual clinic: the patient may utilize an integrated accessories and instruments for 
+clinical evaluation.
+◦ Tele-triage: if artiﬁcial intelligence is utilized to give direct instructions/directions, 
+then an SFDA approval is required for the use of that Artiﬁcial intelligence.
+◦ Alternative channels such as telephone calls can be provided for some of the urgent 
+clinical needs, such as tele-triaging hotline, home healthcare cases, and rehab.
+• Personnel:
+◦ Tele-clinic: The bedside HCP should be trained to use the connected devices and 
+accessories to support the remote HCP in doing a proper evaluation in addition to 
+do some required bedside evaluations techniques.
+• Patient experience and patient rights:
+◦ Virtual clinic: The patient or the caregiver should be trained to use any accessories 
+or IoT devices used at the bedside for a better evaluation and monitoring purposes.
+◦ Tele-triaging:
+▪ The patient should understand the tele-triaging is a screening service that will not 
+achieve a ﬁnal diagnosis. 
+▪ The patient should understand the tele-triaging would help mainly in evaluating the 
+urgent clinical condition in order to get instructions about initial interventions and 
+directions to the proper needed service.
+Telehealth Application Guidelines
+37
+Tele-Diagnosis:
+Deﬁnition: 
+The use of telecommunications technology to facilitate the remote interpretation and/or 
+diagnosis of the remotely performed Studies by a HCP without synchronous interaction 
+with the patient or the requesting professional (47).
+Description: 
+The use of telecommunications technology to enable HCP such as radiologist, 
+cardiologist, histopathology consultant to perform interpretation and/or diagnosis of 
+the remotely performed Studies such as diagnostic imaging, electrocardiogram, and 
+image-rich pathological, without synchronous interaction with the patient or the 
+requesting professional.
+The process require transferring and visualizing the images in a clinical standard 
+accepted format and resolution.    
+The HCP in the interpretation may require further evaluation or studies for example 
+requesting performing special clinical evaluation, cardiovascular system examination 
+or performing further study such as CXR, or blood gas, to support ECG interpretation 
+in the diﬀerential diagnosis. 
+The Artiﬁcial Intelligence (AI) will be playing a major role in augmenting HCP initially, and 
+supporting the screening programs by reduce the cost, using a highly sensitive AI that 
+transfer only the abnormal studies to the HCP , so we can perform more studies with a 
+lesser number of HCP . Furthermore, AI will perform eventually full Tele-Diagnosis 
+services, but to assure the reliability and safety it requires detailed studies that support 
+the process registration for each service, and use case.
+Telehealth Application Guidelines
+38
+Examples: 
+• Tele-Radiology: the practice of a radiologist interpreting medical images while not 
+physically present in the location where the images are generated (48 ).
+• Tele-ECG: the Practice of a cardiologist interpreting and evaluating 
+electrocardiogram, remotely taken by handheld tele-electrocardiogram while not 
+physically present in the location where it is taken.
+• Tele-Pathology: The use of telecommunications technology to facilitate the transfer of 
+image-rich pathology data between remote locations for the purposes of diagnosis, 
+education, and research.
+Minimum requirements of: 
+• Medico-Legal: 
+◦ The images should be captured using the medico-legally accepted format and 
+resolution 
+◦ The images resolution should maintained unchanged during transfer or storage. 
+◦ The professional should evaluate and study the images using a medico-legally 
+accepted display device with the required resolution for each study category
+◦ The studies should be labeled with patient and facility demography.
+◦ The requests should be labeled based on urgency level by the requesting practitioner, 
+to fulfill the required service level agreement (SLA).
+◦ The professional should receive the required report about the case to perform proper 
+evaluation.
+◦ The professional should receive training on the devices used in the evaluation process 
+such as diagnostic modality, and the display tools.
+◦ The Medico-legal disputes resulting from the remote interpretation and / or Diagnosis 
+of the HCP is similar that of the regular HCP practice within the healthcare facilities.
+Telehealth Application Guidelines
+39
+• Setup:
+◦ The system used should comply with the Saudi personal protection law and any 
+national privacy requirements by the NDMO and the cyber security authority.
+◦ The system used should assure the required availability, to fulﬁll the respond time for 
+the most urgent expected cases based on the urgency level.
+◦ The devices/ display used by the reading professional should be calibrated based 
+on the recommended by the manufacturing company. 
+◦ The system should capture and store all the multimedia ﬁles, requesting forms, all 
+transactions timestamps, urgency level and the reporting document during the 
+process for medico-legal purposes.
+◦ Any AI to be used in the service should be registered in SFDA.
+• Personnel:
+◦ The professional should receive training on the devices used in the evaluation 
+process such as diagnostic modality, and the display tools.
+◦ All legal requirements applied to a HCP in the Kingdom of Saudi Arabia shall be 
+applied to the practice of tele-Diagnosis.
+◦ All patients are eligible to beneﬁts from Tele-Diagnosis by a remote HCP if: 
+▪ The required multimedia materials captured, delivered, and visualized with the 
+medically accepted quality to perform the evaluation required.  
+▪ Requested HCP registered, certiﬁed, and trained, to provide the requested 
+evaluation. 
+▪ The service and tools must be certiﬁed by SFDA for medical practice. (for example 
+AI in Mammogram screening)
+◦ The following is not eligible for Tele-Diagnosis request:
+▪ If the diagnosis requires a clinical evaluation that needs a local presence of HCP , or 
+life evaluation tools that is not under the classiﬁcation of Tele-Diagnosis service.
+Telehealth Application Guidelines
+40
+Service and application:
+Getting patient set up with telehealth technology:
+Telehealth services in emergency can be provided based on the following criteria:
+Medical indication for telehealth:
+1. Telehealth in emergency cases can deliver consultation to the patient in an emergency 
+whenever a specialty consult is needed in a timely manner.
+2. Whenever a requirement to have an access to a certiﬁed and an experienced staﬀ to 
+assess in deciding a reliable and eﬀective further treatment plan. 
+3. In the case of a patient who may require a transfer to another advanced facility for 
+further care plan.
+Requirements to conduct telemedicine services:
+1. A suitable technology platform that provide a real-time video call, vital signs evidence, 
+performing a remote applicable diagnostic exams such as ECG, REAL TIME US.
+2. In emergency cases, the biomedical device should meet the international standards 
+of FDA of biomedical devices classiﬁcation as class II.
+3. Capability of continuity of care can provided through tele-monitoring.  
+4. The emergency telemedicine services should be initiated/ conducted through a 
+technology platform that is locally hosted in Saudi Arabia.
+5. The telemedicine platform should provide the HCP the clinical documentation 
+capability. 
+6. Provide the capability of remote physiological monitoring and recording. 
+7. This information should be archived, retrieved and audited when needed according to 
+the national regulation and information archiving law.
+• Patient experience and patient rights:
+◦ The images should be stored and transferred using technology that provide the 
+required privacy and conﬁdentiality.
+◦ Patient consent should be taken, as Patients may need for a tele-Diagnosis at any 
+time. 
+◦ HCPs practicing tele-diagnosis should respect their obligations and ethical 
+responsibilities
+◦ The secondary used of the patient unidentiﬁed data should follow the governmental 
+governance and regulation (IRB approval) in that regard. 
+◦ The secondary use of identity bounded patients data for research requires the 
+patient approvals.
+• Technical: 
+◦ The devices used for study evaluation should provide the minimum medico-legally 
+accepted resolution for each of study.
+◦ The devices used for evaluation should be calibrated in frequent manner, based on 
+the manufacturing recommendation, to maintain the accuracy and performance
+Telehealth Application Guidelines
+41
+Remote patient monitoring:
+Deﬁnition: 
+Remote patient monitoring (RPM) is a technology that enables monitoring of patients 
+outside a conventional clinical setting, such as home or a remote area to trigger clinical 
+interventions as needed. The technology increases access to care at the right time and 
+decreases healthcare delivery costs (49,50).
+Description: 
+RPM is the use of digital technologies to monitor and capture medical and other health 
+information from patients. Also, electronically transmit this information to HCP for 
+assessment, recommendations and instructions, if needed.
+RPM allows HCP to continue tracking healthcare data from patients if they are 
+discharged or at home. It also encourages patients to observe their health status.
+Examples: 
+• Blood pressure monitor: With remote blood pressure monitors, HCP can perform 
+ongoing virtual monitoring and enables the treatment of hypertension/high blood 
+pressure
+• Blood glucose monitor: Practitioners can use the data captured by a remote blood 
+glucose-monitoring device to detect potential alarming changes in glucose levels 
+and take immediate action.
+• Spirometry testing: plays an essential role in diagnosing lung diseases as well as 
+assessing and monitoring conditions virtually such as asthma and chronic 
+obstructive pulmonary disease (COPD).
+Minimum requirements of: 
+• Medico-Legal: 
+◦ Intermittent readings of RPM tools for patients that need continuous monitoring 
+cannot be accepted, and the frequency of monitoring intervals should be conﬁgured 
+as per each patient clinical requirements. 
+◦ Integration minimum requirements as the NHIC interoperability standards.
+◦ Safety and security measures should be applied on the service at all stages 
+(collection, transfer, and store).
+◦ A clear plan for the remotely monitored patient should be designed by his primary 
+physician for the accepted normal parameters range and advices for the 
+interventions for the common expected problems and when the patient requires a 
+hospital admission.
+Telehealth Application Guidelines
+42
+Tele-consultation:
+Deﬁnition:
+Teleconsultation (TLC) is a remote medical consultation between a patient and a HCP 
+(46).
+Description:
+Teleconsultation: the patient can call the HCP or vice versa, based on a booking such as 
+in a virtual clinic or Tele-clinic. In addition, the patient can call the HCP instantly for any 
+support needed such as in tele-triaging or via call centers that support chronic disease 
+patients at home by HCP . 
+Teleconsultation includes the following encounters:
+• Tele-triaging: Initial teleconsultation by patients using various channels for a new 
+instant medical need, who has no previous registration or unknown medical history. 
+During the teleconsultation, the patient requires an evaluation with instructions for 
+measures that can be taken initially, and/or directions based on the urgency level to 
+the suitable healthcare service such as calling an ambulance, immediate visit to the 
+emergency department, primary HCP or visiting a specialized HCP .
+• Tele-clinic: tele-consultation mainly for the ﬁrst visit of the patient to a remote 
+specialized HCP (if it’s not done in-person), where the patient have to visit a near-by 
+clinic equipped for the tele-consultation devices including all the accessories needed 
+for the patient evaluation and with a presence of assistance to apply/use these 
+instruments, to achieve a proper specialized evaluation. 
+• Virtual-clinic: a remote consultation between a patient and a HCP anywhere using 
+video conference technology, which may utilize an integrated accessories and 
+instruments for clinical evaluations. This consultation can be planned with a booking 
+such as a patient with chronic disease follow-up or home healthcare follow-up or 
+instantly based on the patient’s needs such as patient having a new complain, 
+whether the patient is seeking support on the same primary condition or consulting 
+for a newly emerged clinical problem.
+• Setup:
+Most RPM technologies follow a general architecture that consists of the components 
+below:   
+◦ Sensors on a device that is enabled by wireless communications to measure 
+physiological parameters. Any device that is responsible of detecting one of the 
+targeted parameters to measure must be certiﬁed and graded by SFDA.
+◦ Sensors must be connected to a central database by Wi-Fi or cellular 
+communication protocols depending on the manufacturer.
+◦ Local data storage at patients’ site that interfaces between sensors and other 
+centralized data repository and/or healthcare facilities.
+◦ Centralized repository to store data sent from sensors, local data storage, 
+diagnostic applications, and/or healthcare facilities.
+◦ Diagnostic application software that develops treatment recommendations and 
+intervention alerts based on the analysis of collected data
+•   Personnel:
+◦ The professional should receive a proper training that insures eﬀective 
+tele-monitoring delivery 
+◦ The healthcare facility should be licensed to perform Remote patient monitoring 
+service.
+◦ Patients should be educated on the device pre-hospital discharge. 
+•   Patient experience and patient rights:
+◦ HCPs practicing Remote patient monitoring should respect their obligations and 
+ethical responsibilities.
+◦ Patient should be consented prior to using the RPM tool. 
+◦ The patient must educated about the expected outcome, instruction of use, 
+indication, automated reporting method, basic troubleshooting skills.
+◦ Scheduled calls and checkups to make sure the patient follows the instructions of 
+use.
+Telehealth Application Guidelines
+43
+Tele-management:
+Deﬁnition:
+Tele-management is the remote management of inpatients by remote HCPs.
+Description:
+Utilizing telemedicine technology in order to provide a complete management of inpatients 
+remotely. Tele-management provides a better care management in case of scarce or no 
+medical resources adapted to patient needs on patient site. Where a credentialed and 
+privileged HCP is in charge of managing patients admitted in a remote hospital with an 
+accessibility to the patient medical record and streaming of clinical information required to 
+perform this responsibility (for example, vital signs, ECG, ventilators parameters, two-way 
+video communication and accessing the monitors of evaluations tools.) based on the case 
+and the performed rules.
+Examples:
+• Tele-ICU: a remote expert team manages an intensive care unit without intensivist 
+physicians on site through Tele-ICU technologies.
+• Tele-Stroke: a neurologist manages a stroke patient remotely from another center, 
+starting from evaluation, diagnosis, and treatment.
+• Tele-Round: a HCP managing patients remotely using robotics technology for routine 
+rounds, utilizing connected clinical evaluation devices such as camera, Stethoscope, 
+Otoscope, Ophthalmoscope, endoscope, thermometer, pulse-oximeter and 
+sphygmomanometer.
+Minimum requirements of:
+• Medico-legal:
+◦ Similar to regular clinical practice, managing HCP should continuously write his 
+documentation in the patient medical record including all the clinical evaluations, notes, 
+diagnosis, healthcare professionals communication, hand-oﬀs, physician orders and 
+treatment.
+◦ Communication between HCPs should be documented using electronic means.
+◦ Any addendum or amendment occur on the physician orders should be communicated 
+to the HCP at the patient site, documented, time stamped and e-signed.
+◦ There should be the ability to access and review current data from both the 
+tele-managing physician and bedside HCP to facilitate communication and decision 
+making process.
+◦ HCP at the patient site should have a full capability to perform the expected emergency 
+procedures that may occur for the admitted patient according to the patient needs 
+and/or orders/instructions of the remote managing HCP .
+◦ Alternative communication method should be available between the two HCPs in the 
+remote and the patient’s sites (such as landline or mobile phone) to be used in case of 
+disconnect of the tele-management communication system.
+Minimum requirements:
+• Medico-legal:
+◦ The HCP should conﬁrm that the settings of the session are appropriate to conduct 
+the consultation.
+◦ The HCP should conﬁrm that the patient has a proper daylight exposure for a proper 
+clinical evaluation.
+◦ In case of mentally retarded patients, a family caregiver should be attending the 
+session.
+◦ The HCP should know the limitations of the remote clinical evaluation using the 
+attached accessories and should decide whether the patient needs a physical visit or 
+not.
+◦ The HCP should give the patient medication needed and/or directions to the proper 
+service he needs.
+◦ The HCP should give the patient instructions according to the possibility of the 
+progression of the patient’s case. 
+The HCP should give the patient instructions about the medication usage and assure 
+that the patient and/or the caregiver understands and perform it properly. For example, 
+the use of insulin injections and Salbutamol inhaler.
+Telehealth Application Guidelines
+44
+• Setup:
+◦ A uniﬁed electronic medical record (EMR) is preferred to be used for both the remote 
+healthcare site and the patient site. Otherwise, the integration between the multiple 
+systems should have instant synchronization to avoid latency between orders and 
+administrations of medication or performance of the orders.
+◦ Technology should be able to optimize audio and visual clarity for enhancement of 
+clinical assessment. options include:
+▪ Real time
+▪ Two-way/one-way high-deﬁnition audio-visual solutions
+▪ Zooming capability and day lighting to support visual evaluation
+▪ Audio support via traditional phone access as a backup alternative line.
+◦ Adequate telecommunications bandwidth and security to connect near and far end 
+equipment.
+◦ Adequate telecommunications availability should be provided based on the 
+criticality of the services provided.
+• Personnel:
+◦ HCPs providing tele-management services shall have the necessary clinical 
+preparation, orientation and ongoing education to ensure they possess the 
+necessary competencies to promote quality care and patient safety.
+• Patient experience and patient rights:
+◦ All remotely managed inpatients and families shall receive information, which 
+includes the role and beneﬁt in using the tele-management services in improving 
+patient care and assure the conﬁdentiality, availability and safety of this technology.
+Telehealth Application Guidelines
+45
+• Technical:
+◦ Devices shall have up-to-date ﬁrmware and security requirement.
+◦ Healthcare professional’s personal computer or mobile device has the latest 
+security patches and updates applied to the operating system and third party 
+applications.
+◦ Mobile devices should be conﬁgured to utilize an inactivity timeout function that 
+requires a passphrase or re-authentication to access the device after the timeout 
+threshold has been exceeded. Timeout should not exceed 15 minutes.
+◦ Unauthorized persons shall not be allowed access to sensitive information stored on 
+the device, or use the device to access sensitive applications or network resources.
+◦ Healthcare and institutional IT professionals should have the capability to remotely 
+disable or remove data from any mobile device containing PHI or sensitive 
+institutional data, should the device be lost or stolen.
+◦ Remote management of the system should permit far end camera control (FECC), 
+maintenance or diagnostic capabilities such as auto restart, remote conﬁguration, 
+proactive monitoring and/or alerts(51,52).
+◦ System should allow point-to-point connectivity from within or outside of the 
+healthcare facility.
+◦ Audio and video transmission secure by using point-to-point encryption that meets 
+recognized and accepted standards based on local standards.
+◦ Proper testing and maintenance for all functionalities for each system upgrade, 
+newly installed ﬁrmware, new infrastructure or endpoint.
+◦ Implement planned and unplanned downtime procedures that ensure continued 
+service and may include the use of appropriate backup technologies.
+◦ Documentation, storage, and retrieval of health records consistent with the 
+organizational, industry and governmental standards.
+◦ Seamless ﬂow of information between patient information systems to enhance 
+clinical support and promote continuity of care. 
+Telehealth Application Guidelines
+46
+Tele-Surgery: 
+Deﬁnition: 
+Any remote surgical procedure performed by a surgeon or a surgical team, at any 
+distance from the patient and theatre. 
+Note: When remote HCPs provide synchronous support during a surgery or 
+intervention to another HCPs performing at the patient site, this is not tele-surgery but 
+tele-assistance.
+Description:
+• Tele surgery uses wireless networking and robotic technology to allow surgeons 
+(HCP) to operate on patients who are distantly located, by combining advances in 
+imaging, video, robotics and sensors, the system gives surgeon the full sensory 
+experience of hands-on surgery. The surgeon performs the operation sitting at a 
+console that displays a high-resolution image of the patient. Allows collaboration 
+and assistance between senior-to-senior and senior to junior surgeons in providing 
+a variety of advanced surgical care to patient at rural or any distant site. 
+• AI might have a role in augmentation of surgeon for performing automated surgeries.
+Examples:
+• Tele-proctoring and tele-accreditation: extensions of tele-mentoring, involve 
+educational or professional assessment techniques for documentation and granting 
+privileges. 
+• •Tele-robotics: It is an application of robotic surgery where the surgeon performs the 
+surgery with the help of a surgical robotic system, locally or remotely that permit 
+surgeon to operate on patient using robotic system and instrument like robotic arm 
+e.g., Laparoscopic surgery. The relationship between the tele robot and the surgeon 
+called Master-Slave relationship.
+• Tele-presence: Is a novel technology allowing the surgeon to perform a surgery 
+without seeing or touching the patient directly, it is a computerized interface at the 
+surgical workstation in the remote operative site (53). Technology of telepresence 
+creates an illusion for the surgeon, giving him or her a feel of a complete immersion 
+into another environment, which could be real or synthetic. Through the virtual 
+reality, the surgeon will feel like he is in a real environment using the tele robot to 
+telecast their hand motion by conveying sensory feedbacks like sight, haptic, and 
+acoustic to the remote operating room. e.g., vascular surgery, organ excision in 
+trauma surgery (54–59). 
+Telehealth Application Guidelines
+47
+Applications:
+• Provides high-quality surgery to medically underserved locations such as rural 
+areas, battleﬁelds, spacecraft, and peripheral hospitals.
+• Allows for surgical collaboration amongst surgeons at diﬀerent medical centers in 
+real-time.
+• Training and mentoring new surgeons.
+ 
+Minimum requirements of: 
+• Medico-Legal:
+◦ Licensure requirements and regulatory regimes of both the jurisdiction where they 
+practice and where their patients are located should be granted. 
+◦ If the surgeon truly does not believe that these procedures will beneﬁt his or her 
+patients then traditional methods should be retained.
+◦ Full approval from the ethical/institutional review boards of both parties (remote and 
+local site) involved must be obtained prior to initiating the surgery and 
+Responsibilities must be clearly delineated.
+◦ All details such as medical privileges and reimbursement for the surgeons and 
+insurance coverage for the patient should be completed prior to undertaking this 
+type of operations.
+◦ The remote surgeon, in addition to the local surgeon, would have to accept liability 
+for the perioperative welfare of patients.
+◦  Measures to evaluate the quality of medical services must be in place, in order to 
+ensure the highest standard diagnostic and treatment services are oﬀered to 
+patients.
+◦ In case of critical incidents such as intra-operative complication or even patient 
+death, the responsibility of the owner of the robot should be also investigated.
+Examples: 
+• Tele-Radiology: the practice of a radiologist interpreting medical images while not 
+physically present in the location where the images are generated (48 ).
+• Tele-ECG: the Practice of a cardiologist interpreting and evaluating 
+electrocardiogram, remotely taken by handheld tele-electrocardiogram while not 
+physically present in the location where it is taken.
+• Tele-Pathology: The use of telecommunications technology to facilitate the transfer of 
+image-rich pathology data between remote locations for the purposes of diagnosis, 
+education, and research.
+Minimum requirements of: 
+• Medico-Legal: 
+◦ The images should be captured using the medico-legally accepted format and 
+resolution 
+◦ The images resolution should maintained unchanged during transfer or storage. 
+◦ The professional should evaluate and study the images using a medico-legally 
+accepted display device with the required resolution for each study category
+◦ The studies should be labeled with patient and facility demography.
+◦ The requests should be labeled based on urgency level by the requesting practitioner, 
+to fulfill the required service level agreement (SLA).
+◦ The professional should receive the required report about the case to perform proper 
+evaluation.
+◦ The professional should receive training on the devices used in the evaluation process 
+such as diagnostic modality, and the display tools.
+◦ The Medico-legal disputes resulting from the remote interpretation and / or Diagnosis 
+of the HCP is similar that of the regular HCP practice within the healthcare facilities.
+Telehealth Application Guidelines
+48
+• Setup:
+◦ The robotic system and the communication system and link must be reliable, secure, 
+and compliant with the Saudi data protection law, thus reducing the risk of interruptions 
+to the connection.
+◦ The surgical teams must also be able to provide eﬀective surgical care if systems fail or 
+communication is lost.
+◦  Assistant surgeon must be always present at the operating table.
+◦ Technical and support team and backup plans must be ready during the surgery to 
+maintain the speed and if any disconnection or other technical problem happens. 
+◦ All systems and components should be interoperable. Both the remote site (location of 
+surgeon) and the local site (patient location) must have system components that can 
+cooperatively interact with other medical systems.
+◦ Tele-surgery systems should be capable of robust interaction with supporting 
+technologies such as imaging. Furthermore, all operating room systems should use 
+hardware and software standards that facilitate interoperability.
+◦ The robotic system should be proven to be used for each speciﬁc procedure and all 
+accessories needed for that procedure should be available. In addition, the HCP should 
+be trained for this procedure. 
+• Personnel:
+◦ The organization should have a licensing requirement and fully developed training 
+programs and competency-based practice and guidelines for HCP practicing tele 
+surgery and standard operating protocols (including that for equipment maintenance)
+◦ The health care organization should be accredited and certiﬁed by CBAHI to perform 
+and oﬀer Tele surgery service.
+◦ Medical centers that oﬀer tele-surgery services must employ a specialist in the patient 
+site that would deal with the intra and post-operative complications.
+◦ The medical centers and doctors must have insurance that covers robotic 
+assisted-surgery and tele surgery services. 
+◦ Measures to evaluate the quality of medical services must be in place, in order to 
+ensure the highest standard diagnostic and treatment services are oﬀered to patients.
+◦ Physician should be fully aware of the rationale behind, the limitations (including 
+patient’s clinical evaluation, technology failure, and remote monitoring limitations) and 
+alternative options must be understood when providing telehealth to avert disputes and 
+minimize legal risks.
+Telehealth Application Guidelines
+49
+• Patient experience and patient rights:
+◦ The images should be stored and transferred using technology that provide the 
+required privacy and conﬁdentiality.
+◦ Patient consent should be taken, as Patients may need for a tele-Diagnosis at any 
+time. 
+◦ HCPs practicing tele-diagnosis should respect their obligations and ethical 
+responsibilities
+◦ The secondary used of the patient unidentiﬁed data should follow the governmental 
+governance and regulation (IRB approval) in that regard. 
+◦ The secondary use of identity bounded patients data for research requires the 
+patient approvals.
+• Technical: 
+◦ The devices used for study evaluation should provide the minimum medico-legally 
+accepted resolution for each of study.
+◦ The devices used for evaluation should be calibrated in frequent manner, based on 
+the manufacturing recommendation, to maintain the accuracy and performance
+• Patient experience and patient rights:
+◦ Patients should be fully informed of the rationale behind, the limitations (including the 
+possibility of intra or post-operative complication, and technology failure), and 
+alternative options available when choosing tele surgery in order to avert disputes and 
+minimize legal risks.
+◦ HCPs practicing tele surgery should follow medical ethical principles, maintain 
+conﬁdentiality and privacy, quality of the medical services, take patient’s valid consent 
+and providing all the information the patient wants or needs to make an informed 
+decision, collecting and storage of data relating to the medical act.
+◦ Patient has the right to refuse doing the operation under the tele surgery approach. 
+◦ Tele surgery should not be anonymous: both patient and tele surgeon need to know 
+each other’s identity.
+◦ HCP must exercise due diligence in protecting patients' data when using 
+telecommunication devices, transmitting data to third parties (e.g., other healthcare 
+professionals) and follow the governmental governance and regulation in that regards.  
+◦ Patient records, reports, documents, images, diagnostics, data etc. (Digital or 
+non-Digital) utilized in the tele surgery should be retained by the HCP at the patient ﬁle 
+in both sites. 
+• Technical: 
+◦ Latency time which is deﬁned as the time delay in transferring auditory, visual, and even 
+tactile feedback between the two distant locations it is ideal to be less than 100  
+milliseconds.
+◦ Availability of connectivity must be similar to the availability of electricity in the 
+operation rooms; both locations must have redundancy in connectivity by having a DIA 
+(dedicated internet access) with the required speed from at least two diﬀerent 
+aggregators, and avoid any intra-facility points of failure.
+◦ A healthcare facility that has the tele-surgery machine must deﬁne a Quality of service 
+(QoS) and take in consideration the level of the LAN network within the facility and the 
+Wide area networking (WAN) to assure the quality of audio and video.
+◦ Secure, and encrypted high-speed data connections with suﬃcient bandwidth and 
+high-quality audio-visual systems are required.
+◦ The technology must have haptic feedback that enables transmission of tactile 
+information to the tele-operator.
+◦ The equipment, devices, and system quality and safety should be routinely assessed 
+based on the manufacturing recommendation, to maintain the accuracy and 
+performance.
+Telehealth Application Guidelines
+50
+Remote patient monitoring:
+Deﬁnition: 
+Remote patient monitoring (RPM) is a technology that enables monitoring of patients 
+outside a conventional clinical setting, such as home or a remote area to trigger clinical 
+interventions as needed. The technology increases access to care at the right time and 
+decreases healthcare delivery costs (49,50).
+Description: 
+RPM is the use of digital technologies to monitor and capture medical and other health 
+information from patients. Also, electronically transmit this information to HCP for 
+assessment, recommendations and instructions, if needed.
+RPM allows HCP to continue tracking healthcare data from patients if they are 
+discharged or at home. It also encourages patients to observe their health status.
+Examples: 
+• Blood pressure monitor: With remote blood pressure monitors, HCP can perform 
+ongoing virtual monitoring and enables the treatment of hypertension/high blood 
+pressure
+• Blood glucose monitor: Practitioners can use the data captured by a remote blood 
+glucose-monitoring device to detect potential alarming changes in glucose levels 
+and take immediate action.
+• Spirometry testing: plays an essential role in diagnosing lung diseases as well as 
+assessing and monitoring conditions virtually such as asthma and chronic 
+obstructive pulmonary disease (COPD).
+Minimum requirements of: 
+• Medico-Legal: 
+◦ Intermittent readings of RPM tools for patients that need continuous monitoring 
+cannot be accepted, and the frequency of monitoring intervals should be conﬁgured 
+as per each patient clinical requirements. 
+◦ Integration minimum requirements as the NHIC interoperability standards.
+◦ Safety and security measures should be applied on the service at all stages 
+(collection, transfer, and store).
+◦ A clear plan for the remotely monitored patient should be designed by his primary 
+physician for the accepted normal parameters range and advices for the 
+interventions for the common expected problems and when the patient requires a 
+hospital admission.
+Tele-assistance:
+Deﬁnition: 
+Tele-Assistance (TLA) is a synchronous remote technical or medical expert support 
+provided by a healthcare professional (HCP) at the patient site -such as a doctor or a 
+nurse- to a requesting HCP during a technical intervention. 
+Description:
+The use of telecommunications technology to assist the requesting HCP to manage the 
+patient’s condition remotely. Such assistance might include interpreting laboratory or 
+diagnostic studies, planning a therapeutic or a palliative care plan. In addition, it can 
+facilitate transfer of the patient to a higher level of care or transfer of HCPs, medical 
+equipment, blood products, test samples, organs, etc. to the bedside.
+AI: can assist practitioners and enhance their capabilities
+Examples:
+• Tele-ICU: a critical care expert provides further management guidance to a non-critical 
+care physician.
+• Tele-EM: an emergency medicine expert provides further management guidance for a 
+HCP working in an emergency department.
+• Tele-case management: Groups of experts receive and manage requests for patient’s 
+transfer between healthcare facilities.
+• Tele-operation: remote advisory support during surgical operations or clinical 
+procedures.
+• Tele-mentoring: Enables a remote specialist surgeon to guide and/or monitor surgeon(s) 
+to act as instructor for surgeons who actually performing the surgery at a remote patient 
+end. It facilitates training sessions by experienced surgeons. 
+• Online medical control for Emergency Medical Services: an emergency-medicine 
+expert provides further care instructions to pre-hospital providers during patient 
+transfer.
+Telehealth Application Guidelines
+51
+• Setup:
+Most RPM technologies follow a general architecture that consists of the components 
+below:   
+◦ Sensors on a device that is enabled by wireless communications to measure 
+physiological parameters. Any device that is responsible of detecting one of the 
+targeted parameters to measure must be certiﬁed and graded by SFDA.
+◦ Sensors must be connected to a central database by Wi-Fi or cellular 
+communication protocols depending on the manufacturer.
+◦ Local data storage at patients’ site that interfaces between sensors and other 
+centralized data repository and/or healthcare facilities.
+◦ Centralized repository to store data sent from sensors, local data storage, 
+diagnostic applications, and/or healthcare facilities.
+◦ Diagnostic application software that develops treatment recommendations and 
+intervention alerts based on the analysis of collected data
+•   Personnel:
+◦ The professional should receive a proper training that insures eﬀective 
+tele-monitoring delivery 
+◦ The healthcare facility should be licensed to perform Remote patient monitoring 
+service.
+◦ Patients should be educated on the device pre-hospital discharge. 
+•   Patient experience and patient rights:
+◦ HCPs practicing Remote patient monitoring should respect their obligations and 
+ethical responsibilities.
+◦ Patient should be consented prior to using the RPM tool. 
+◦ The patient must educated about the expected outcome, instruction of use, 
+indication, automated reporting method, basic troubleshooting skills.
+◦ Scheduled calls and checkups to make sure the patient follows the instructions of 
+use.
+Minimum requirements of:
+• Medico-legal:
+◦ The request for tele-assistance shall be treated as a consultation and documented as 
+such; Documentation of the exchange between the requesting and the assisting HCP 
+shall be a permanent part of the patient care record. 
+◦ The tele-assistance exchange shall contain the patient identiﬁers such as name or ID 
+number to access the patient clinical data with minimal level needed to cover the 
+speciﬁc encounter. Such as transferred documented information, access to the 
+information EMR, recorded telephone calls by repeating of the medical information 
+between the HCPs. 
+◦ Patient safety is the ultimate responsibility of the HCP at the bedside. Any interventions 
+proposed by the remote HCP shall be viewed as recommendations that are subject to 
+the limits of practice imposed on the HCP at the bedside by license, privileges, 
+protocols, scope of practice, certiﬁcations, etc.   
+◦ The burden of describing the patient complete condition that contains all the details 
+pertinent to the assistance requested falls on the requesting HCP and the assisting 
+HCP shall not be held liable for assistance provided based on incomplete consultation.
+◦ Following recommended interventions and their eﬀect is a shared responsibility 
+between requesting HCP and the assisting HCP .
+◦ Exchange of data shall be governed by the same overarching guidelines on privacy, 
+security and accurate representation of truth e.g. high-quality imagery of diagnostic 
+studies, body parts, etc. 
+◦ Medico-legal disputes resulting from tele-assistance shall be arbitrated as if the consult 
+was conducted physically at the place of work for the requested HCP based on his 
+contribution, based on the data received. 
+• Setup:
+◦ Healthcare facilities receiving TLA requests on regular basis may elect to develop 
+protocols to minimize variability of care provided. 
+◦ It is preferred that the assisting HCP keeps a record of cases discussed and 
+recommendations given. The cases must be documented, and both parties should 
+have an agreed report.
+◦ The assisting HCP is not required to be located in a designated site and can be 
+anywhere.
+Telehealth Application Guidelines
+52
+• Personnel:
+◦ Requesting and assisting HCPs shall have formal training on protocols, communication 
+equipment utilization, and the limitations of requesting and assisting HCPs.
+◦ Requesting and assisting HCPs shall have knowledge on available equipment, and 
+expertise at requesting and requested facilities.
+◦ All patients are illegible for TLA provided that:
+▪ Requesting HCP needs further assistance.
+▪ Assisting HCP can provide the requested assistance. 
+▪ Such assistance does not exist at the bedside unless in case of capacity issues. 
+◦ The following shall not be considered a reason for TLA request:
+▪ Second opinion or tele-expertise requests.
+▪ Transfer of care requests is not a service used mainly for the purpose of transferring the 
+case to another hospital.
+▪ Patient or family requests.
+▪ Requested for social reasons. 
+• Patient experience and patient rights: 
+• Patients shall be informed of the result of the TLA request, the requested HCP details 
+and credentials.
+◦ Patients shall not be subject to ‘ﬁrst experience’ interventions where the requesting 
+HCP is taking remote instructions on how to perform a procedure or an intervention that 
+he is not trained on. An exception can be made with complete informed consent of the 
+patient or their representative in extreme circumstances where it is the only way to save 
+a life or prevent permanent damage.
+ 
+• Technical:
+◦ Some of the tools and devices used during an encounter might be subjected to 
+certiﬁcation. 
+Tele-management:
+Deﬁnition:
+Tele-management is the remote management of inpatients by remote HCPs.
+Description:
+Utilizing telemedicine technology in order to provide a complete management of inpatients 
+remotely. Tele-management provides a better care management in case of scarce or no 
+medical resources adapted to patient needs on patient site. Where a credentialed and 
+privileged HCP is in charge of managing patients admitted in a remote hospital with an 
+accessibility to the patient medical record and streaming of clinical information required to 
+perform this responsibility (for example, vital signs, ECG, ventilators parameters, two-way 
+video communication and accessing the monitors of evaluations tools.) based on the case 
+and the performed rules.
+Examples:
+• Tele-ICU: a remote expert team manages an intensive care unit without intensivist 
+physicians on site through Tele-ICU technologies.
+• Tele-Stroke: a neurologist manages a stroke patient remotely from another center, 
+starting from evaluation, diagnosis, and treatment.
+• Tele-Round: a HCP managing patients remotely using robotics technology for routine 
+rounds, utilizing connected clinical evaluation devices such as camera, Stethoscope, 
+Otoscope, Ophthalmoscope, endoscope, thermometer, pulse-oximeter and 
+sphygmomanometer.
+Minimum requirements of:
+• Medico-legal:
+◦ Similar to regular clinical practice, managing HCP should continuously write his 
+documentation in the patient medical record including all the clinical evaluations, notes, 
+diagnosis, healthcare professionals communication, hand-oﬀs, physician orders and 
+treatment.
+◦ Communication between HCPs should be documented using electronic means.
+◦ Any addendum or amendment occur on the physician orders should be communicated 
+to the HCP at the patient site, documented, time stamped and e-signed.
+◦ There should be the ability to access and review current data from both the 
+tele-managing physician and bedside HCP to facilitate communication and decision 
+making process.
+◦ HCP at the patient site should have a full capability to perform the expected emergency 
+procedures that may occur for the admitted patient according to the patient needs 
+and/or orders/instructions of the remote managing HCP .
+◦ Alternative communication method should be available between the two HCPs in the 
+remote and the patient’s sites (such as landline or mobile phone) to be used in case of 
+disconnect of the tele-management communication system.
+Telehealth Application Guidelines
+53
+• Setup:
+◦ A uniﬁed electronic medical record (EMR) is preferred to be used for both the remote 
+healthcare site and the patient site. Otherwise, the integration between the multiple 
+systems should have instant synchronization to avoid latency between orders and 
+administrations of medication or performance of the orders.
+◦ Technology should be able to optimize audio and visual clarity for enhancement of 
+clinical assessment. options include:
+▪ Real time
+▪ Two-way/one-way high-deﬁnition audio-visual solutions
+▪ Zooming capability and day lighting to support visual evaluation
+▪ Audio support via traditional phone access as a backup alternative line.
+◦ Adequate telecommunications bandwidth and security to connect near and far end 
+equipment.
+◦ Adequate telecommunications availability should be provided based on the 
+criticality of the services provided.
+• Personnel:
+◦ HCPs providing tele-management services shall have the necessary clinical 
+preparation, orientation and ongoing education to ensure they possess the 
+necessary competencies to promote quality care and patient safety.
+• Patient experience and patient rights:
+◦ All remotely managed inpatients and families shall receive information, which 
+includes the role and beneﬁt in using the tele-management services in improving 
+patient care and assure the conﬁdentiality, availability and safety of this technology.
+Tele-expertise:
+Deﬁnition: 
+The use of telecommunications technology to facilitate the remote expert medical opinion 
+provided by an expert HCP to a requesting HCP relying on store-and-forward (24).
+Description: 
+Utilizing telecommunications capabilities to upload patient clinical information 
+(store-and-forward) which may include ﬁlling speciﬁc forms, detailed clinical reports, 
+multimedia content, investigation results and details about previous course of treatment 
+and receive from the expert practitioners or centers an oﬃcial recommendations or second 
+opinion that may include diagnosis, suggested treatment.
+Examples: 
+Tele-dermatology: A HCP or a patient asks a dermatologist an expert advice on the 
+patient’s medical situation with a relevant clinical information and pictures of lesions and 
+the level of urgency. The expert replies with the diagnosis, a potential treatment and if the 
+patient needs further investigations or to be referred to the dermatologist.
+Tele-second opinion: Utilizing telecommunications capabilities by HCPs or patients to 
+upload patient clinical information which may include speciﬁc forms, clinical reports, 
+multimedia content, investigation results and details about previous course of treatment 
+and receive an oﬃcial recommendations or second opinion that may include diagnosis, 
+suggested treatment from expert practitioner or center.
+Telehealth Application Guidelines
+54
+• Technical:
+◦ Devices shall have up-to-date ﬁrmware and security requirement.
+◦ Healthcare professional’s personal computer or mobile device has the latest 
+security patches and updates applied to the operating system and third party 
+applications.
+◦ Mobile devices should be conﬁgured to utilize an inactivity timeout function that 
+requires a passphrase or re-authentication to access the device after the timeout 
+threshold has been exceeded. Timeout should not exceed 15 minutes.
+◦ Unauthorized persons shall not be allowed access to sensitive information stored on 
+the device, or use the device to access sensitive applications or network resources.
+◦ Healthcare and institutional IT professionals should have the capability to remotely 
+disable or remove data from any mobile device containing PHI or sensitive 
+institutional data, should the device be lost or stolen.
+◦ Remote management of the system should permit far end camera control (FECC), 
+maintenance or diagnostic capabilities such as auto restart, remote conﬁguration, 
+proactive monitoring and/or alerts(51,52).
+◦ System should allow point-to-point connectivity from within or outside of the 
+healthcare facility.
+◦ Audio and video transmission secure by using point-to-point encryption that meets 
+recognized and accepted standards based on local standards.
+◦ Proper testing and maintenance for all functionalities for each system upgrade, 
+newly installed ﬁrmware, new infrastructure or endpoint.
+◦ Implement planned and unplanned downtime procedures that ensure continued 
+service and may include the use of appropriate backup technologies.
+◦ Documentation, storage, and retrieval of health records consistent with the 
+organizational, industry and governmental standards.
+◦ Seamless ﬂow of information between patient information systems to enhance 
+clinical support and promote continuity of care. 
+Minimum requirements of: 
+• Medico-Legal:
+◦ If the patient need to be examined by the expert physically, a referral should be advised.
+◦ The medical report should be written to include all the information regarding the patient 
+case.
+◦ The medical questions or requests should be deﬁned precisely 
+◦ all uploaded clinical information should be sent in a clear and easy way to read 
+◦ The medical report should be maintained unchanged during transfer or storage. 
+◦ The medical report should be labeled with patient and facility demography.
+◦ the degree of emergency of the request should be deﬁned 
+◦ the request should be related to the expert specialty 
+◦ Tele-expertise may not be suitable for emergency cases which needs urgent 
+intervention 
+◦ All legal requirements applied to a HCP in the Kingdom of Saudi Arabia shall be applied 
+to the practice of tele-expertise. 
+◦ The remote HCP should provide a service under a registered remote healthcare facility 
+that have an oﬃcial legally bounded agreement with a registered local healthcare 
+facility. The HCP should be licensed and registered based on SCFHS and other the 
+local policies in KSA. 
+• Setup:
+◦ Tele-expertise requests are non-scheduled telehealth activities. The expert HCP may 
+however schedule a dedicated time to reply to the requests or answer one by one 
+based on his own agenda, availability, and urgency.
+◦ The professional should receive training on the devices used in the evaluation 
+process .
+Telehealth Application Guidelines
+55
+• Personnel:
+◦ The professional should receive the required report about the case to perform proper 
+evaluation.
+◦ HCPs shall be trained on telehealth before practicing tele-expertise.
+◦ The HCP should gather all relevant administrative and medical information.
+◦ During a tele-expertise, both HCPs shall engage their responsibility based on their 
+individual contribution. 
+◦ HCPs practicing tele-expertise should respect their obligations and ethical 
+responsibilities
+• Patient experience and patient rights:
+◦ The medical report and patient details should be stored and transferred using 
+technology that provide the required privacy and conﬁdentiality.
+◦ patient consent should be taken 
+◦ A patient approval is required before any third-party participation in evaluating patient 
+reports. 
+◦ Patients may refuse and/or cancel any participation to a tele-expertise activity, at any 
+time, without the need to provide justiﬁcation.
+• Technical:
+◦ The request form should be automated, tagged in a way to notify the urgency level of 
+the case and the specialty needed.
+Tele-Surgery: 
+Deﬁnition: 
+Any remote surgical procedure performed by a surgeon or a surgical team, at any 
+distance from the patient and theatre. 
+Note: When remote HCPs provide synchronous support during a surgery or 
+intervention to another HCPs performing at the patient site, this is not tele-surgery but 
+tele-assistance.
+Description:
+• Tele surgery uses wireless networking and robotic technology to allow surgeons 
+(HCP) to operate on patients who are distantly located, by combining advances in 
+imaging, video, robotics and sensors, the system gives surgeon the full sensory 
+experience of hands-on surgery. The surgeon performs the operation sitting at a 
+console that displays a high-resolution image of the patient. Allows collaboration 
+and assistance between senior-to-senior and senior to junior surgeons in providing 
+a variety of advanced surgical care to patient at rural or any distant site. 
+• AI might have a role in augmentation of surgeon for performing automated surgeries.
+Examples:
+• Tele-proctoring and tele-accreditation: extensions of tele-mentoring, involve 
+educational or professional assessment techniques for documentation and granting 
+privileges. 
+• •Tele-robotics: It is an application of robotic surgery where the surgeon performs the 
+surgery with the help of a surgical robotic system, locally or remotely that permit 
+surgeon to operate on patient using robotic system and instrument like robotic arm 
+e.g., Laparoscopic surgery. The relationship between the tele robot and the surgeon 
+called Master-Slave relationship.
+• Tele-presence: Is a novel technology allowing the surgeon to perform a surgery 
+without seeing or touching the patient directly, it is a computerized interface at the 
+surgical workstation in the remote operative site (53). Technology of telepresence 
+creates an illusion for the surgeon, giving him or her a feel of a complete immersion 
+into another environment, which could be real or synthetic. Through the virtual 
+reality, the surgeon will feel like he is in a real environment using the tele robot to 
+telecast their hand motion by conveying sensory feedbacks like sight, haptic, and 
+acoustic to the remote operating room. e.g., vascular surgery, organ excision in 
+trauma surgery (54–59). 
+Telehealth Application Guidelines
+56
+Tele-education:
+Deﬁnition: 
+Tele-education represents health education on distance, using Information 
+Communication Technologies (ICT), as well as continuous education of a health system 
+beneﬁciaries and use of electronic libraries, databases or electronic data with databases 
+of knowledge (60).
+Description: 
+A healthcare professional may convey health promotion and disease prevention 
+messages. These could be related to diet, physical activity, and cessation of smoking, 
+contagious infections. Similarly, he/ she may give advice on immunizations, exercises, 
+hygiene practices.
+A healthcare professional may have an access to a continuous educational materials, 
+electronic libraries, databases, and live educational sessions.
+Examples: 
+• General diseases education (Diabetes Mellitus, Hypertension, Bronchial Asthma, etc.)
+• Using Interactive videoconferencing.
+• Tele-mentoring and other forms of individual teaching (personalized education), 
+(coaching).
+• Lectures delivered through satellite broadcasts to multiple sites. 
+• Nudging in order to motivate people to adopt healthy behaviors without incentives or 
+deterrent.
+Applications:
+• Provides high-quality surgery to medically underserved locations such as rural 
+areas, battleﬁelds, spacecraft, and peripheral hospitals.
+• Allows for surgical collaboration amongst surgeons at diﬀerent medical centers in 
+real-time.
+• Training and mentoring new surgeons.
+ 
+Minimum requirements of: 
+• Medico-Legal:
+◦ Licensure requirements and regulatory regimes of both the jurisdiction where they 
+practice and where their patients are located should be granted. 
+◦ If the surgeon truly does not believe that these procedures will beneﬁt his or her 
+patients then traditional methods should be retained.
+◦ Full approval from the ethical/institutional review boards of both parties (remote and 
+local site) involved must be obtained prior to initiating the surgery and 
+Responsibilities must be clearly delineated.
+◦ All details such as medical privileges and reimbursement for the surgeons and 
+insurance coverage for the patient should be completed prior to undertaking this 
+type of operations.
+◦ The remote surgeon, in addition to the local surgeon, would have to accept liability 
+for the perioperative welfare of patients.
+◦  Measures to evaluate the quality of medical services must be in place, in order to 
+ensure the highest standard diagnostic and treatment services are oﬀered to 
+patients.
+◦ In case of critical incidents such as intra-operative complication or even patient 
+death, the responsibility of the owner of the robot should be also investigated.
+Telehealth Application Guidelines
+57
+Minimum requirements of: 
+• Medico-Legal:
+◦ Being aware of legislation, professional, and regulatory and licensing requirements that 
+inﬂuence the delivery of educational information.
+◦ In organizations providing educational information, there should be senior management 
+accountability for such information, including the supervision of all persons directly 
+responsible for developing, coordinating, and operating Tele-education services.
+◦ Organizations providing Tele-education services must have policies and procedures in 
+place to protect the data and conﬁdentiality of information. Tele-education security 
+policy and procedures should be integrated with those for electronic health records, 
+whenever possible.
+◦ There should be policies and procedures for documentation, storage and retrieval of 
+patient records that respect the conﬁdentiality of the information.
+◦ Tele-education consultation should not be anonymous: both patient and the healthcare 
+professional need to know each other’s identity (61).
+◦ Healthcare professional should obtain informed consent, which may be implied or 
+expressed before starting any service or intervention following principles and 
+processes similar to standard practice for the particular healthcare service.
+◦ Explicit consent should be obtained from the patient for medical acts that would 
+normally require explicit consent in the traditional health care setting (e.g. video or 
+audio recording of the sessions, use of data for research or educational purposes) (62).
+◦ Healthcare professional should share relevant information with the patient and 
+caregiver, as appropriate, before the beginning of any Tele-education interaction. This 
+information includes informing the patient of the objective of the Tele-education 
+interaction, the role and responsibility of the provider and the patient during the 
+Tele-education interaction, other people participating in this interaction.
+Telehealth Application Guidelines
+58
+• Setup:
+◦ Platform and sessions for patient education should fulﬁl the required privacy and 
+conﬁdentially measures in the kingdom.
+• Patient experience and patient rights:
+◦ Education material provided should be created and reviewed by subject matter experts 
+in the ﬁeld of the content provided and documenting the approving body.
+◦ Education material should be maintained up to date and each content should have an 
+expiry date when it is going to be subject for review.
+◦ The evaluation parameters for the educational content are as follows: patient outcomes 
+and satisfactions, provider satisfaction, quality of illustration content, clarity of the 
+content and consumer completion of the content
+◦ HCPs ethical conduct should not be compromised in all telehealth educational 
+sessions. 
+◦ Patients’ rights and conﬁdentiality should strictly preserved in all telehealth educational 
+sessions.
+• Technical:
+◦ Technical requirements must be appropriate and ﬁt for purpose to eﬀectively transfer 
+audio and visual data in real time and any interactions between the Provider-end and 
+the Receiver-end during the tele-educational session. 
+◦ Software and hardware capability and suitability for the use of a tele-education setting 
+for diﬀerent purposes and scenarios may require a compatibility between the software 
+and the diﬀerent hardware tools such as computers, smartphones, laptops, tablets.  
+◦ Adopt a process of continuous monitoring and testing the used tele-education 
+solutions, networks and devices in a frequency that prevent any failures during the 
+real-time session and proactively discover and provide the support for any 
+troubleshooting required instantly.
+Telehealth Application Guidelines
+59
+Cross-border access:
+Deﬁnition:
+Cross-border tele-health is the provision of healthcare services involves medical 
+practice and information and communications technology. Cross border tele-health 
+allows healthcare to be provided at distance, opening the door for healthcare services 
+to be provided by a health professional who lives in a country other than the patient’s 
+(63).
+Description:
+• When a patient is requesting a consultation from a healthcare professional who is 
+located outside Saudi Arabia, whether using a synchronous (video consultation, 
+tele-triaging, tele-education, tele-management, RPM) or asynchronous, 
+store-and-forward (tele-expertise, tele-education)
+• When a HCP requesting a service from another HCP who is located outside Saudi 
+Arabia and vice versa, whether using a synchronous (tele-assistance, 
+tele-management, tele-surgery, tele-education) or asynchronous, 
+store-and-forward (tele-expertise, tele-diagnosis).
+• The use of telehealth technical solutions and emerging technologies such as 
+artiﬁcial intelligence (augmentation in screening) located in diﬀerent countries. 
+Tele-assistance:
+Deﬁnition: 
+Tele-Assistance (TLA) is a synchronous remote technical or medical expert support 
+provided by a healthcare professional (HCP) at the patient site -such as a doctor or a 
+nurse- to a requesting HCP during a technical intervention. 
+Description:
+The use of telecommunications technology to assist the requesting HCP to manage the 
+patient’s condition remotely. Such assistance might include interpreting laboratory or 
+diagnostic studies, planning a therapeutic or a palliative care plan. In addition, it can 
+facilitate transfer of the patient to a higher level of care or transfer of HCPs, medical 
+equipment, blood products, test samples, organs, etc. to the bedside.
+AI: can assist practitioners and enhance their capabilities
+Examples:
+• Tele-ICU: a critical care expert provides further management guidance to a non-critical 
+care physician.
+• Tele-EM: an emergency medicine expert provides further management guidance for a 
+HCP working in an emergency department.
+• Tele-case management: Groups of experts receive and manage requests for patient’s 
+transfer between healthcare facilities.
+• Tele-operation: remote advisory support during surgical operations or clinical 
+procedures.
+• Tele-mentoring: Enables a remote specialist surgeon to guide and/or monitor surgeon(s) 
+to act as instructor for surgeons who actually performing the surgery at a remote patient 
+end. It facilitates training sessions by experienced surgeons. 
+• Online medical control for Emergency Medical Services: an emergency-medicine 
+expert provides further care instructions to pre-hospital providers during patient 
+transfer.
+Telehealth Application Guidelines
+60
+Minimum requirements:
+• Organizational:
+◦ Telehealth services should only be provided by healthcare facilities that are licensed 
+and complied with laws and regulations issued by relevant authority.
+◦ The healthcare facility must provide the minimum requirements of healthcare 
+practitioners, equipment, devices and technologies to provide telehealth services 
+according to the relevant authority licensing guidelines for medical facilities. 
+◦ The healthcare facility must have a formal agreement in place with the other healthcare 
+facility.
+◦ The healthcare facility shall be responsible to ensure that the partnering health facility, 
+which is not subject to the relevant jurisdiction, is made aware of all the applicable laws 
+and regulations for telehealth services and assure compliance across both 
+jurisdictions. 
+Examples:
+Minimum requirements of:
+• Medico-legal:
+◦ The request for tele-assistance shall be treated as a consultation and documented as 
+such; Documentation of the exchange between the requesting and the assisting HCP 
+shall be a permanent part of the patient care record. 
+◦ The tele-assistance exchange shall contain the patient identiﬁers such as name or ID 
+number to access the patient clinical data with minimal level needed to cover the 
+speciﬁc encounter. Such as transferred documented information, access to the 
+information EMR, recorded telephone calls by repeating of the medical information 
+between the HCPs. 
+◦ Patient safety is the ultimate responsibility of the HCP at the bedside. Any interventions 
+proposed by the remote HCP shall be viewed as recommendations that are subject to 
+the limits of practice imposed on the HCP at the bedside by license, privileges, 
+protocols, scope of practice, certiﬁcations, etc.   
+◦ The burden of describing the patient complete condition that contains all the details 
+pertinent to the assistance requested falls on the requesting HCP and the assisting 
+HCP shall not be held liable for assistance provided based on incomplete consultation.
+◦ Following recommended interventions and their eﬀect is a shared responsibility 
+between requesting HCP and the assisting HCP .
+◦ Exchange of data shall be governed by the same overarching guidelines on privacy, 
+security and accurate representation of truth e.g. high-quality imagery of diagnostic 
+studies, body parts, etc. 
+◦ Medico-legal disputes resulting from tele-assistance shall be arbitrated as if the consult 
+was conducted physically at the place of work for the requested HCP based on his 
+contribution, based on the data received. 
+• Setup:
+◦ Healthcare facilities receiving TLA requests on regular basis may elect to develop 
+protocols to minimize variability of care provided. 
+◦ It is preferred that the assisting HCP keeps a record of cases discussed and 
+recommendations given. The cases must be documented, and both parties should 
+have an agreed report.
+◦ The assisting HCP is not required to be located in a designated site and can be 
+anywhere.
+Classiﬁcation
+Tele-consultation
+Tele-expertise
+Tele-assistance
+Remote patient monitoring
+Tele-surgery
+Tele-diagnosis
+Tele-management
+Emerging technology (AI, 
+mobile, block chain...)
+Tele-education
+Synchronous / asynchronous
+Synchronous
+Synchronous
+Synchronous
+Beneﬁciary with cross-border 
+provider
+Patient with HCP
+Patient or HCP with HCP
+HCP with HCP
+Patient with HCP
+Patient and HCP with HCP
+HCP with HCP
+Patient and HCP with HCP
+Patient and/or HCP with 
+technology provider
+Patient or HCP with education 
+provider
+Synchronous
+Both
+Both
+Synchronous
+Asynchronous
+Asynchronous
+Telehealth Application Guidelines
+61
+• Personnel:
+◦ Requesting and assisting HCPs shall have formal training on protocols, communication 
+equipment utilization, and the limitations of requesting and assisting HCPs.
+◦ Requesting and assisting HCPs shall have knowledge on available equipment, and 
+expertise at requesting and requested facilities.
+◦ All patients are illegible for TLA provided that:
+▪ Requesting HCP needs further assistance.
+▪ Assisting HCP can provide the requested assistance. 
+▪ Such assistance does not exist at the bedside unless in case of capacity issues. 
+◦ The following shall not be considered a reason for TLA request:
+▪ Second opinion or tele-expertise requests.
+▪ Transfer of care requests is not a service used mainly for the purpose of transferring the 
+case to another hospital.
+▪ Patient or family requests.
+▪ Requested for social reasons. 
+• Patient experience and patient rights: 
+• Patients shall be informed of the result of the TLA request, the requested HCP details 
+and credentials.
+◦ Patients shall not be subject to ‘ﬁrst experience’ interventions where the requesting 
+HCP is taking remote instructions on how to perform a procedure or an intervention that 
+he is not trained on. An exception can be made with complete informed consent of the 
+patient or their representative in extreme circumstances where it is the only way to save 
+a life or prevent permanent damage.
+ 
+• Technical:
+◦ Some of the tools and devices used during an encounter might be subjected to 
+certiﬁcation. 
+• Healthcare Professional:
+◦ The remote HCPs are required to be licensed and registered based on SCFHS and 
+other local policies in KSA
+◦ Liability issues should be discussed and settled before engaging in any telehealth 
+activity.
+◦ The health professional who provides telehealth services should be aﬃliated with 
+licensed healthcare facility.
+◦ The licensed remote HCP should provide a service under a registered remote 
+healthcare facility that have an oﬃcial legally bounded agreement with a registered local 
+healthcare facility.
+◦ KSA HCP must be licensed or registered with the regulator in the patient’s jurisdiction if 
+required.
+◦ The healthcare professional must be aware about the approach, law and culture of the 
+country receiving service.
+The healthcare professional must complete training requirements.
+• Information and technology:
+◦ Healthcare professionals shall have access to all relevant patient records relevant to the 
+practice of cross border telehealth services. 
+◦ Healthcare facilities shall provide secure, private and conﬁdential workspace to 
+safeguard patient privacy and during patient information exchange.
+◦ Cross-border telehealth services shall be compliant with health information exchange 
+policy, including all relevant data security, privacy requirements and level of sensitivity.
+◦ Each healthcare facility is responsible for the availability and completeness of data 
+when expected and needed.
+◦ The healthcare facility should comply with the patient’s country set of principles and 
+processes in applying telehealth services.
+◦ The healthcare facility should comply with the patient’s country personal data 
+protection laws.
+◦ The healthcare professional should follow patient documentation rules as agreed 
+between two healthcare facilities, fulﬁlling safety and clinical best practice.
+◦ There are many international standards for privacy information management and 
+information security management systems such as HIPAA, ISO/IEC 27701, ISO/IEC 
+27001 and ISO/IEC 27002, facilities from both countries should agree on implementing 
+any of these international standards.
+◦ Emerging technology in cross-border may require additional measures in privacy and 
+conﬁdentiality that enforce exchanging de-identiﬁed (anonymized) clinical information 
+in line with the data protection law requirements
+Telehealth Application Guidelines
+62
+• Legal:
+◦ In tortious claims jurisdiction is decided on the basis of the place where harm 
+occurred as a result of the tort (that is to say, a result of a negligent act or failure to 
+act). The applicable law will normally be the law of the jurisdiction in which the tort 
+was committed.
+◦ The healthcare facility shall ensure malpractice insurance for healthcare professionals 
+is in place throughout the duration of the telehealth service.
+◦ Healthcare professionals shall be responsible based on their individual contribution. 
+◦ The physicians have the right to refuse a case if the quality and the quantity of the 
+data provided in the patient record are not suﬃcient to give a complete and accurate 
+medical opinion or if the quality of the images is insuﬃcient.
+◦ The patient has to give informed consent for the exchange of his patient ﬁle and 
+medical data.
+◦ Patient consent should cover the possibility of having a HCP present outside Saudi 
+Arabia.
+◦ Patients are entitled to a written or electronic medical record of their treatment, and 
+access to at least a copy of this record.
+◦ The local healthcare facility involved in cross-border telehealth activities should 
+guarantee that there is no abuse, malpractice nor ethical issues during cross-border 
+telehealth practice.
+◦ The local healthcare facility involved in cross-border telehealth activities should have 
+a bounding agreement that hold both parties committed and accountable to the 
+national requirements and regulations in a constant manner.
+◦ A translator should be present in case of language barrier to avoid misinterpretations 
+during the consultation session between the HCP and the patient. 
+Tele-expertise:
+Deﬁnition: 
+The use of telecommunications technology to facilitate the remote expert medical opinion 
+provided by an expert HCP to a requesting HCP relying on store-and-forward (24).
+Description: 
+Utilizing telecommunications capabilities to upload patient clinical information 
+(store-and-forward) which may include ﬁlling speciﬁc forms, detailed clinical reports, 
+multimedia content, investigation results and details about previous course of treatment 
+and receive from the expert practitioners or centers an oﬃcial recommendations or second 
+opinion that may include diagnosis, suggested treatment.
+Examples: 
+Tele-dermatology: A HCP or a patient asks a dermatologist an expert advice on the 
+patient’s medical situation with a relevant clinical information and pictures of lesions and 
+the level of urgency. The expert replies with the diagnosis, a potential treatment and if the 
+patient needs further investigations or to be referred to the dermatologist.
+Tele-second opinion: Utilizing telecommunications capabilities by HCPs or patients to 
+upload patient clinical information which may include speciﬁc forms, clinical reports, 
+multimedia content, investigation results and details about previous course of treatment 
+and receive an oﬃcial recommendations or second opinion that may include diagnosis, 
+suggested treatment from expert practitioner or center.
+Telehealth Application Guidelines
+63
+Minimum requirements of: 
+• Medico-Legal:
+◦ If the patient need to be examined by the expert physically, a referral should be advised.
+◦ The medical report should be written to include all the information regarding the patient 
+case.
+◦ The medical questions or requests should be deﬁned precisely 
+◦ all uploaded clinical information should be sent in a clear and easy way to read 
+◦ The medical report should be maintained unchanged during transfer or storage. 
+◦ The medical report should be labeled with patient and facility demography.
+◦ the degree of emergency of the request should be deﬁned 
+◦ the request should be related to the expert specialty 
+◦ Tele-expertise may not be suitable for emergency cases which needs urgent 
+intervention 
+◦ All legal requirements applied to a HCP in the Kingdom of Saudi Arabia shall be applied 
+to the practice of tele-expertise. 
+◦ The remote HCP should provide a service under a registered remote healthcare facility 
+that have an oﬃcial legally bounded agreement with a registered local healthcare 
+facility. The HCP should be licensed and registered based on SCFHS and other the 
+local policies in KSA. 
+• Setup:
+◦ Tele-expertise requests are non-scheduled telehealth activities. The expert HCP may 
+however schedule a dedicated time to reply to the requests or answer one by one 
+based on his own agenda, availability, and urgency.
+◦ The professional should receive training on the devices used in the evaluation 
+process .
+Emerging Technologies in Telehealth:
+Deﬁnition: 
+• The use of new and novel telecommunications and information technology to provide 
+access to health assessment, screening, diagnosis, intervention, collaboration, 
+consultation, supervision, coaching and information across distance.
+Description: 
+• In addition to virtual visits using telemedicine, there are several emerging technologies 
+including wearable technology (e.g., to monitor activity and vital signs), RPM (e.g., 
+environmental exposures and medication adherence) as well as electronic medical 
+records augmented with clinical decision support (64).
+• The artiﬁcial intelligence introduced augmentation to multiple clinical services such as 
+patient online tele-triaging to guide him to the appropriate service and giving the 
+required safe recommendations, also, it is used in screening imaging of the retina of the 
+patients and give a detailed medical report about many retinal problems. In addition, it 
+is used to screen other images such as histopathology, chest x-rays, mammogram and 
+other diagnostic imaging to screen for speciﬁc diseases or general augmentation for 
+radiologists.
+• Augmented reality and virtual reality is used in tele-education and potentially can be 
+used in other purposes.
+• Social media for mass education and nudging.
+Examples: 
+• Artiﬁcial intelligence
+• Augmented reality (AR) and virtual reality (VR) 
+• Tele-robots
+• The Internet of Things (IoT) 
+• Nanotechnology
+• Mobile
+• Block chain
+• Cloud computing
+Telehealth Application Guidelines
+64
+• Personnel:
+◦ The professional should receive the required report about the case to perform proper 
+evaluation.
+◦ HCPs shall be trained on telehealth before practicing tele-expertise.
+◦ The HCP should gather all relevant administrative and medical information.
+◦ During a tele-expertise, both HCPs shall engage their responsibility based on their 
+individual contribution. 
+◦ HCPs practicing tele-expertise should respect their obligations and ethical 
+responsibilities
+• Patient experience and patient rights:
+◦ The medical report and patient details should be stored and transferred using 
+technology that provide the required privacy and conﬁdentiality.
+◦ patient consent should be taken 
+◦ A patient approval is required before any third-party participation in evaluating patient 
+reports. 
+◦ Patients may refuse and/or cancel any participation to a tele-expertise activity, at any 
+time, without the need to provide justiﬁcation.
+• Technical:
+◦ The request form should be automated, tagged in a way to notify the urgency level of 
+the case and the specialty needed.
+Minimum requirements of: 
+• Medico-Legal:
+◦ All novel technologies should be registered either the SFDA or any other medical 
+devices registration authorities.
+◦ Healthcare professionals should obtain informed consent from the patient for the use of 
+these emerging technologies.
+• Setup:
+◦ The Healthcare facilities must apply their safety procedures and protocols to 
+Telemedicine services, when using all novel technologies.
+• Technical:
+◦ The novel technology use should be secured by design.
+◦ Privacy and conﬁdentiality measures should be maintained.
+• Personnel:
+◦ Healthcare professionals providing Telemedicine services using novel technologies 
+should have the necessary education, training/orientation and ongoing professional 
+development needed for the safe provision of quality health services.
+◦ Each healthcare facility should be aware of best practices relating to Telemedicine and 
+adapt and change processes as such practices evolve. 
+• Patient experience and patient rights:
+◦ Some evaluation parameters may include patient outcomes and satisfaction, provider 
+satisfaction; technical quality of service; quality of communication; performance 
+metrics; costs; utilization; and improved access to care.  
+◦ HCPs ethical conduct should not be compromised in the use of any of the novel 
+telehealth solutions. 
+◦ Patients’ rights, privacy and conﬁdentiality should strictly preserved in all novel 
+telehealth solutions.
+Telehealth Application Guidelines
+65
+Tele-education:
+Deﬁnition: 
+Tele-education represents health education on distance, using Information 
+Communication Technologies (ICT), as well as continuous education of a health system 
+beneﬁciaries and use of electronic libraries, databases or electronic data with databases 
+of knowledge (60).
+Description: 
+A healthcare professional may convey health promotion and disease prevention 
+messages. These could be related to diet, physical activity, and cessation of smoking, 
+contagious infections. Similarly, he/ she may give advice on immunizations, exercises, 
+hygiene practices.
+A healthcare professional may have an access to a continuous educational materials, 
+electronic libraries, databases, and live educational sessions.
+Examples: 
+• General diseases education (Diabetes Mellitus, Hypertension, Bronchial Asthma, etc.)
+• Using Interactive videoconferencing.
+• Tele-mentoring and other forms of individual teaching (personalized education), 
+(coaching).
+• Lectures delivered through satellite broadcasts to multiple sites. 
+• Nudging in order to motivate people to adopt healthy behaviors without incentives or 
+deterrent.
+Appendix:
+Appendix A:
+Privacy and conﬁdentiality of health information: 
+The Saudi personal data protection law, which is based on the following principles (14):
+• Principle 1- Accountability: Data Controller's privacy policies and procedures shall be 
+identiﬁed, documented and approved by the head of entity (or his designee) and 
+circulated to all concerned parties.
+• Principle 2- Transparency: A notice of Data Controller's privacy policies and 
+procedures – Privacy Notice – shall be drawn up indicating the purposes for which 
+personal data will be collected in a clear, easy to understand language.
+• Principle 3- Choice and Consent: The purpose for collection of any personally 
+identifying data shall be shall be made clear to Data Subject and their (implicit / explicit) 
+approval shall be obtained regarding collection, use and/or disclosure of personal data 
+before collection.
+• Principle 4- Limiting Data Collection: Collection of any personal data shall be limited 
+to minimum data that enables fulﬁllment of purposes provided for in Privacy Notice.
+• Principle 5- Use, Retention and Destruction: Personal data usage shall be restricted 
+to purposes provided for in Privacy Notice, which the Data Subject has implicitly or 
+explicitly approved. Moreover, Data shall be retained as long as necessary to achieve 
+their intended purposes or as required by laws and regulations. Furthermore, data shall 
+be destroyed it in a safe manner that prevents leakage, loss, theft, misuse or 
+unauthorized access.
+• Principle 6- Access to Data: Entities shall provide a means by which any Data Subject 
+can review, update and correct their personal data.
+• Principle 7- Data Disclosure Limitation: Disclosure of personal data to third parties 
+shall be restricted to the purposes provided for in Privacy Notice, which was approved 
+by Data Subject.
+• Principle 8- Data Security: Personal data shall be protected from leakage, damage, 
+loss, theft, misuse, modiﬁcation, or unauthorized access – according to the controls 
+issued by the National Cybersecurity Authority and the relevant authorities.
+• Principle 9- Data Quality: Personal data shall be maintained after veriﬁcation of its 
+accuracy, completeness and timeliness, and such data shall be directly relevant to 
+purposes provided for in Privacy Notice.
+• Principle 10- Monitoring and Compliance: Compliance with Data Controller's privacy 
+policies and procedures shall be monitored, and any privacy-related inquires, 
+complaints, and disputes shall be addressed.
+Telehealth Application Guidelines
+66
+Minimum requirements of: 
+• Medico-Legal:
+◦ Being aware of legislation, professional, and regulatory and licensing requirements that 
+inﬂuence the delivery of educational information.
+◦ In organizations providing educational information, there should be senior management 
+accountability for such information, including the supervision of all persons directly 
+responsible for developing, coordinating, and operating Tele-education services.
+◦ Organizations providing Tele-education services must have policies and procedures in 
+place to protect the data and conﬁdentiality of information. Tele-education security 
+policy and procedures should be integrated with those for electronic health records, 
+whenever possible.
+◦ There should be policies and procedures for documentation, storage and retrieval of 
+patient records that respect the conﬁdentiality of the information.
+◦ Tele-education consultation should not be anonymous: both patient and the healthcare 
+professional need to know each other’s identity (61).
+◦ Healthcare professional should obtain informed consent, which may be implied or 
+expressed before starting any service or intervention following principles and 
+processes similar to standard practice for the particular healthcare service.
+◦ Explicit consent should be obtained from the patient for medical acts that would 
+normally require explicit consent in the traditional health care setting (e.g. video or 
+audio recording of the sessions, use of data for research or educational purposes) (62).
+◦ Healthcare professional should share relevant information with the patient and 
+caregiver, as appropriate, before the beginning of any Tele-education interaction. This 
+information includes informing the patient of the objective of the Tele-education 
+interaction, the role and responsibility of the provider and the patient during the 
+Tele-education interaction, other people participating in this interaction.
+Appendix B:
+Telehealth Application Guidelines
+67
+ﻧﻤﻮﺫﺝ ﻣﻮﺍﻓﻘﺔ ﺍﻟﻤTelehalth Patient Consent Form
+ﺃﻧﺎ )ﺍﻻﺳﻢ( ........................................ ﺃﻭﺍﻓﻖ ﻋﻠﻰ ﺗﻠﻘﻲ ﺧﺪﻣﺔ
+ﻃ
+ﻣﻤﻜﻦ ﺃﻥ ﻳﻜﻮﻥ ﻣﺘﻮﺍﺟﺪ ﻓﻲ ﻣﻨﺸﺄﺓ ﺻﺤﻴﺔ ﺃﺧﺮﻯ.
+ﺧﺪﻣﺔ ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ ﻋﻦ ﺑﻌﺪ ﺗﻌﻨﻲ ﺑﺄﻥ
+ﻓﻲ ﻣﻮﻗﻊ ﺑﻌﻴﺪ ﺳ
+ﺍﻟﻤﻮﺍﻓﻘﺔ ﺻﺎﻟﺤﺔ ﻟﻤﺪﺓ ﺳﺘﺔ ﺃﺷﻬﺮ ﻟﻤﺘﺎﺑﻌﺔ ﺧﺪﻣﺎﺕ ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ ﻋﻦ ﺑﻌﺪ 
+ﻣﻊ ﻣﻘﺪﻡ ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ.
+ﻛﻤﺎ ﺃﻧﻨﻲ:
+•ﺑﻤﻮﺟﺐ ﻫﺬﺍ ﺍﻭﺍﻓﻖ ﻋﻠﻰ ﺗﻠﻘﻲ ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ ﺑﺎﺳﺘﺨﺪﺍﻡ ﻣﻨﺼﺔ 
+ﻣﻤﺎﺭﺳﺔ ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ ﻋﻦ ﺑﻌﺪ ﻟﺘﻘ
+•ﻳﻤﻜﻨﻨﻲ ﺭﻓﺾ ﺗﻠﻘﻲ ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ ﻋﻦ ﺑﻌﺪ ﻓﻲ ﺃﻱ ﻭﻗﺖ ﺩﻭﻥ ﺍﻟﺘﺄ
+ﻋﻠﻰ ﺣﻘﻲ ﻓﻲ ﺍﻟﺮﻋﺎﻳﺔ ﺃﻭ ﺍﻟﻌﻼﺝ ﺍﻟﻤﺴﺘﻘﺒﻠﻲ.
+•ﺇﺫﺍ ﺭﻓﻀﺖ ﺗﻠﻘﻲ ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔﻋﻦ ﺑﻌﺪ، ﻓﺈﻥ ﺍﻟﺨﻴﺎ
+ﺍﻷﺧﺮﻯ ﺍﻟﻤﺘﺎﺣﺔ ﻟﻲ ﻫﻲ ﺗﻠﻘﻲ ﺍﻟﺨﺪﻣﺔ ﺍﻟﻄ
+ﺍﻟﻤﻤﺎﺭﺱ ﺍﻟﺼﺤﻲ.
+•ﺳﻴﺘﻢ ﺇﺑﻼﻏﻲ ﺑﺠﻤﻴﻊ ﺍﻻﺷﺨﺎﺹ ﺍﻟﺬ
+ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ ﻋﻦ ﺑﻌﺪ ﺍﻟﺨﺎﺻﺔ ﺑﻲ.
+•ﻣﻦ ﺍﻟﻤﻤﻜﻦ ﻣﻘﺎﺑﻠﺔ ﺍﻟﻤﻤﺎﺭﺱ ﺍﻟﺼﺢ ﻓﻮ
+ﻋﻦ ﺑﻌﺪ ﺇﺫﺍ ﻇﻬﺮﺕ ﺣﺎﺟﺔ ﻣﺎﺳّﺔ ﺃﻭ ﺳﻴﺘﻢ ﺇﺧﺒﺎﺭﻱ ﻣﺴﺒﻘﺎً ﺇﻥ ﻛﺎﻥ ﺫﻟﻚ 
+ﻏﻴﺮ ﻣﺘﻮﻓﺮ.
+•ﺃﻭﺍﻓﻖ ﻋﻠﻰ ﺇﻧﻪ ﻳﻤﻜﻦ ﺍﻻﺣﺘﻔﺎﻅ ﺑﺴﺠﻼﺗﻲ ﺍﻟﻄ
+ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ ﻋﻦ ﺑﻌﺪ ، ﻛﻲ ﻳﺘﻢ ﻋﻤﻞ ﺍﻟﻤ
+ﻭﺍﻟﺘﻮﺛﻴﻖ، ﻭﺳﻴﺘﻢ ﺍﻻﺣﺘﻔﺎﻅ ﺑﻤﻌﻠﻮﻣﺎ
+•ﺳﺄ
+ﺧﺪﻣﺔ ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ ﻋﻦ ﺑﻌﺪ ﻛﻤﺎ ﻳﻨﺺ ﻋﻠﻴﻬﺎ ﺍﻟﻘﺎﻧﻮﻥ.
+•ﻻﻳﻤﻜﻦ ﻧﺸﺮ ﺍﻟﻤﻌﻠﻮﻣﺎﺕ ﻣﻦ ﺧﺪﻣﺔ ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ ﻋﻦ ﺑﻌﺪ ﻟﻠﺒﺎﺣﺜﻴﻦ ﺃﻭ 
+ﺃﻱ ﺷﺨﺺ ﺁﺧﺮ ﺩﻭﻥ ﻣﻮﺍﻓﻘﺘﻲ ﺍﻟﺨﻄﻴﺔ ﺍﻹﺿﺎﻓﻴﺔ.
+•ﺃﻓﻬﻢ ﺃﻥ ﺍﻟﻤﺸﺎﻛﻞ ﺍﻟﺘﻘﻨﻴﺔ ﻗﺪ ﺗﺤﺪﺙ ﻗﺒﻞ ﺟﻠﺴﺎﺕ ﺍﻟﺮﻋﺎﻳﺔ ﺍﻟﺼﺤﻴﺔ ﻋﻦ 
+ﺑﻌﺪ ﺃﻭ ﺃ
+•ﺃﻗﺒﻞ ﺃﻥ ﺍﻟﻤﻤﺎﺭﺳﻴﻦ ﺍﻟﺼﺤ
+ﺗﻔﺎﻋﻠﻴﺔ ﻣﻊ ﻣﻜﺎﻟﻤﺔ ﻓﻴﺪ
+ﺇﺟ
+ﺍﻟﺘﻘﻨﻴﺔ ﻣﺜﻞ ﺳﺮﻋﺔ ﺍﻹ
+I (name)....................................................................
+agree to receive a Telehealth service. I understand that 
+healthcare practitioner(name)................................
+my be located in another facility.
+A Telehealth service means that my visit with a 
+practitioner at the
+distant site will happen by using special audiovisual 
+equipment.
+This consent is valid for six months for follow-up 
+Telehealth
+services with the healthcare provider.
+I also understand that:
+• I hereby authorize healthcare services to use the 
+telehealth practice platform for telecommunication 
+for evaluating, testing and diagnosing my medical 
+condition.
+• I can decline the Telehealth service at any time 
+without affecting my right to future care or 
+treatment.
+• If I decline the Telehealth services, the other 
+options/alternatives available for me is in-person 
+services.
+• I will be informed of all people who will be present 
+during myTelehealth service.
+• I may see an employee in-person immediately after 
+the
+• Telehealth service if an urgent need arises OR I will 
+be told ahead of time that this is not available.
+• I agree that my medical records on telehealth can be 
+kept for
+• further evaluation, analysis and documentation, and 
+in all of these, my information will be kept private.
+• I will have access to all medical information resulting 
+from the Telehealth service as provided by law.
+• The information from the Telehealth service (images 
+that can be identiﬁed as mine or other medical 
+information from the Telehealth service) cannot be 
+released to researchers or anyone else without my 
+additional written consent.
+• I understand that technical difﬁculties may occur 
+before or during the telehealth sessions and my 
+encounter might not go as intended.
+• I accept that the professionals can contact interactive 
+sessions with video call via robots; however, I am 
+informed that the sessions can be conducted via 
+regular voice communication if the technical 
+requirements such as internet speed cannot be met.
+ﺍﺳﻢ ﺍﻟﻤ
+:Patient`s Name
+:ﺍﻟﺠﻨﺲ
+ﺗﺎ
+Date Of Birth:
+:ﺍﻟﺘﻮﻗﻴﻊ
+Signature:
+:ﺭﻗﻢ ﺍﻟﺴﺠﻞ ﺍﻟﻄﺒﻲ
+Medical Record Number:
+:ﺍﺳﻢ ﺍﻟﻤﻨﺸﺄﺓ ﺍﻟﺼﺤﻴﺔ
+Healthcare Facility Name:
+:ﺍﻟﻮﻗﺖ
+Time:
+:ﺍﻟﺘﺎ
+Date:
+ﺃ
+ﺫﻛﺮ
+:ﺍﻟﻴﻮﻡ
+Day:
+
+• Setup:
+◦ Platform and sessions for patient education should fulﬁl the required privacy and 
+conﬁdentially measures in the kingdom.
+• Patient experience and patient rights:
+◦ Education material provided should be created and reviewed by subject matter experts 
+in the ﬁeld of the content provided and documenting the approving body.
+◦ Education material should be maintained up to date and each content should have an 
+expiry date when it is going to be subject for review.
+◦ The evaluation parameters for the educational content are as follows: patient outcomes 
+and satisfactions, provider satisfaction, quality of illustration content, clarity of the 
+content and consumer completion of the content
+◦ HCPs ethical conduct should not be compromised in all telehealth educational 
+sessions. 
+◦ Patients’ rights and conﬁdentiality should strictly preserved in all telehealth educational 
+sessions.
+• Technical:
+◦ Technical requirements must be appropriate and ﬁt for purpose to eﬀectively transfer 
+audio and visual data in real time and any interactions between the Provider-end and 
+the Receiver-end during the tele-educational session. 
+◦ Software and hardware capability and suitability for the use of a tele-education setting 
+for diﬀerent purposes and scenarios may require a compatibility between the software 
+and the diﬀerent hardware tools such as computers, smartphones, laptops, tablets.  
+◦ Adopt a process of continuous monitoring and testing the used tele-education 
+solutions, networks and devices in a frequency that prevent any failures during the 
+real-time session and proactively discover and provide the support for any 
+troubleshooting required instantly.
+1. US Department of Health and Human Services HR and SAO for the A of T. 2001 
+Telemedicine Report to Congress. 
+2. Shaw DK. Overview of Telehealth and Its Application to Cardiopulmonary Physical 
+Therapy. Cardiopulmonary Physical Therapy Journal [Internet]. 2009 Jun [cited 2022 Mar 
+22];13:(2)20. Available from: /pmc/articles/PMC2845264/
+3. Mashima PA, Doarn CR. Overview of telehealth activities in speech-language 
+pathology. Telemedicine journal and e-health : the oﬃcial journal of the American 
+Telemedicine Association [Internet]. 2008 Dec 1 [cited 2022 Mar 22];17–1101:(10)14. 
+Available from: https://pubmed.ncbi.nlm.nih.gov/19119834/
+4. Miller EA. Solving the disjuncture between research and practice: Telehealth trends in 
+the 21st century. Health Policy. 2007 Jul 41–133:(2)82;1. 
+5. Medical Association A. 50-state survey: Establishment of a patient-physician 
+relationship via telemedicine. 2018; 
+6. Saudi Guidelines for Informed Consent. 
+7. kkondo. Tool 3 Patient identiﬁcation and matching to intended care. 
+8. Colorado Proposes New Telehealth Rules | Blogs | Health Care Law Today | Foley & 
+Lardner LLP [Internet]. [cited 2022 Mar 22]. Available from: 
+https://www.foley.com/en/insights/publications/07/2015/colorado-proposes-new-telehea
+lth-rules
+9. The Guidelines provide practical advice on how to conduct telehealth consultations. 
+[cited 2022 Mar 22]; Available from: www.racptelehealth.com.au
+10. Regulatory-approaches-to-telemedicine. 
+11. The Royal Australasian College of Physicians Ethical Guidelines for Occupational and 
+Environmental Physicians. 2016; 
+12. The Guidelines provide practical advice on how to conduct telehealth consultations 
+[Internet]. Available from: www.racptelehealth.com.au
+13. Haleem A, Javaid M, Singh RP , Suman R. Telemedicine for healthcare: Capabilities, 
+features, barriers, and applications. Sensors International. 2021 Jan 2:100117 ;1. 
+14. Privacy and Data Protection in the Kingdom of Saudi Arabia [Internet]. [cited 2022  
+Mar 22]. Available from: https://www.my.gov.sa/wps/portal/snp/content/dataprotection
+15. BOARD OF GOVERNORS In supersession of the Medical Council of India 
+Telemedicine Practice Guidelines Enabling Registered Medical Practitioners to Provide 
+Healthcare Using Telemedicine. 2020; 
+References
+Telehealth Application Guidelines
+68
+:ﺍﻟﻴﻮﻡ
+Day:
+Cross-border access:
+Deﬁnition:
+Cross-border tele-health is the provision of healthcare services involves medical 
+practice and information and communications technology. Cross border tele-health 
+allows healthcare to be provided at distance, opening the door for healthcare services 
+to be provided by a health professional who lives in a country other than the patient’s 
+(63).
+Description:
+• When a patient is requesting a consultation from a healthcare professional who is 
+located outside Saudi Arabia, whether using a synchronous (video consultation, 
+tele-triaging, tele-education, tele-management, RPM) or asynchronous, 
+store-and-forward (tele-expertise, tele-education)
+• When a HCP requesting a service from another HCP who is located outside Saudi 
+Arabia and vice versa, whether using a synchronous (tele-assistance, 
+tele-management, tele-surgery, tele-education) or asynchronous, 
+store-and-forward (tele-expertise, tele-diagnosis).
+• The use of telehealth technical solutions and emerging technologies such as 
+artiﬁcial intelligence (augmentation in screening) located in diﬀerent countries. 
+Patient Rights And Ethics - PubMed [Internet]. [cited 2022 Mar 22]. Available from: 
+https://pubmed.ncbi.nlm.nih.gov/30855863/
+17. The Regulation and Licensing of Telemedicine in Saudi Arabia - Al Tamimi & 
+Company [Internet]. [cited 2022 Mar 22]. Available from: 
+https://www.tamimi.com/law-update-articles/the-regulation-and-licensing-of-telemedicin
+e-in-saudi-arabia/
+18. Saudi S, SaudiMOH M, wwwmohgovsa Mohp. Clinical Governance 
+Directorate-DHCOE Legal Regulations for Telehealth Services. [cited 2022 Mar 22]; 
+Available from: www.moh.gov.sa
+19. Alkhenizan AH, Shaﬁq MR. The process of litigation for medical errors in Saudi Arabia 
+and the United Kingdom. Saudi Medical Journal [Internet]. 2018 Nov 1  [cited 2022 Mar 
+26];1075:(11)39. Available from: /pmc/articles/PMC6274669/
+20. Amirthalingam K. Medical dispute resolution, patient safety and the doctor-patient 
+relationship. Singapore Medical Journal [Internet]. 2017 Dec 1 [cited 2022 Mar 
+26];681:(12)58. Available from: /pmc/articles/PMC5917052/
+21. Curran WJ. The Patient’s Bill of Rights Becomes Law. 
+http://dx.doi.org/101056/NEJM197401032900108 [Internet]. 2010 Jan 13 [cited 2022 Mar 
+26];3–32:(1)290. Available from: 
+https://www.nejm.org/doi/full/10.1056/NEJM197401032900108
+22. Patient Rights And Ethics - PubMed [Internet]. [cited 2022 Mar 26]. Available from: 
+https://pubmed.ncbi.nlm.nih.gov/30855863/
+23. Nasser M. Medical dispute in Indonesia health. Legal and Forensic Medicine. 2013  
+Jan 70–1459;1. 
+24. The governing rules of Telehealth in the kingdom of Saudi Arabia-Executive rules. 
+25. Creating a Continuum of Care. 
+26. Dingley C, Daugherty K, Derieg MK, Persing R. Improving Patient Safety Through 
+Provider Communication Strategy Enhancements. Advances in Patient Safety: New 
+Directions and Alternative Approaches (Vol 3: Performance and Tools) [Internet]. 2008 
+[cited 2022 Mar 22]; Available from: https://www.ncbi.nlm.nih.gov/books/NBK43663/
+27. Henriksen K, Battles JB, Keyes MA, Mary Grady ML. Advances in Patient Safety: 
+New Directions and Alternative Approaches Volume 4. Technology and Medication Safety 
+Editors. 2008; 
+28. Lee Ventola C. Mobile Devices and Apps for Health Care Professionals: Uses and 
+Beneﬁts. Pharmacy and Therapeutics [Internet]. 2014 [cited 2022 Mar 22];356 :(5)39. 
+Available from: /pmc/articles/PMC4029126/
+29. DOH STANDARD ON TELE-MEDICINE. 2020. 
+30. National Data Management Oﬃce Data Management and Personal Data Protection 
+Standards. 2021; 
+Telehealth Application Guidelines
+69
+National E-Health and Data Management Strategy Draft for Stakeholder Consultation 
+Qatar National E-Health & Data Program (QNeDP) National E-Health and Data 
+Management Strategy i Revision Log. 2015; 
+32. Healthcare Data Management: Three Principles of Using Data to Its Ful… [Internet]. 
+[cited 2022 Mar 22]. Available from: 
+https://www.slideshare.net/healthcatalyst1/healthcare-data-management-three-principle
+s-of-using-data-to-its-full-potential
+33. What is Cloud Computing? | Oracle Saudi Arabia [Internet]. [cited 2022 Mar 22]. 
+Available from: https://www.oracle.com/sa/cloud/what-is-cloud-computing/
+34. Three reasons why healthcare is moving to the cloud - Blog | Philips [Internet]. [cited 
+2022 Mar 22]. Available from: 
+https://www.philips.com/a-w/about/news/archive/blogs/innovation-matters/202108/2021
+03-three-reasons-why-healthcare-providers-are-moving-to-the-cloud.html
+35. Adane K, Gizachew M, Kendie S. The role of medical data in eﬃcient patient care 
+delivery: a review. Risk Management and Healthcare Policy [Internet]. 2019 [cited 2022 
+Mar 22];12:67. Available from: /pmc/articles/PMC6486797/
+36. The Need for a National Digital Identity Infrastructure - Centre for International 
+Governance Innovation [Internet]. [cited 2022 Mar 22]. Available from: 
+https://www.cigionline.org/articles/need-national-digital-identity-infrastructure/?utm_sour
+ce=google_ads&utm_medium=grant&gclid=CjwKCAiAiKuOBhBQEiwAId_sK3KibX9kSEQ
+yvvjX4i6sJPN-IfCzv2UQAkHT5XWwZxTHWI1TCjqfnxoCAc8QAvD_BwE
+37. Data Management Best Practices for Hospitals and Medical Facilities [Internet]. [cited 
+2022 Mar 22]. Available from: 
+https://www.hhmglobal.com/knowledge-bank/articles/data-management-best-practices-
+for-hospitals-and-medical-facilities
+38. Sani N, Manohar RK, Okocha DO, Bdamasi S. Health Information Systems, Best 
+Practices in Patient data Management for Eﬀective Health Care Service Delivery in 
+Hospitals. A case of Some Selected Tertiary Hospitals in Jigawa State of Nigeria. 
+39. Data Collection and Quality Assurance - Registries for Evaluating Patient Outcomes - 
+NCBI Bookshelf [Internet]. [cited 2022 Mar 22]. Available from: 
+https://www.ncbi.nlm.nih.gov/books/NBK208601/
+40. Interoperability in Healthcare | HIMSS [Internet]. [cited 2022 Mar 22]. Available from: 
+https://www.himss.org/resources/interoperability-healthcare
+41. Global strategy on digital health 2021 .2025-2020 [cited 2022 Mar 22]; Available from: 
+http://apps.who.int/bookorders.
+42.What Is Patient Experience? | Agency for Healthcare Research and Quality [Internet]. 
+[cited 2022 Mar 22]. Available from: 
+https://www.ahrq.gov/cahps/about-cahps/patient-experience/index.html
+43. Health Databases and Health Database Organizations: Uses, Beneﬁts, and Concerns 
+- Health Data in the Information Age - NCBI Bookshelf [Internet]. [cited 2022 Mar 22]. 
+Available from: https://www.ncbi.nlm.nih.gov/books/NBK236556/
+Telehealth Application Guidelines
+70
+National E-Health and Data Management Strategy Draft for Stakeholder Consultation 
+Qatar National E-Health & Data Program (QNeDP) National E-Health and Data 
+Management Strategy i Revision Log. 2015; 
+32. Healthcare Data Management: Three Principles of Using Data to Its Ful… [Internet]. 
+[cited 2022 Mar 22]. Available from: 
+https://www.slideshare.net/healthcatalyst1/healthcare-data-management-three-principle
+s-of-using-data-to-its-full-potential
+33. What is Cloud Computing? | Oracle Saudi Arabia [Internet]. [cited 2022 Mar 22]. 
+Available from: https://www.oracle.com/sa/cloud/what-is-cloud-computing/
+34. Three reasons why healthcare is moving to the cloud - Blog | Philips [Internet]. [cited 
+2022 Mar 22]. Available from: 
+https://www.philips.com/a-w/about/news/archive/blogs/innovation-matters/202108/2021
+03-three-reasons-why-healthcare-providers-are-moving-to-the-cloud.html
+35. Adane K, Gizachew M, Kendie S. The role of medical data in eﬃcient patient care 
+delivery: a review. Risk Management and Healthcare Policy [Internet]. 2019 [cited 2022 
+Mar 22];12:67. Available from: /pmc/articles/PMC6486797/
+36. The Need for a National Digital Identity Infrastructure - Centre for International 
+Governance Innovation [Internet]. [cited 2022 Mar 22]. Available from: 
+https://www.cigionline.org/articles/need-national-digital-identity-infrastructure/?utm_sour
+ce=google_ads&utm_medium=grant&gclid=CjwKCAiAiKuOBhBQEiwAId_sK3KibX9kSEQ
+yvvjX4i6sJPN-IfCzv2UQAkHT5XWwZxTHWI1TCjqfnxoCAc8QAvD_BwE
+37. Data Management Best Practices for Hospitals and Medical Facilities [Internet]. 
+[cited 2022 Mar 22]. Available from: 
+https://www.hhmglobal.com/knowledge-bank/articles/data-management-best-practices-
+for-hospitals-and-medical-facilities
+38. Sani N, Manohar RK, Okocha DO, Bdamasi S. Health Information Systems, Best 
+Practices in Patient data Management for Eﬀective Health Care Service Delivery in 
+Hospitals. A case of Some Selected Tertiary Hospitals in Jigawa State of Nigeria. 
+39. Data Collection and Quality Assurance - Registries for Evaluating Patient Outcomes - 
+NCBI Bookshelf [Internet]. [cited 2022 Mar 22]. Available from: 
+https://www.ncbi.nlm.nih.gov/books/NBK208601/
+40. Interoperability in Healthcare | HIMSS [Internet]. [cited 2022 Mar 22]. Available from: 
+https://www.himss.org/resources/interoperability-healthcare
+41. Global strategy on digital health 2021 .2025-2020 [cited 2022 Mar 22]; Available 
+from: http://apps.who.int/bookorders.
+42.What Is Patient Experience? | Agency for Healthcare Research and Quality [Internet]. 
+[cited 2022 Mar 22]. Available from: 
+https://www.ahrq.gov/cahps/about-cahps/patient-experience/index.html
+43. Health Databases and Health Database Organizations: Uses, Beneﬁts, and Concerns 
+- Health Data in the Information Age - NCBI Bookshelf [Internet]. [cited 2022 Mar 22]. 
+Available from: https://www.ncbi.nlm.nih.gov/books/NBK236556/
+Telehealth Application Guidelines
+71
+• Legal:
+◦ In tortious claims jurisdiction is decided on the basis of the place where harm 
+occurred as a result of the tort (that is to say, a result of a negligent act or failure to 
+act). The applicable law will normally be the law of the jurisdiction in which the tort 
+was committed.
+◦ The healthcare facility shall ensure malpractice insurance for healthcare professionals 
+is in place throughout the duration of the telehealth service.
+◦ Healthcare professionals shall be responsible based on their individual contribution. 
+◦ The physicians have the right to refuse a case if the quality and the quantity of the 
+data provided in the patient record are not suﬃcient to give a complete and accurate 
+medical opinion or if the quality of the images is insuﬃcient.
+◦ The patient has to give informed consent for the exchange of his patient ﬁle and 
+medical data.
+◦ Patient consent should cover the possibility of having a HCP present outside Saudi 
+Arabia.
+◦ Patients are entitled to a written or electronic medical record of their treatment, and 
+access to at least a copy of this record.
+◦ The local healthcare facility involved in cross-border telehealth activities should 
+guarantee that there is no abuse, malpractice nor ethical issues during cross-border 
+telehealth practice.
+◦ The local healthcare facility involved in cross-border telehealth activities should have 
+a bounding agreement that hold both parties committed and accountable to the 
+national requirements and regulations in a constant manner.
+◦ A translator should be present in case of language barrier to avoid misinterpretations 
+during the consultation session between the HCP and the patient. 
+44,10 Ways to Secure Healthcare Data - Fast Chart [Internet]. [cited 2022 Mar 22]. 
+Available from: https://fastchart.com/news/ways-to-secure-healthcare-data/
+45.Delivering quality health services. [cited 2022 Mar 22]; Available from: 
+http://apps.who.int/bookorders.
+46. Telemedicine Regulations in the Kingdom of Saudi Arabia. 
+47. The governing rules of Telehealth in the kingdom of Saudi Arabia-Executive rules. 
+48. What is Teleradiology? A Deﬁnition of Services & History - eVisit [Internet]. [cited 
+2022 Mar 22]. Available from: https://evisit.com/resources/what-is-teleradiology/
+49. Vegesna A, Tran M, Angelaccio M, Arcona S. Remote Patient Monitoring via 
+Non-Invasive Digital Technologies: A Systematic Review. Telemedicine journal and 
+e-health : the oﬃcial journal of the American Telemedicine Association [Internet]. 2017 
+Jan 1 [cited 2022 Mar 22];17–3:(1)23. Available from: 
+https://pubmed.ncbi.nlm.nih.gov/27116181/
+50. Continuous Glucose Monitoring | NIDDK [Internet]. [cited 2022 Mar 22]. Available 
+from: 
+https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/co
+ntinuous-glucose-monitoring
+51. Guidelines For TeleICU Operations. DRAFT FOR OPEN PUBLIC COMMENTS March 
+2014 ,28 April 26, PDF Free Download [Internet]. [cited 2022 Mar 22]. Available from: 
+https://docplayer.net/12300089-Guidelines-for-teleicu-operations-draft-for-open-public-
+comments-march-2014-28-april-2014-26.html
+52. Demaerschalk BM, Berg J, Chong BW, Gross H, Nystrom K, Adeoye O, et al. 
+American Telemedicine Association: Telestroke Guidelines. Telemedicine journal and 
+e-health : the oﬃcial journal of the American Telemedicine Association [Internet]. 2017 
+May 1 [cited 2022 Mar 22];8–376:(5)23. Available from: 
+https://pubmed.ncbi.nlm.nih.gov/28384077/
+53. Akay Metin, editor. Wiley Encyclopedia of Biomedical Engineering, 6 Volume Set | 
+Wiley [Internet]. 2006 [cited 2022 Mar 22]. 4152 p. Available from: 
+https://www.wiley.com/en-us/Wiley+Encyclopedia+of+Biomedical+Engineering%2C+6+
+Volume+Set-p-9780471249672
+54. Robotic Telesurgery - Beneﬁts, And Challenges | RoboticsBiz [Internet]. [cited 2022 
+Mar 22]. Available from: 
+https://roboticsbiz.com/robotic-telesurgery-beneﬁts-and-challenges/
+55. Kumar S, Marescaux J. Telesurgery. Telesurgery. 190–1;2008. 
+56Challacombe B, Kavoussi L, Patriciu A, Stoianovici D, Dasgupta P . Technology 
+Insight: telementoring and telesurgery in urology. Nature Clinical Practice Urology 
+[Internet]. 2006 Nov 1 [cited 2022 Mar 22];8–611:(11)3. Available from: 
+https://go.gale.com/ps/i.do?p=AONE&sw=w&issn=17434270&v=2.1&it=r&id=GALE%7
+CA183392797&sid=googleScholar&linkaccess=fulltext
+57. SM S, C A, S V, A P . Telesurgery and Robotic Surgery: Ethical and Legal Aspect. 
+Journal of Community Medicine & Health Education 5:3 2015 [Internet]. 2015 Jul 7 [cited 
+2022 Mar 
+Telehealth Application Guidelines
+72
+2–1:(3)5;[22. Available from: 
+https://www.omicsonline.org/open-access/telesurgery-and-robotic-surgery-ethical-and-l
+egal-aspect-1000355-0214-2376.php?aid=54752
+58. Telecommunications [Internet]. [cited 2022 Mar 22]. Available from: 
+https://www.umsl.edu/~joshik/msis480/chapt07.htm
+59. Bishoﬀ JT, Kavoussi LR. Atlas of laparoscopic and robotic urologic surgery. :356. 
+60. Masic I. E-Learning as New Method of Medical Education. Acta Informatica Medica 
+[Internet]. 2008 [cited 2022 Mar 22];102:(2)16. Available from: 
+/pmc/articles/PMC3789161/
+61. BOARD OF GOVERNORS In supersession of the Medical Council of India 
+Telemedicine Practice Guidelines Enabling Registered Medical Practitioners to Provide 
+Healthcare Using Telemedicine. 2020; 
+62.Using Video in Research [Internet]. [cited 2022 Mar 22]. Available from: 
+http://www.sfu.ca/media-lab/cmns362/Spotlight45.pdf
+63. International Telemedicine: A Global Regulatory Challenge - Lexology [Internet]. [cited 
+2022 Mar 22]. Available from: 
+https://www.lexology.com/library/detail.aspx?g=f2d9946b-e5c43-3f5-b9528-813e23afbd
+a
+64. Portnoy JM, Pandya A, Waller M, Elliott T. Telemedicine and emerging technologies 
+for health care in allergy/immunology. Journal of Allergy and Clinical Immunology. 2020 
+Feb 54–445:(2)145;1. 
+Telehealth Application Guidelines
+73
+Minimum requirements of: 
+• Medico-Legal:
+◦ All novel technologies should be registered either the SFDA or any other medical 
+devices registration authorities.
+◦ Healthcare professionals should obtain informed consent from the patient for the use of 
+these emerging technologies.
+• Setup:
+◦ The Healthcare facilities must apply their safety procedures and protocols to 
+Telemedicine services, when using all novel technologies.
+• Technical:
+◦ The novel technology use should be secured by design.
+◦ Privacy and conﬁdentiality measures should be maintained.
+• Personnel:
+◦ Healthcare professionals providing Telemedicine services using novel technologies 
+should have the necessary education, training/orientation and ongoing professional 
+development needed for the safe provision of quality health services.
+◦ Each healthcare facility should be aware of best practices relating to Telemedicine and 
+adapt and change processes as such practices evolve. 
+• Patient experience and patient rights:
+◦ Some evaluation parameters may include patient outcomes and satisfaction, provider 
+satisfaction; technical quality of service; quality of communication; performance 
+metrics; costs; utilization; and improved access to care.  
+◦ HCPs ethical conduct should not be compromised in the use of any of the novel 
+telehealth solutions. 
+◦ Patients’ rights, privacy and conﬁdentiality should strictly preserved in all novel 
+telehealth solutions.
+Telehealth Application Guidelines
+Telehealth Application Guidelines
+                          2023

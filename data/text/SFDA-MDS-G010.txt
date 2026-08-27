@@ -1,0 +1,647 @@
+  
+MDS-G-010-V1/230103 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+MDS – G010 
+ 
+ 
+Guidance on Artificial Intelligence (AI)  
+and Machine Learning (ML) technologies based Medical Devices 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Version Number: 1.0 
+Version Date: 29/11/2022 
+ 
+ 
+ 
+ 
+ 
+ 
+
+  
+MDS-G-010-V1/230103 
+Table of Content 
+Introduction ......................................................................................................................... 3 
+Purpose ______________________________________________________________ 3 
+Scope ________________________________________________________________ 3 
+Background ___________________________________________________________ 3 
+Medical Device Item Classification and Criteria ................................................................ 4 
+Medical Device Classification Criteria ______________________________________ 4 
+Intended use ___________________________________________________________ 6 
+Clinical Evaluation .............................................................................................................. 6 
+Risk Management ............................................................................................................. 13 
+Quality Management Systems .......................................................................................... 16 
+Change Notification .......................................................................................................... 18 
+Annexes ............................................................................................................................. 20 
+Annex (1): Definitions & Abbreviations ____________________________________ 21 
+Further Relevant Reading Materials ................................................................................. 22 
+ 
+  
+MDS-G-010-V1/230103 
+Introduction 
+ 
+Purpose  
+The purpose of this guidance is to clarify the requirements for obtaining Medical Devices 
+Marketing Authorization (MDMA) for Artificial Intelligence (AI) and Machine Learning 
+(ML) based medical devices, in order to place them on the market within KSA. 
+ 
+Scope 
+This guidance applies to Artificial Intelligence (AI) and Machine Learning (ML) 
+technologies that diagnose, manage or predict diseases by analyzing medical data.  
+ 
+ 
+Background 
+SFDA has issued this guidance document in reference to the following: 
+- Article 8 stipulating that “medical devices cannot be marketed/used unless 
+obtaining a registration and marketing Authorization, and The SFDA may exempt 
+some medical devices from the requirement to obtain a marketing Authorization, 
+after ensuring their safety, and not using them for commercial purposes”. 
+- Requirements specified in “Requirements for Medical Device Marketing 
+Authorization (MDS– REQ 1)”. 
+- Guidance to Pre-Market Cybersecurity of Medical Devices MDS-G38 
+- Guidance to Post-Market Cybersecurity of Medical Devices MDS-G37 
+ 
+ 
+ 
+ 
+ 
+  
+MDS-G-010-V1/230103 
+Medical Device Item Classification and Criteria  
+Medical Device Classification Criteria 
+ 
+A. Overview 
+ 
+Development of Artificial Intelligence (AI) and Machine Learning (ML) medical devices 
+is continuously evolving and rapidly improving at a rapid pace. Diverse and more complex 
+functions are coming in line with the purpose of improving patients care. This section aims 
+to present the Medical device classification criteria and control methods for these emerging 
+medical devices. 
+The intended use of Artificial Intelligence (AI) and Machine Learning (ML) technologies 
+will determine whether they will be regulated a s a medical device. The intended use is 
+based on the product specifications and instructions of use along with any information 
+provided by the product developer. 
+If the Artificial Intelligence (AI) and Machine Learning (ML) devices are intended by the 
+Product developer to be used for investigation, detection diagnosis, monitoring, treatment, 
+or management of any medical condition, disease, anatomy or physiological process, it will 
+be classified as a medical device subject to SFDA’s regulatory controls.  
+Examples of Artificial Intelligence (AI) and Machine Learning (ML) technologies that 
+are classified as medical device: 
+ In-vitro diagnostic tools. Artificial Intelligence (AI) and Machine Learning (ML) 
+technology that has the ability to recognize different typ es of cells, quantify, and 
+analyze the results. 
+ AI-based biosensors that predict tendencies and probability of disease, the device 
+may provide information of dangerous vital signals and give recommendations for 
+health improvement. 
+ 
+ 
+ 
+  
+MDS-G-010-V1/230103 
+B. Regulatory approach to Artificial Intelligence (AI) and Machine Learning (ML) 
+medical devices 
+ 
+Premarket Review Considerations 
+The manufacturer (developer) of Artificial Intelligence (AI) and Machine Learning (ML) 
+based medical devices or  in vitro diagnostics is expected to meet the technical 
+documentation required for Medical Devices Marketing Authorization that is specified 
+within MDS-REQ 1, Annex (3) Medical Device Technical Documentation, or Annex (4) 
+IVD Technical Documentation, which list them as follow: 
+1) Device Description and Specification, Including Variants and Accessories. 
+2) Information to be provided by the Manufacturer. 
+3) Design and Manufacturing Information. 
+4) Essential Principles of Safety and Performance. 
+5) Benefit-Risk Analysis and Risk Management. 
+6) Product Verification and Validation. 
+7) Post Market Surveillance Plan. 
+8) Periodic Safety Update Report and Post Market Surveillance Report 
+Special consideration: 
+When a manufacturer is conducting verification and validation testing, the nature and 
+extent of the validation depends upon the risks associated with the device, the intended 
+purpose, the anticipated use of the device in the digital health system, and the intended use 
+of the device, Documentation which demonstrates the following performance testing 
+should be included in the submission:  
+ Verification that the device meets its design specifications;  
+ Validation that the device performs as intended;  
+  
+MDS-G-010-V1/230103 
+ Usability study that verify that the information provided to the user to connect to 
+the device and to allow the user to ensure that the connection has been made 
+correctly; and  
+ Validation that the device will perform safely and within specification when used 
+under normal conditions and abnormal conditions  that are reasonably likely to 
+occur (e.g. receives data outside of specification, connected to an unintended device 
+or system). 
+ 
+Intended use 
+ 
+Medical devices are classified based on their intended use and degree o f potential risk to 
+human body upon use in accordance with the Medical Devices Marketing Authorization 
+requirements that are specified within MDS-REQ 1, Annex (5) Risk Classification Rules 
+for Medical Devices”. 
+In accordance with Article (1) of the Medical  Devices Law, a medical device means Any 
+instrument, apparatus, implant, in vitro reagent or calibrator, software, or material used for 
+operating medical devices, or any other similar or related articles, intended to be used alone 
+or in combination with ot her devices for diagnosis, prevention, monitoring, controlling, 
+treatment, or alleviation of disease or injury, or for compensation for an injury; investigation, 
+replacement, modification, or support of the anatomy or of a physiological process; supporting 
+or sustaining life; controlling or assisting conception; sterilization of medical devices and 
+supplies; providing information for medical or personal purposes by means of in vitro 
+examination of specimens derived from the human body; and does not achieve its primary 
+intended action by pharmacological, immunological or metabolic means, but which may be 
+assisted in its intended function by such means. 
+ 
+Clinical Evaluation 
+ 
+There is no internationally aligned framework for the clinical evaluation of  AI/ML-based 
+medical devices. A manufacturer of AI/ML -based medical devices is expected to provide 
+clinical evidence of the device’s safety, effectiveness and performance before it can be 
+placed on the market. 
+  
+MDS-G-010-V1/230103 
+According to IMDRF description of the process of clinica l evaluation explained in the 
+SaMD: Clinical Evaluation guidance, the manufacturer needs to generate evidence to 
+demonstrate a valid clinical association , analytical/technical validation , and clinical 
+validation of AI/ML-based medical device. This clinical evaluation pathway emphasis that 
+this process should be an iterative and continuous as part of the quality management system 
+for AI/ML-based medical devices. The requirements for clinical evaluation apply to all risk 
+categories of AI/ML-based medical devices.  
+To demonstrate a valid clinical association  between the output of AI/ML -based medical 
+device and the targeted clinical condition, the manufacturer need to provide evidence that 
+the device output is clinically accepted based on existing evidence in pu blished scientific 
+literature, original clinical research, and/or clinical guidelines. The manufacturer should 
+demonstrate the relevance of available data to the clinical problem and current clinical 
+practice, and that it aligns with the AI/ML -based medica l device’s intended use. If the 
+manufacturer cannot confirm the scientific validity of the device based on an established 
+body of evidence, new evidence needs to be generated, for example, through conducting 
+secondary data analysis or a clinical trial. Sin ce the evidence underlying the clinical 
+association validity of AI/ML -based medical devices are immature, and due to the low 
+confidence in this evidence as applied to AI/ML -based medical devices, AI/ML -based 
+medical devices often will be classified as having novel clinical association as these devices 
+may involve new inputs or outputs, novel algorithms, new intended target population, or 
+new intended use.  
+Next, the manufacturer of AI/ML-based medical devices should demonstrate the expected 
+analytical/technical validation. The analytical validation evaluates the correctness of input 
+data processing by the AI/ML -based medical devices to create reliable output data. The 
+manufacturer should provide objective evidence that the device specified requirements 
+have been fulfilled, and demonstrate that the device meets its specifications for a specific 
+intended use. This evidence is generally generated during the verification and validation 
+activities as part of the quality management system; usually using labeled ref erence 
+datasets. 
+  
+MDS-G-010-V1/230103 
+Lastly, AI/ML-based medical devices’ manufacturers are expected to demonstrate clinical 
+validation. Clinical validation is a necessary component of clinical evaluation for all 
+AI/ML-based medical devices and it measures the ability of AI/ML-based medical device 
+to yield a clinically meaningful outcome associated to the intended use of the device output 
+in the target population in the context of clinical care. Clinical validation may only be 
+conducted upon successful completion of analytical /technical validation. Clinical validity 
+is evaluated during the development of the AI/ML-based medical device before it is placed 
+on the market (pre -market) and after placement on the market (post -market). The 
+manufacturer can demonstrate the clinical validity by referencing existing data from studies 
+conducted for the same intended use, or if available data references studies conducted for 
+a different intended use, extrapolation of such data can be justified, otherwise, the 
+manufacturer will be required to generate new clinical data for the intended use. 
+The clinical validation should list the data sources that have been evaluated and that both 
+support and contradict the manufacturer claim that the benefits have been achieved. The 
+types of data necessary t o assure safety and effectiveness during the clinical validation, 
+including study design, will depend on the function of the AI/ML -based medical device, 
+the intended use, and the risk it poses to users. Example of metrics of clinical validation in 
+the intended use environment with the intended user include, but not limited to: specificity, 
+sensitivity, positive predictive value (PPV), negative predictive value (NPV), likelihood 
+ratio negative (LR-), likelihood ratio positive (LR+), and clinical usability. The likelihood 
+ratio of a positive result should be as large as possible whereas the likelihood ratio of a 
+negative result should be as small as possible. All metrics, except the likelihoods, are 
+evaluated in the range of 0-1 or in percentage from 0 to 100%: 
+This is a device dependent example, not a rule. 
+Evaluation 
+<0.6 – unsuitable 
+0.61 - 0.8 – revision required 
+> 0.81 – admissible for clinical validation 
+ 
+  
+MDS-G-010-V1/230103 
+Certain AI/ML-based medical devices may require independent review of the results of the 
+clinical evaluation to ensure that the AI/ML-based medical device is clinically meaningful 
+to users. In this case, the clinical evaluation of the AI/ML -based medical device should, 
+where possible or as far as possible, be reviewed by  someone who has not been 
+significantly involved in the development of the AI/ML -based medical device, and who 
+does not have anything to gain from the device, and who can objectively assess the device’s 
+intended purpose and the conformity with the overall clinical evaluation evidence. The 
+level of evaluation and independent review should be proportionate with the risk posed by 
+the AI/ML-based medical device. 
+If the  clinical evaluation  is based on a comparator device, the manufacturer must 
+demonstrate sufficient clinical and technical equivalence of the other device, including 
+explicit evaluation of the AI/ML algorithm/model. Manufacturers that cannot demonstrate 
+equivalence must have sufficient evidence or conduct clinical trials to establish and verify 
+clinical safety and effectiveness. 
+Since there are no international standards for the clinical evaluation of AI/ML-based 
+medical devices, the minimum standards and good practice for clinically evaluating 
+AI/ML-based medical devices as partially adapted from WHO: 
+ The manufacturer should assess whether the promised medical benefit is achieved is 
+consistent with the state of the art. 
+ The manufacturer should list alternative methods, technologies and/or procedures and 
+compares these alternatives with respect to cli nical benefits, safety/risks, and 
+performance. 
+ The manufacturer should assess whether the promised medical benefit is achieved 
+with the quality parameters. 
+ The outcomes assessed should be pre -defined by manufacturers and should be 
+reported using standard p erformance metrics for the specific field to facilitate 
+comparisons across studies. 
+  
+MDS-G-010-V1/230103 
+ Manufacturers should provide assurance that metrics of effectiveness and safety 
+include outcomes that are meaningful to patients and clinical outcome, i.e. 
+measures of improvement in patient outcomes, clinical process or time efficiency, 
+measures of acceptable unintended consequences, and absence of harm to patients. 
+ Manufacturers are advised to evaluate user and system elements, this may include 
+assessments of: 
+ Acceptability and changes in user’s experience. 
+ Human-computer interactions, including how the output is interpreted and 
+actioned. 
+ Human factors surrounding its use, i.e. account for user variability (such as the 
+learning curve, understanding, trust, and behaviors) and the added biases occurring 
+as a result. 
+ Variance in practice settings. 
+ Wider impact on care pathways. 
+ Analytical validation should be done using large independent reference dataset 
+reflecting the intended purpose and the diversity of the inte nded population and 
+setting. The reference dataset should meet the following requirements unless there is 
+sufficient evidence to show that a requirement does not need to be met: 
+1. The normal -to-abnormal ratio should reflect the prevalence of the target 
+condition in the population; 
+2. Several medical centers should source the reference dataset to introduce the data 
+heterogeneity; 
+3. Demographic, socio-economic characteristics and basic health indicators in the 
+reference dataset should correspond to the population’s average characteristics 
+in the target region; 
+  
+MDS-G-010-V1/230103 
+4. The proposed size of the reference dataset should be justified per statistical 
+considerations, and the desired diagnostic accuracy by the standard metrics 
+indicated above; 
+5. Reference datasets used in clinical te sts for registering the device as a medical 
+device should not be publicly available (to exclude the possibility of training AI 
+algorithms on reference datasets). 
+ The manufacturer should generate evidence on device performance that can be 
+generalized to the entire intended population, demonstrating that performance will not 
+deteriorate across populations and sites: 
+ Conduct multisite clinical investigation that account for variations on different 
+sites and allow identification of unintended bias and reliability. 
+ Analyze the performance of the model for appropriate subgroups, i.e. 
+demographics, geographic location, disease subtype, etc. The statistical 
+distribution of data must correspond to the real environment. 
+ Demonstrate adequacy of the sample size and power calculation. 
+ Consider the effects of confounding factors. 
+ The manufacturer of  AI/ML-based medical devices should test performance by 
+comparing it to gold standard, i.e. the reference standard that is being used to evaluate 
+the model has to be evidence-based, demonstrating that the results are repeatable and 
+reproducible in different settings. 
+ The effects of AI/ML-based medical devices should be evaluated in clinically relevant 
+conditions, i.e. this requires integration into the existing clinical workflow with a 
+platform to collect, store, and process data, and to deliver the outputs to users in a 
+timely manner. This will provide assurance that AI/ML -based medical devices are 
+safe, effective and performant – not just under test conditions but in the real world. 
+ Because AI/ML -based medical devices aim to enhance users’ performance, not to 
+replace them, evaluation of model performance in efficacy/effectiveness studies 
+requires comparisons of clinicians’ performance with and without the AI/ML -based 
+  
+MDS-G-010-V1/230103 
+medical device; not the performance of clinicians versus AI/ML-based medical device 
+alone, in order to demonstrate the impact of the device on clinical practice.  
+ Manufacturers in their study design should consider proactively the effects that their 
+studies may have o n healthcare organizations and potentially explore the possibility 
+of prospective real -world studies in order to minimize selection bias, have more 
+control over variables and data collection, and examine multiple outcomes. The 
+majority of published evidenc e to date has consisted of early phase retrospective 
+validation studies which are in fact in silico (i.e. performed by computer, as opposed 
+to in vivo) assessments of datasets used to test performance accuracy of AI/ML-based 
+medical devices’ algorithms. 
+ Report the result of the clinical investigation using AI -specific reporting guidelines 
+and standards. 
+ The manufacturer should locally validate the AI/ML -based medical devices that 
+developed and approved in other jurisdictions. 
+ AI/ML-based medical device is  unique in its ability for continuous learning, hence, 
+manufacturers are required to use post -market continuous monitoring of safety, 
+effectiveness, and performance to gather and validate relevant performance 
+parameters and metrics for the AI/ML -based medical device in real -world setting in 
+order to understand and modify software based on real-world performance.  
+ 
+  
+  
+MDS-G-010-V1/230103 
+Risk Management 
+ 
+The implementation of new technologies such as Artificial intelligence (AI) and Machine 
+Learning (ML) may present risks that c ould jeopardize patient health and safety, increase 
+inequalities and inefficiencies, undermine trust in healthcare, and adversely impact the 
+management of healthcare. Thus, in line with SFDA “Requirements for Medical Devices 
+Marketing Authorization (MDS-REQ 1)” manufacturers are required to demonstrate that 
+their medical devices do not pose unacceptable risks, and that the benefits of their intended 
+use outweigh the overall residual risk. 
+Since Artificial intelligence (AI) and Machine Learning (ML) are soft ware-driven, the 
+unique or elevated risks are those around data management, feature extraction, algorithm 
+training, model evaluation, and cyber and information security. Safety risk may be 
+introduced by Machine learning systems by learning incorrectly, making wrong inferences, 
+and then recommending or initiating actions that, instead of better outcomes, can lead to 
+harm. Occasionally, machine learning systems detect correlations in data sets instead of 
+causations, which can lead to incorrect conclusions. 
+The fundamental requirements for safety should include results of the evaluations 
+regarding the limitations and the performance of the ML algorithm that may not produce 
+100% accuracy and the necessary training of human personnel for an adequate management 
+of the algorithm errors. Thus, data scientists should be included in the cross -functional 
+team that perform risk management tasks. 
+There should be a risk management plan that includes: 
+  The scope of risk management activities 
+  Assignment of responsibilities 
+  Requirements for review of the activities 
+  Risk acceptability criteria 
+  Method to evaluate overall residual risk 
+ Activities of the implementation and effectiveness of the risk control measures 
+  Activities to collect and review post-production information 
+  
+MDS-G-010-V1/230103 
+ The criteria used to trigger an update, risk management of the update process itself, 
+and provisions for returning the product to a previous version if necessary 
+ For ML-based medical devices that communicate with other devices or IT systems, 
+the scope of the plan should include risks related interoperability. 
+ Cyber security risks 
+Risk analysis should include the following questions about ML medical device and explore 
+the risks associated with each: 
+ Does the software provide diagnostic or treatment recommendations?  
+ If so, how significant is the information in influencing the user? 
+ What is the target population of the device (e.g., is the patient condition non -
+serious, serious, or critical? 
+ Which is the urgency/emergency of the information provided? 
+ Does the algorithm provide options and likelihood of appropriateness? 
+ Are errors detectable? 
+ What autonomous functions, if any, does the system provide? Is the algorithm 
+configurable  
+ Does the ML-enabled medical device have the ability to learn over time? 
+ Is the device capable of adjusting its performance characteristics over time? 
+ What are potential off-label uses of the device? What are the potential foreseeable 
+misuse? 
+ Are there contra -indications due to restricted patient's conditions in data used to 
+train, test, and validate the ML? 
+ Is the system intended to learn over time, and if so, is there any potential impact to 
+the intended use? 
+ 
+Additional risks that should be taken into consideration include: failure to act (the user does 
+not have confidence in the ML), data (or use) drift (locked ML that performed well a decade 
+ago might not perform as well today), abundance of data but a lack of knowledge and 
+Fragmented data throughout different formats 
+  
+MDS-G-010-V1/230103 
+ Where the probability of occurrence cannot be estimated (which can often be the 
+case for ML applications), the risk should be estimated based on the severity of 
+possible harm alone 
+ Risk controls for data collected by MD -based medical devices should include 
+process activities through the data lifecycle such as ensuring the data is complete, 
+correct, and consistent (affecting data integrity), as well as ensuring data is the best 
+representative data at that time. 
+ Operational risk controls are features in the software itself that directly interact with 
+the user (e.g., human oversight.). 
+ Design of the human user interface should be reviewed to ensure this does not 
+introduce bias or unduly influence the user. 
+ For autonomous systems, there might be a need for a hand -off s trategy where 
+control is passed from the system to the user. 
+ Risk management review according to Clause 9 of ISO 14971:2019 and essential 
+principles 3,4,5 and 8 should be performed before commercial release of the ML -
+based medical device 
+Source: AAMI CR34971:2022,  Guidance on the Application of ISO 14971 to Artificial Intelligence and Machine 
+Learning,   
+  
+MDS-G-010-V1/230103 
+Quality Management Systems  
+ 
+The AI/ML device shall be designed and manufactured, and monitored in accordance with 
+Medical Devices Quality Management System (ISO 13485) to document and implement 
+all processes, reduce mistakes, and guarantee continues quality and safety of the device. 
+The Quality Management System in place shall ensures compliance with this Regulation. 
+QMS and Regulatory requirements: The organization, which designs and deploys the 
+AI/ML, is responsible for implementing the QMS, which include developing a quality 
+policy, quality objectives, procedures, and project-specific plans that are customer focused. 
+It is also required to provide the appropriate level of resources (including people, tools, 
+environment, etc.), needed for ensuring the effectiveness of the AI/ML lifecycle processes 
+and activities in meeting SFDA regulation and customer requirements.  
+Human resources: It is important to ensure that personnel who are assigned to AI/ML 
+projects should be competent in performing their jobs. For AI/ML, such a team should have 
+competencies in technology and software engineering including an understanding of the 
+clinical aspects of the use of the software. 
+Infrastructure: Such as equipment, information, communication networks, tools, and the 
+physical facility, etc., should be made available throughout AI/ML li fecycle processes. 
+Such infrastructure is used to support the development, production, and maintenance of 
+AI/ML and consequently needs to be provided and maintained.  
+Traceability: The QMS shall assist the organization to produce a systematic documentation 
+of the AI/ML and its supporting design and development, including a robust and 
+documented configuration and change management process, and identifying its constituent 
+parts, to provide a history of changes made to it, and to enable recovery/recreation of past 
+versions of the software, i.e., traceability of the AI/ML. 
+Measurement and Monitoring: Post market surveillance including monitoring, 
+measurement and analysis of quality data can include logging and tracking of complaints, 
+clearing technical issues, d etermining problem causes and actions to address, identify, 
+collect, analyze, and report on critical quality characteristics of products developed. 
+  
+MDS-G-010-V1/230103 
+Aspects important for the measurement, analysis, and improvement of AI/ML processes 
+and products can include: 
+- Evaluation of the AI/ML and its lifecycle processes should be based on defined 
+responsibilities and predetermined activities including using leading and lagging 
+safety indicators and collecting and analyzing appropriate quality data. 
+- Corrections and corrective actions may be required when a process is not correctly 
+followed or the AI/ML does not meet its specified requirements. 
+- Nonconforming AI/ML should be contained to prevent unintended use or delivery. 
+The detected nonconformity should be analyzed and actions taken to eliminate the 
+detected nonconformity (i.e., correction); and to identify and eliminate the cause(s) 
+of the detected nonconformity (i.e., corrective action) to prevent recurrence of the 
+detected nonconformity in the future. 
+- Actions taken to  address the cause of AI/ML nonconformities, as well as actions 
+taken to eliminate potential AI/ML nonconformities, should be verified/validated 
+before AI/ML release and should be evaluated for effectiveness. 
+- Lessons learned from the analysis of past proje cts, including the results from 
+internal or external audits of the AI/ML lifecycle processes, can be used to improve 
+the safety, effectiveness, and performance of AI/ML. The manufacturer should also 
+have processes in place for reporting adverse events to the SFDA, the collection of 
+active and passive post market surveillance information in order to make 
+appropriate decisions relating to future releases.  
+- After the product is in the market, it is important to maintain vigilance for 
+vulnerability to intentional and unintentional security threats as part of post market 
+surveillance. 
+  
+  
+MDS-G-010-V1/230103 
+Change Notification  
+ 
+ According to SFDA “ Requirements for Medical Devices Marketing Authorization 
+(MDS-REQ 1)” , the SFDA shall be informed, via the electronic system “GHAD”, 
+within (10) days of the occurrence any significant change to the relevant information 
+or (30) non-significant change". 
+ Major/Significant change: It could reasonably be expected to directly affect the safety 
+or effectiveness of a device. 
+ Minor/Non-significant change: It could reasonably be expected to indirectly affect the 
+safety or effectiveness of a device. 
+ Manufacturer shall have procedures within the manufacture’s QMS for evaluating the 
+changes and shall cover: 
+ Change control  
+ Categorizing the changes as significant or not.  
+ Informing the SFDA of the changes. 
+ All changes shall be evaluated, verified and validated according to the accepted 
+procedures in the manufacturer’s QMS 
+ Changing that could not reasonably be expected to affect the safety or effectiveness of 
+a device shall be updated at the time of renew the MDMA certificates. 
+  
+  
+MDS-G-010-V1/230103 
+ Manufacturer shall fill the below form and submit it to SFDA: 
+ Table 1 Version Control Method 
+Medical Device Model:  
+ Description of Change Major or 
+Minor 
+Date and Reason for 
+changes 
+Relevant 
+Document 
+1  
+ 
+ 
+ 
+   
+2  
+ 
+ 
+ 
+   
+3  
+ 
+ 
+ 
+   
+ 
+For more information, kindly see the SFDA Guidance on MDMA Significant and Non-
+Significant Changes. 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+MDS-G-010-V1/230103 
+ 
+ 
+ 
+ 
+ 
+ 
+Annexes   
+  
+MDS-G-010-V1/230103 
+Annex (1): Definitions & Abbreviations 
+ 
+ 
+KSA Kingdom of Saudi Arabia 
+SFDA Saudi Food and Drug Authority 
+MDS Medical Devices Sector 
+Manufacturer Means any natural or legal person with responsibility for design and 
+manufacture of a medical device with the intention of making it 
+available for use, under his name; whether or not such a medical 
+device is designed and/or manufactured by that person himself or on 
+his behalf by another person. 
+Authorized 
+Representative 
+(AR) 
+Means any natural or legal person established within the KSA who 
+has received a written mandate from the manufacturer to act on his 
+behalf for specified tasks including the obligation to represent the 
+manufacturer in its dealings with the SFDA. 
+Artificial 
+Intelligence 
+(AI) 
+ Technology that realizes some or all of intellectual abilities 
+(intelligence) of human such as recognition and learning based on 
+methods including machine learning using a computer 
+AI-based 
+Medical 
+Devices 
+ Medical devices that support the work for medical professionals by 
+diagnosing, managing or predicting diseases based on analysis of 
+medical big data with AI technology 
+Artificial 
+intelligence 
+system (AI 
+system) 
+Engineered system that generates outputs su ch as content, forecasts, 
+recommendations or decisions for a given set of human -defined 
+objectives.  
+Machine 
+Learning (ML) 
+is an artificial intelligence technique that can be used to design and 
+train software algorithms to learn from and act on data. Soft ware 
+developers can use machine learning to create an algorithm that is 
+‘locked’ so that its function does not change, or ‘adaptive’ so its 
+behaviour can change over time based on new data.  
+Genetic 
+algorithm GA 
+Algorithm which simulates natural selection by creating and evolving 
+a population of individuals (solutions) for optimization problems. 
+(ISO) 
+Machine 
+learning 
+algorithm 
+Algorithm to determine parameters of a machine learning model from 
+data according to given criteria.  
+  
+MDS-G-010-V1/230103 
+Reference 
+Standard 
+It is a result of checking whether a certain disease or condition wants 
+to diagnose or predict exists or not 
+Prospective 
+study 
+ It is a method to trace changes for a certain period of time after pre -
+setting factors (risk factors) to be studied, observing the cha nges 
+caused by risk factors. 
+Retrospective 
+study 
+It is a method of conducting a study without direct contact with study 
+subjects. It is a clinical trial conducted to verify the safety and 
+effectiveness of medical devices using medical data of subjects 
+obtained through previous medical care or clinical trials rather than 
+recruiting subjects. 
+ 
+Further Relevant Reading Materials 
+o Software as a Medical Device (SaMD): Key Definitions (IMDRF/SaMD 
+WG/N10FINAL:2013) 
+o Software as a Medical Device (SaMD): Possible Framework for Risk Categorization and 
+Corresponding Considerations (IMDRF/SaMD WG/N12FINAL:2014) 
+o Software as a Medical Device (SaMD): Application of Quality Management System 
+(IMDRF/SaMD WG/N23 FINAL:2015) 
+o Software as a Medical Device (SaMD): Clinical Evaluation (SaMD WG (PD1)/N41R3) 
+o  Guideline on Review and Approval of Artificial Intelligence(AI) and big data-based 
+Medical Devices (For Industry), Republic of Korea, Ministry of Food and Drug Safety. 
+o Proposed Regulatory Framework for Modifications to Artificial Intelligence/Machine 
+Learning (AI/ML)-Based Software as a Medical Device (SaMD), FDA. 
+ 
+ 

@@ -1,0 +1,18 @@
+CURATED EXTRACT - Ehalati Referral Program
+Issuer: Ministry of Health, Medical Referrals Centre
+Source: https://www.moh.gov.sa/en/Ministry/Structure/Programs/Referral/Pages/FAQ.aspx
+NOTE: Curated summary of verified content, not the official text.
+
+PROGRAMME. Ehalati is the national electronic medical referral programme, operated through the Saudi Medical Appointments and Referrals Centre (SMARC). Launched 2012; SMARC established 2019; unified platform inaugurated 19 May 2024. Hotline 937.
+
+REFERRAL URGENCY CATEGORIES AND TIME STANDARDS (as published by MOH):
+- Life-saving: immediate, via the 24 hour hotline.
+- Emergency: maximum 24 hours.
+- Routine inpatient: maximum 3 days.
+- Routine outpatient: maximum 7 days.
+
+DISCREPANCY WARNING. Peer-reviewed literature (Healthcare 2025;13(16):1945) reports different standards for the same categories: emergency maximum 72 hours, routine inpatient maximum 2 weeks, routine outpatient maximum 4 weeks. Any citation of a service level standard must acknowledge this discrepancy.
+
+CARE HIERARCHY. Referrals move through a four-level hierarchy of care.
+
+CONTENT STANDARD - VERIFIED ABSENCE. The programme publishes time standards governing how quickly a referral must be responded to. No published national standard defines what content a referral document must contain in order to be complete. This absence is recorded as gap G11 and is directly material to any system that scores referral completeness.

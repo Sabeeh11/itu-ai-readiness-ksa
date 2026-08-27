@@ -1,0 +1,153 @@
+{
+  "_warning": "SYNTHETIC DATA. Every record below is invented for demonstration. No real patient, clinician, facility record or identifier is represented. Identifier values are deliberately patterned (repeating digits, sequential blocks) so they cannot collide with real Saudi National ID or Iqama numbers. Field structure follows what the published SMARC literature reports the Ehalati system captures; the actual MOH form is not public, and this is a reconstruction, not a copy.",
+  "_completeness_fields": [
+    "history",
+    "examination",
+    "vital_signs",
+    "investigations",
+    "provisional_diagnosis",
+    "current_treatment"
+  ],
+  "referrals": [
+    {
+      "ref": "RYD-PHC-2026-08-04471",
+      "date": "04/08/2026",
+      "patient": {
+        "name_ar": "محمد عبدالله (اسم افتراضي)",
+        "name_en": "Mohammed A. [SYNTHETIC]",
+        "national_id": "1000000471",
+        "dob": "14/03/1979",
+        "age": 47,
+        "sex": "M",
+        "phone": "+966 500 000 471",
+        "mrn": "PHC-RYD-0098431"
+      },
+      "referring": {
+        "facility": "Primary Healthcare Centre, Al-Nasim, Riyadh",
+        "physician": "Dr. [SYNTHETIC], SCFHS Reg. 00471",
+        "region": "Central"
+      },
+      "requested": {
+        "specialty": "Gastroenterology",
+        "urgency": "Routine - outpatient",
+        "bed_type": "OPD",
+        "reason": "Subspecialty not available at referring facility"
+      },
+      "clinical": {
+        "presenting_complaint": "Epigastric pain 3/12, worse post-prandial",
+        "history": "",
+        "examination": "",
+        "vital_signs": "BP 138/86, HR 78, T 37.1",
+        "investigations": "",
+        "provisional_diagnosis": "",
+        "current_treatment": ""
+      },
+      "free_text": "Pt seen after Friday prayer, known to clinic. Brother of the mayor of Al-Quwayiyah - asked to be seen quickly. Previously managed at Al-Quwayiyah General before moving to Riyadh. No red flags noted."
+    },
+    {
+      "ref": "EAS-PHC-2026-08-01192",
+      "date": "11/08/2026",
+      "patient": {
+        "name_ar": "نورة سعد (اسم افتراضي)",
+        "name_en": "Noura S. [SYNTHETIC]",
+        "national_id": "1000001192",
+        "dob": "02/11/1994",
+        "age": 31,
+        "sex": "F",
+        "phone": "+966 500 001 192",
+        "mrn": "PHC-DMM-0114982"
+      },
+      "referring": {
+        "facility": "Primary Healthcare Centre, Al-Rakah, Dammam",
+        "physician": "Dr. [SYNTHETIC], SCFHS Reg. 01192",
+        "region": "Eastern"
+      },
+      "requested": {
+        "specialty": "Rheumatology",
+        "urgency": "Routine - outpatient",
+        "bed_type": "OPD",
+        "reason": "Subspecialty not available at referring facility"
+      },
+      "clinical": {
+        "presenting_complaint": "Bilateral hand joint pain and morning stiffness > 1 hour, 4/12",
+        "history": "No trauma. No psoriasis. Mother with RA.",
+        "examination": "Symmetrical MCP and PIP swelling, both hands. No nodules.",
+        "vital_signs": "BP 118/74, HR 72, T 36.8",
+        "investigations": "ESR 48, CRP 21, RF pending, anti-CCP pending",
+        "provisional_diagnosis": "Suspected inflammatory arthropathy, ?RA",
+        "current_treatment": "Ibuprofen 400mg TDS PRN"
+      },
+      "free_text": "Requesting early rheumatology assessment given inflammatory markers and family history."
+    },
+    {
+      "ref": "WES-PHC-2026-08-00733",
+      "date": "18/08/2026",
+      "patient": {
+        "name_ar": "عبدالرحمن (اسم افتراضي)",
+        "name_en": "Abdulrahman [SYNTHETIC]",
+        "national_id": "1000000733",
+        "dob": "27/07/1962",
+        "age": 63,
+        "sex": "M",
+        "phone": "0500000733",
+        "mrn": "PHC-JED-0073312"
+      },
+      "referring": {
+        "facility": "Primary Healthcare Centre, Al-Safa, Jeddah",
+        "physician": "Dr. [SYNTHETIC], SCFHS Reg. 00733",
+        "region": "Western"
+      },
+      "requested": {
+        "specialty": "Cardiology",
+        "urgency": "Emergency",
+        "bed_type": "CCU",
+        "reason": "Subspecialty not available at referring facility"
+      },
+      "clinical": {
+        "presenting_complaint": "Central chest pain, 2 hours, radiating to left arm",
+        "history": "",
+        "examination": "",
+        "vital_signs": "BP 96/58, HR 112, SpO2 94%",
+        "investigations": "",
+        "provisional_diagnosis": "",
+        "current_treatment": ""
+      },
+      "free_text": "Sending urgently. Patient is the only dialysis technician at the Al-Lith unit, colleagues aware."
+    },
+    {
+      "ref": "NOR-PHC-2026-08-00218",
+      "date": "22/08/2026",
+      "patient": {
+        "name_ar": "فاطمة (اسم افتراضي)",
+        "name_en": "Fatimah [SYNTHETIC]",
+        "national_id": "1000000218",
+        "dob": "09/05/2015",
+        "age": 11,
+        "sex": "F",
+        "phone": "+966 500 000 218",
+        "mrn": "PHC-ARR-0021845"
+      },
+      "referring": {
+        "facility": "Primary Healthcare Centre, Arar",
+        "physician": "Dr. [SYNTHETIC], SCFHS Reg. 00218",
+        "region": "Northern"
+      },
+      "requested": {
+        "specialty": "Paediatric Endocrinology",
+        "urgency": "Routine - inpatient",
+        "bed_type": "Ward",
+        "reason": "Subspecialty not available at referring facility"
+      },
+      "clinical": {
+        "presenting_complaint": "Polyuria, polydipsia, weight loss 6/52",
+        "history": "No family history of diabetes. Otherwise well.",
+        "examination": "Thin, well hydrated. No acanthosis.",
+        "vital_signs": "BP 102/64, HR 88, T 36.9",
+        "investigations": "Random glucose 16.8 mmol/L, urine ketones +",
+        "provisional_diagnosis": "New presentation, likely type 1 diabetes",
+        "current_treatment": "None started - referred same day"
+      },
+      "free_text": "Family travelled from the border settlement; father works at the crossing. Requesting paediatric endocrine review."
+    }
+  ]
+}

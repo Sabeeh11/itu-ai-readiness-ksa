@@ -1,0 +1,31 @@
+CURATED EXTRACT - Recommendation ITU-T Y.3172: Architectural framework for machine learning in future networks including IMT-2020
+Issuer: ITU-T Study Group 13. Approved 22 June 2019. Edition 1.0. Unique ID 11.1002/1000/13894.
+Source: https://www.itu.int/rec/T-REC-Y.3172/en
+NOTE: Curated summary of the Recommendation's architectural components. The ITU link is a landing page; the full Recommendation is downloaded separately.
+
+MACHINE LEARNING PIPELINE (clause 3.2.5). A set of logical nodes, each with specific functionalities, that can be combined to form a machine learning application in a telecommunication network. The nodes are managed in a standard manner and can be hosted in a variety of network functions.
+
+THE NODES (clause 8.1):
+- SRC (source): the source of data used as input to the ML pipeline.
+- C (collector): responsible for collecting data from one or more SRC nodes. A collector may have the capability to configure SRC nodes, controlling the nature, granularity and periodicity of the data generated.
+- PP (preprocessor): responsible for cleaning data, aggregating data, or performing any other preprocessing needed for the data to be in a suitable form for the ML model to consume.
+- M (model): the machine learning model, in a form usable in a machine learning pipeline.
+- P (policy): enables the application of policies to the output of the model node. Used to minimise impact when ML output is applied to a live underlay network; specific rules may be put in place by an operator to safeguard the network.
+- D (distributor): responsible for identifying the SINK nodes and distributing the output of the M node to them. May have the capability to configure SINK nodes.
+- SINK: the target of the ML output, on which it takes action.
+
+Each node has a service egress point (producer role) and a service ingress point (consumer role).
+
+MACHINE LEARNING FUNCTION ORCHESTRATOR, MLFO (clause 3.2.2, 8.1). A logical node with functionalities that manage and orchestrate the nodes of ML pipelines based on ML Intent and dynamic network conditions. The MLFO selects and reselects the ML model based on performance, determines placement of pipeline nodes based on network capabilities and application constraints, and provides chaining functionality connecting nodes to form a pipeline.
+
+ML INTENT. A declarative description used to specify an ML application. ML Intent does not specify any technology-specific network functions and provides a basis for mapping ML applications to diverse technology-specific network functions.
+
+MACHINE LEARNING SANDBOX (clause 3.2.6, 8.1). An isolated domain allowing the hosting of separate ML pipelines to train, test and evaluate them before deploying them in a live network. The sandbox can use data generated from simulated underlay networks and from live networks. It is designed to prevent an ML application from affecting the network, or to restrict the usage of certain ML functionalities.
+
+MULTILEVEL DISTRIBUTION (clause 8.2). Deployment of an ML pipeline in future networks may span different levels. Reference points between nodes located in different levels allow ML pipeline multilevel distribution - for example distributing the pipeline across user equipment, an access network and a core network. Decoupling of node location from node functionality is achieved through placement and chaining mechanisms.
+
+THREE SUBSYSTEMS OF THE HIGH-LEVEL ARCHITECTURE (clause 8.2): the management subsystem (containing the MLFO and other management and orchestration functions), the ML pipeline subsystem, and the ML sandbox subsystem.
+
+DATA HANDLING REFERENCE POINTS. Defined between the ML pipeline and the simulated or live underlay networks, so that any impact on the underlay network is localised to the source of data and the target of configurations.
+
+RELEVANCE TO THIS SUBMISSION. Y.3172 supplies the seven-node vocabulary against which the governance corpus is mapped. Three candidate extensions are proposed in the report: a privacy obligation attached to the PP node; guidance on which node boundary a data-residency requirement should be enforced at in a multilevel deployment; and a distinction between advisory and blocking enforcement at the P node.

@@ -1,0 +1,17 @@
+CURATED EXTRACT - Implementing Regulations of the Personal Data Protection Law (2023)
+Issuer: Saudi Data & AI Authority (SDAIA). In force 14 September 2023; enforcement from 14 September 2024.
+Source: https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PDPL2
+NOTE: Curated summary of verified provisions, not the official text. The official regulations are published in Arabic.
+
+ARTICLE 26 - PROCESSING OF HEALTH DATA. Article 26 is dedicated to the processing of health data and imposes the following requirements on any entity processing health data:
+
+1. Adoption of the procedures and controls issued by the Ministry of Health governing health data processing.
+2. Segregation of duties and establishment of access hierarchies that prevent overlap of access privileges between roles.
+3. Documentation of all stages of health data processing.
+4. Restriction of processing to the minimum necessary to deliver the healthcare or health insurance service in question.
+
+Health data is classified as sensitive personal data under the Law, attracting heightened controls including need-to-know access, data mapping, and data minimisation.
+
+CROSS-BORDER TRANSFER. Transfer of personal data outside the Kingdom is governed by a separate regulation, amended in 2024 to introduce standard contractual clauses and a transfer risk assessment requirement.
+
+RELATIONSHIP TO ANONYMISATION. The Law does not apply to data that has been anonymised such that the data subject can no longer be identified. However the act of anonymising personal data is itself processing and remains within scope of the Law.

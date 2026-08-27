@@ -1,0 +1,14 @@
+CURATED EXTRACT - FG-AI4H DEL7.4: Clinical evaluation of AI for health, Version 1, approved 24 March 2023
+Issuer: ITU-T / WHO Focus Group on Artificial Intelligence for Health
+Source: https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-AI4H-2023-3-PDF-E.pdf
+NOTE: Curated summary of verified content, not the official text.
+
+FOUR EVALUATION PHASES:
+Phase 1 - Model design and purpose. Definition of intended use, target population, clinical question and success criteria.
+Phase 2 - Algorithmic validation. Evaluation on development data and on external test data drawn from a different source than the training data.
+Phase 3 - Clinical validation. Interventional or clinical studies evaluating the model in the intended clinical setting.
+Phase 4 - Deployment and ongoing monitoring, including periodic algorithmic audits.
+
+CROSS-CUTTING. Ethical considerations and economic evaluation apply across all four phases. The deliverable carries an explicit focus on equity in low and middle income countries.
+
+RELATIONSHIP TO NATIONAL REGIMES. The deliverable provides an internationally agreed structure for clinical evaluation of health AI. In the Saudi context there is no national counterpart: IS0304 provides conformance certification for interoperability only, and no Saudi body validates or benchmarks model performance. This absence is recorded as gap G5.

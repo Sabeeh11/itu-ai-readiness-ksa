@@ -1,0 +1,12 @@
+CURATED EXTRACT - CBAHI National Hospital Standards
+Issuer: Saudi Central Board for Accreditation of Healthcare Institutions (CBAHI)
+Source: https://portal.cbahi.gov.sa/english/accreditation-programs/hospital-accreditation-program
+NOTE: Curated summary. CBAHI standards are distributed to accredited and applicant facilities rather than published as a single downloadable instrument, so this entry records their character and relevance rather than their text.
+
+STATUS. CBAHI is the national accrediting body for healthcare facilities in Saudi Arabia. Accreditation is a condition of licensure for hospitals, which makes the standards mandatory in practice.
+
+RELEVANCE TO REFERRAL DOCUMENTATION. The National Hospital Standards include requirements relating to patient transfer and referral, covering the documentation that must accompany a patient moved between facilities, continuity of care, and the completeness of the clinical record at the point of transfer.
+
+WHY THIS INSTRUMENT IS IN THE CORPUS. It is the strongest available challenge to gap G11. Any assertion that Saudi Arabia publishes no referral content requirement must survive the objection that CBAHI imposes transfer documentation requirements. It does survive, but only in a narrowed form, and the narrowing is recorded here rather than left implicit.
+
+WHY IT DOES NOT CLOSE G11. CBAHI requirements are accreditation criteria assessed by periodic survey against a facility's practice. They are not published as a minimum referral dataset - an enumerated, versioned specification of the fields a referral document must carry, against which an individual document could be checked programmatically or disputed field by field. A completeness model cannot be built against a survey criterion. The gap that remains is therefore not "no requirement exists" but "no machine-checkable specification of the requirement is published", which is the form in which G11 is stated throughout this submission.

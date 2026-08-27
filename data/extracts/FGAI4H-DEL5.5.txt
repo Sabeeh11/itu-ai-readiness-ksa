@@ -1,0 +1,13 @@
+CURATED EXTRACT - FG-AI4H DEL5.5: Data handling, March 2023
+Issuer: ITU-T / WHO Focus Group on Artificial Intelligence for Health
+Source: https://www.itu.int/dms_pub/itu-t/opb/fg/T-FG-AI4H-2023-8-PDF-E.pdf
+NOTE: Curated summary of verified content, not the official text.
+
+DATA LIFECYCLE. Governance of create, read, update and delete operations across the data lifecycle.
+SECURITY. Encryption in transit and at rest. Secure data centre hosting. Authentication and role-based access control.
+TEST DATA. Undisclosed test data must remain undisclosed, so that model evaluation is not contaminated. This aligns with the SFDA requirement that clinical test reference datasets not be publicly available.
+OWNERSHIP. Data ownership licence agreements are required between parties.
+INTEROPERABILITY. Four layers of interoperability are described.
+AUDIT. Comprehensive logging of access and processing events is required.
+
+LIMITATION. The deliverable references compliance with GDPR and HIPAA but does not itself detail de-identification techniques or thresholds.

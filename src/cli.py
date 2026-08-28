@@ -109,14 +109,71 @@ def cmd_scenarios() -> None:
         print(f"{DIM}{wrap(s['question'], 6)}{OFF}")
 
 
-def cmd_run(kb: KnowledgeBase, scenario_id: str) -> None:
+def run_scenario(kb: KnowledgeBase, scenario_id: str) -> dict | None:
     data = json.loads((ROOT / "data" / "scenarios.json").read_text(encoding="utf-8"))
     match = next(
         (s for s in data["scenarios"] if s["id"].upper() == scenario_id.upper()), None
     )
     if not match:
+        return None
+
+    concerns = match.get("concerns")
+    findings = []
+    for node in match["nodes"]:
+        node_concerns = concerns or kb.node_concerns[node]
+        for concern in node_concerns:
+            if concern in kb.node_concerns[node]:
+                f = kb.concern_finding(node, concern)
+                if f.covered and not f.method_published:
+                    status = "duty_only"
+                elif f.covered:
+                    status = "covered"
+                else:
+                    status = "not_governed"
+                findings.append(
+                    {
+                        "node": node,
+                        "concern": concern,
+                        "status": status,
+                        "citations": [
+                            {
+                                "doc_id": c.doc_id,
+                                "title": c.title,
+                                "url": c.url,
+                                "binding": c.binding,
+                                "scope_limit": c.scope_limit,
+                                "currency_warning": c.currency_warning,
+                            }
+                            for c in f.citations[:3]
+                        ],
+                        "scoped_out": [
+                            {
+                                "doc_id": doc_id,
+                                "title": kb.docs[doc_id]["title"],
+                                "url": kb.docs[doc_id]["url"],
+                                "scope_limit": kb.docs[doc_id]["scope_limit"],
+                            }
+                            for doc_id in f.scoped_out
+                        ],
+                    }
+                )
+
+    unmet = [f for f in findings if f["status"] != "covered"]
+    return {
+        "scenario": match,
+        "findings": findings,
+        "unmet_count": len(unmet),
+        "total_count": len(findings),
+        "expected_finding": match["expected_finding"],
+    }
+
+
+def cmd_run(kb: KnowledgeBase, scenario_id: str) -> None:
+    result = run_scenario(kb, scenario_id)
+    if not result:
         print(f"No scenario {scenario_id}. Try: python3 src/cli.py scenarios")
         return
+    match = result["scenario"]
 
     rule(f"{match['id']}  -  {match['title']}   [{match['kind']}]")
     for i, step in enumerate(match["steps"], 1):
@@ -127,86 +184,45 @@ def cmd_run(kb: KnowledgeBase, scenario_id: str) -> None:
     print(wrap(match["question"]))
 
     print(f"\n{BOLD}KNOWLEDGE BASE CONSULTATION{OFF}")
-    concerns = match.get("concerns")
-    findings = []
-    for node in match["nodes"]:
-        node_concerns = concerns or kb.node_concerns[node]
-        for concern in node_concerns:
-            if concern in kb.node_concerns[node]:
-                findings.append(kb.concern_finding(node, concern))
-
-    for f in findings:
-        if f.covered and not f.method_published:
+    for f in result["findings"]:
+        if f["status"] == "duty_only":
             status = f"{YEL}DUTY IMPOSED, NO METHOD PUBLISHED{OFF}"
-        elif f.covered:
+        elif f["status"] == "covered":
             status = f"{GRN}GOVERNED{OFF}"
         else:
             status = f"{RED}NOT GOVERNED{OFF}"
-        print(f"\n  {f.node} / {f.concern}: {status}")
-        def show_scoped_out():
-            """Instruments squarely on point whose own scope excludes us.
+        print(f"\n  {f['node']} / {f['concern']}: {status}")
 
-            Worth showing either way: when the concern is ungoverned they are
-            the reason it looks covered to a casual reader; when it is
-            governed they still qualify the picture. But they must not lead a
-            GOVERNED line, or the output reads as self-contradictory.
-            """
-            for doc_id in f.scoped_out:
-                doc = kb.docs[doc_id]
+        if f["status"] != "covered":
+            for doc in f["scoped_out"]:
                 line = "- {}: {}  [OUT OF SCOPE: {}]".format(
-                    doc_id, doc["title"], doc["scope_limit"])
+                    doc["doc_id"], doc["title"], doc["scope_limit"])
                 print(f"{DIM}{wrap(line, 6)}{OFF}")
                 print(f"{DIM}{wrap(doc['url'], 8)}{OFF}")
 
-        if not f.covered:
-            show_scoped_out()
-
-        # A document already printed as scope-limited, or as the source of an
-        # unmethodded duty, must not print again from the retrieval hits.
-        duty_docs = set()
-        if not f.method_published:
-            duty_docs = {
-                i for i, d in kb.docs.items()
-                if f.concern in d.get("governs_without_method", [])
-                and d.get("binding") and not d.get("scope_limit")
-            }
-        already = set(f.scoped_out) | duty_docs
-        rest = [c for c in f.citations if c.doc_id not in already]
-
-        if not rest and not f.scoped_out and f.method_published:
+        scoped_ids = {d["doc_id"] for d in f["scoped_out"]}
+        rest = [c for c in f["citations"] if c["doc_id"] not in scoped_ids]
+        if not rest and not f["scoped_out"] and f["status"] == "covered":
             print(f"{DIM}{wrap('No instrument in the corpus addresses this.', 6)}{OFF}")
-
-        if duty_docs:
-            for doc_id in sorted(duty_docs):
-                doc = kb.docs[doc_id]
-                line = "- {}: {}  [IMPOSES THE DUTY, PUBLISHES NO METHOD]".format(
-                    doc_id, doc["title"])
-                print(f"{DIM}{wrap(line, 6)}{OFF}")
-                print(f"{DIM}{wrap(doc['url'], 8)}{OFF}")
-
         for c in rest[:3]:
             flags = []
-            if not c.binding:
+            if not c["binding"]:
                 flags.append("non-binding")
-            if c.scope_limit:
-                flags.append(f"OUT OF SCOPE: {c.scope_limit}")
-            if c.currency_warning:
-                flags.append(f"CURRENCY: {c.currency_warning}")
+            if c.get("scope_limit"):
+                flags.append(f"OUT OF SCOPE: {c['scope_limit']}")
+            if c.get("currency_warning"):
+                flags.append(f"CURRENCY: {c['currency_warning']}")
             suffix = f"  [{'; '.join(flags)}]" if flags else "  [binding, in scope]"
-            print(f"{DIM}{wrap(f'- {c.doc_id}: {c.title}{suffix}', 6)}{OFF}")
-            print(f"{DIM}{wrap(c.url, 8)}{OFF}")
+            print(f"{DIM}{wrap(f'- {c['doc_id']}: {c['title']}{suffix}', 6)}{OFF}")
+            print(f"{DIM}{wrap(c['url'], 8)}{OFF}")
 
-        if f.covered and f.scoped_out:
-            print(f"{DIM}{wrap('Also on point, but excluded by its own scope:', 6)}{OFF}")
-            show_scoped_out()
-
-    unmet = [f for f in findings if not f.covered or not f.method_published]
     print(f"\n{BOLD}FINDING{OFF}")
-    print(wrap(match["expected_finding"]))
-    ok = len(findings) - len(unmet)
+    print(wrap(result["expected_finding"]))
+    unmet = result["unmet_count"]
+    ok = result["total_count"] - unmet
     if unmet:
         print(
-            f"\n{RED}{BOLD}{len(unmet)} of {len(findings)} concerns raised by this "
+            f"\n{RED}{BOLD}{unmet} of {result['total_count']} concerns raised by this "
             f"scenario are either ungoverned or governed without any published method "
             f"of compliance.{OFF}"
             + (f"{DIM}\n  The remaining {ok} {'is' if ok == 1 else 'are'} "

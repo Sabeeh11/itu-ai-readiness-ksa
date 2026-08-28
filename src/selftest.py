@@ -140,6 +140,77 @@ check("every sample id uses the reserved 10000000xx block",
       all(i.startswith("10000") for i in ids), str(ids))
 check("sample file carries a synthetic warning", "SYNTHETIC DATA" in samples["_warning"])
 
+print("\n10. Assessor is deterministic and presets differ")
+from assessor import assess, activate_concerns, load_rules, schema  # noqa: E402
+
+rules = load_rules()
+screening = rules["presets"]["referral_screening"]["values"]
+blocking = rules["presets"]["referral_blocking"]["values"]
+a1 = assess(screening, kb)
+a2 = assess(screening, kb)
+check("same inputs produce identical assessment", a1 == a2)
+check("assessment schema exposes presets", "referral_screening" in schema()["presets"])
+screen_concerns = {c.concern for c in activate_concerns(screening)}
+block_concerns = {c.concern for c in activate_concerns(blocking)}
+check("blocking preset activates advisory_vs_blocking", "advisory_vs_blocking" in block_concerns - screen_concerns)
+check("screening preset activates audit_trail concern", "audit_trail" in screen_concerns - block_concerns)
+check("assessment returns human labels", all("node_label" in f and "concern_label" in f for f in a1["findings"]))
+check("material blockers have human labels",
+      all("node_label" in b and "concern_label" in b for b in a1["material_blockers"]))
+check("pipeline nodes include concern details",
+      all("concerns" in n and isinstance(n["concerns"], list) for n in a1["pipeline"]))
+check("pipeline concerns match activated findings",
+      sum(len(n["concerns"]) for n in a1["pipeline"]) == len(a1["findings"]))
+
+print("\n11. Referral analysis returns structured JSON")
+from referral_demo import analyze_referral, load as load_referrals  # noqa: E402
+
+ref = analyze_referral(load_referrals()["referrals"][0])
+check("referral JSON has completeness", "completeness" in ref and ref["completeness"]["total"] == 6)
+check("referral JSON flags mayor's brother", any("mayor" in c["snippet"].lower() for c in ref["residual_risk"]["candidates"]))
+check("referral JSON has before/after documents",
+      "document_before" in ref and "document_after" in ref)
+check("after document removes identifiers",
+      "REMOVED" in ref["document_after"]["patient"][0][1])
+
+print("\n12. Demo server APIs respond")
+from demo_server import app  # noqa: E402
+
+client = app.test_client()
+endpoints = [
+    ("/api/overview", None),
+    ("/api/assessment/schema", None),
+    ("/api/evidence", None),
+    ("/api/coverage", None),
+    ("/api/readiness", None),
+    ("/api/gaps", None),
+    ("/api/scenarios", None),
+    ("/api/scenarios/S2", None),
+    ("/api/referrals", None),
+    ("/api/referrals/1", None),
+    ("/api/search?q=re-identification+risk+assessment", None),
+    ("/api/corpus", None),
+    ("/api/corpus/export", None),
+    ("/api/methodology", None),
+]
+for path, _ in endpoints:
+    r = client.get(path)
+    check(f"GET {path}", r.status_code == 200 and r.is_json)
+
+post = client.post("/api/assessment", json=screening)
+check("POST /api/assessment", post.status_code == 200 and post.is_json)
+overview = client.get("/api/overview").get_json()
+check("overview corpus count matches kb", overview["corpus_documents"] == len(kb.docs))
+export = client.get("/api/corpus/export").get_json()
+check("corpus export has document_count", export["document_count"] == len(kb.docs))
+
+page = client.get("/")
+check("index page serves", page.status_code == 200 and b"Saudi Health AI Readiness Assessor" in page.data)
+check("methodology endpoint has steps", len(client.get("/api/methodology").get_json()["steps"]) == 5)
+methodology = client.get("/api/methodology").get_json()
+check("methodology has workflow and insights", "workflow" in methodology and "insights" in methodology)
+check("methodology has no negations strip", "negations" not in methodology)
+
 print("\n" + "=" * 62)
 if failed:
     print(f"{len(failed)} CHECK(S) FAILED\n")

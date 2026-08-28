@@ -50,6 +50,19 @@ The shape matters more than the number. SRC and C are almost entirely covered â€
 
 ## Running it
 
+### Browser demo (recommended for judges)
+
+```bash
+pip install -r requirements.txt
+python3 src/demo_server.py           # â†’ http://localhost:8080
+```
+
+The web UI walks through a **5-step guided journey**: what this tool is, describe your deployment, see results with full Y.3172 coverage, proof on a synthetic referral document, and authority-specific recommendations. Click **Start demo tour** for presenter copy. Advanced reference material (full pipeline matrix, corpus search, scenarios) is under **Reference material**.
+
+No API keys, no network at query time, no LLM.
+
+### Command-line tools
+
 ```bash
 pip install -r requirements.txt
 
@@ -62,7 +75,7 @@ python3 src/cli.py ask "re-identification risk assessment"
 
 python3 src/referral_demo.py         # the argument, on a document
 python3 src/referral_demo.py 1       # one referral, in full
-python3 src/selftest.py              # 33 checks: nothing crashes, figures match the report
+python3 src/selftest.py              # checks: nothing crashes, figures match the report
 ```
 
 ### The referral demo
@@ -130,16 +143,20 @@ Retrieval itself is TF-IDF: no API key, no network at query time, no stochastic 
 ## Layout
 
 ```
-data/corpus.json       28 instruments: issuer, binding status, node tags, URLs,
+data/corpus.json       29 instruments: issuer, binding status, node tags, URLs,
                        governs[] (which concerns each instrument actually
                        governs), known gaps, search phrasings
+data/assessment_rules.json  form fields, presets, concern activation rules
 data/extracts/         curated extracts for documents that cannot be fetched
 data/scenarios.json    the five evaluation scenarios
+web/                   browser demo (index.html, styles.css, app.js)
+src/demo_server.py     Flask API + static file server
+src/assessor.py        deterministic governance-readiness assessment
 src/fetch_corpus.py    download and text-extract the corpus
 src/check_corpus.py    report text provenance per instrument
 src/kb.py              chunking, indexing, retrieval, per-concern coverage
 src/gapfinder.py       gap classification and recommendations
-src/cli.py             demo interface
+src/cli.py             command-line demo interface
 output/gap_report.json machine-readable gap register
 ```
 

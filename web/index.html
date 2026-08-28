@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudi Health AI Readiness Assessor</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1>Saudi Health AI Readiness Assessor</h1>
+      <p class="tagline">ITU AI Readiness Hackathon KSA 2026 · Health domain</p>
+    </div>
+    <button id="tour-btn" class="btn btn-accent">Start demo tour</button>
+  </header>
+
+  <div class="stepper-bar" id="stepper-bar">
+    <div class="stepper-track" id="stepper-track"></div>
+    <p class="stepper-label" id="stepper-label">Step 1 of 5 · What is this?</p>
+  </div>
+
+  <nav class="ref-nav">
+    <button type="button" class="btn btn-sources" id="view-sources-btn">Sources &amp; resources</button>
+    <details class="ref-dropdown">
+      <summary>More reference material</summary>
+      <div class="ref-links">
+        <button type="button" data-ref="evidence">Evidence</button>
+        <button type="button" data-ref="pipeline">Full pipeline matrix</button>
+        <button type="button" data-ref="readiness">AI Readiness factors</button>
+        <button type="button" data-ref="scenarios">Scenarios</button>
+        <button type="button" data-ref="search">Search corpus</button>
+        <button type="button" data-ref="corpus">Policy instruments</button>
+      </div>
+    </details>
+  </nav>
+
+  <main id="main">
+    <!-- Step 1 -->
+    <section id="step-1" class="panel active" data-step="1">
+      <p class="step-subtitle" id="subtitle-1"></p>
+      <div id="explain-1" class="explain-box"></div>
+      <div class="two-box">
+        <article class="card workflow-card" id="workflow-box"></article>
+        <article class="card insights-card" id="insights-box"></article>
+      </div>
+      <ul id="insights-list" class="insights-list"></ul>
+      <details class="readiness-path">
+        <summary id="readiness-path-title">What is needed for operational readiness?</summary>
+        <p id="readiness-path-body"></p>
+      </details>
+      <div id="overview-stats" class="stats"></div>
+      <section class="sources-preview">
+        <h3>Published sources</h3>
+        <p class="meta">Evidence and policy instruments cited in this assessment.</p>
+        <div id="sources-preview-list"></div>
+        <button type="button" class="btn" id="view-all-sources">View all 29 policy instruments</button>
+      </section>
+    </section>
+
+    <!-- Step 2 -->
+    <section id="step-2" class="panel" data-step="2">
+      <p class="step-subtitle" id="subtitle-2"></p>
+      <div id="explain-2" class="explain-box"></div>
+      <div class="toolbar">
+        <label>Preset
+          <select id="preset-select"></select>
+        </label>
+        <button id="run-assessment" class="btn btn-primary">Run assessment</button>
+      </div>
+      <details class="advanced-options">
+        <summary>Workflow configuration options</summary>
+        <form id="assessment-form" class="form-grid"></form>
+      </details>
+    </section>
+
+    <!-- Step 3 -->
+    <section id="step-3" class="panel" data-step="3">
+      <p class="step-subtitle" id="subtitle-3"></p>
+      <div id="explain-3" class="explain-box"></div>
+      <div id="results-empty" class="empty">Run an assessment on the previous step to see results here.</div>
+      <div id="results-content" class="hidden">
+        <div class="two-box compact" id="results-framing"></div>
+        <div id="status-legend" class="legend"></div>
+        <div id="executive-summary" class="summary-box"></div>
+        <div id="material-blockers"></div>
+        <div id="pipeline-map"></div>
+        <details class="coverage-note">
+          <summary>How is coverage decided?</summary>
+          <p>Coverage is a curated legal judgment in <code>data/corpus.json</code>, not inferred by search similarity. TF-IDF retrieval supplies supporting passages and citations only.</p>
+        </details>
+        <div class="toolbar">
+          <button id="export-assessment" class="btn">Download assessment JSON</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 4 -->
+    <section id="step-4" class="panel" data-step="4">
+      <p class="step-subtitle" id="subtitle-4"></p>
+      <div id="explain-4" class="explain-box"></div>
+      <div id="data-flow" class="data-flow"></div>
+      <p class="warning">SYNTHETIC DATA — demonstration scenarios only, not training data.</p>
+      <label>Sample referral
+        <select id="referral-select"></select>
+      </label>
+      <div id="referral-detail"></div>
+    </section>
+
+    <!-- Step 5 -->
+    <section id="step-5" class="panel" data-step="5">
+      <p class="step-subtitle" id="subtitle-5"></p>
+      <div id="explain-5" class="explain-box"></div>
+      <div id="gaps-by-authority"></div>
+      <section class="sources-preview">
+        <h3>Published sources</h3>
+        <div id="sources-step5-list"></div>
+        <button type="button" class="btn" id="view-all-sources-5">View all policy instruments with links</button>
+      </section>
+      <h3>AI Readiness factors</h3>
+      <div id="factors-grid" class="cards"></div>
+      <h3>Standards gaps proposed to ITU</h3>
+      <ul id="standards-gaps"></ul>
+      <div class="toolbar">
+        <button id="export-corpus" class="btn">Download knowledge base JSON</button>
+      </div>
+    </section>
+
+    <!-- Reference panels -->
+    <section id="evidence" class="panel ref-panel">
+      <h2>Why this use case matters</h2>
+      <div id="evidence-list"></div>
+      <div id="future-validation" class="card"></div>
+    </section>
+
+    <section id="pipeline" class="panel ref-panel">
+      <h2>Full Y.3172 pipeline coverage (all 35 concerns)</h2>
+      <p id="pipeline-headline" class="headline"></p>
+      <div id="coverage-matrix"></div>
+    </section>
+
+    <section id="readiness" class="panel ref-panel">
+      <h2>AI Readiness dimensions in depth</h2>
+      <div id="dimensions-list"></div>
+    </section>
+
+    <section id="scenarios" class="panel ref-panel">
+      <h2>Evaluation scenarios</h2>
+      <div id="scenario-list" class="cards"></div>
+      <div id="scenario-detail" class="card hidden"></div>
+    </section>
+
+    <section id="search" class="panel ref-panel">
+      <h2>Ask the knowledge base</h2>
+      <div class="toolbar">
+        <input id="search-input" type="text" placeholder="e.g. re-identification risk assessment" />
+        <button id="search-btn" class="btn btn-primary">Search</button>
+      </div>
+      <div id="search-results"></div>
+    </section>
+
+    <section id="corpus" class="panel ref-panel">
+      <h2>Policy knowledge base</h2>
+      <div class="toolbar">
+        <span id="corpus-count"></span>
+      </div>
+      <table id="corpus-table">
+        <thead>
+          <tr><th>Issuer</th><th>Instrument</th><th>Binding</th><th>Provenance</th><th>Link</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="step-footer" id="step-footer">
+    <button id="step-back" class="btn" disabled>Back</button>
+    <button id="step-next" class="btn btn-primary">Start assessment</button>
+  </footer>
+
+  <div id="tour-overlay" class="tour hidden">
+    <div class="tour-card">
+      <p class="tour-step" id="tour-step"></p>
+      <h3 id="tour-title"></h3>
+      <p id="tour-script"></p>
+      <div class="tour-actions">
+        <button id="tour-prev" class="btn">Back</button>
+        <button id="tour-next" class="btn btn-primary">Next</button>
+        <button id="tour-close" class="btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

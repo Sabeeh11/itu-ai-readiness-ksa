@@ -1,0 +1,212 @@
+{
+  "version": "1.0.0",
+  "fields": [
+    {
+      "id": "ai_purpose",
+      "label": "AI purpose",
+      "type": "choice",
+      "options": [
+        {"value": "administrative", "label": "Administrative / document workflow"},
+        {"value": "clinical_support", "label": "Clinical decision support"},
+        {"value": "diagnosis", "label": "Diagnosis or treatment"},
+        {"value": "patient_facing", "label": "Patient-facing communication"}
+      ]
+    },
+    {
+      "id": "health_data",
+      "label": "Processes health data",
+      "type": "boolean"
+    },
+    {
+      "id": "direct_identifiers",
+      "label": "Handles direct identifiers before de-identification",
+      "type": "boolean"
+    },
+    {
+      "id": "free_text",
+      "label": "Processes clinician free text",
+      "type": "boolean"
+    },
+    {
+      "id": "training_data",
+      "label": "Uses historical data for model training",
+      "type": "boolean"
+    },
+    {
+      "id": "deployment",
+      "label": "Deployment location",
+      "type": "choice",
+      "options": [
+        {"value": "on_premises", "label": "On-premises only (Level 1)"},
+        {"value": "saudi_cloud", "label": "Saudi cloud region (Level 2)"},
+        {"value": "hybrid", "label": "Hybrid: de-id on-premises, model in Saudi cloud"},
+        {"value": "cross_border", "label": "Cross-border cloud processing"}
+      ]
+    },
+    {
+      "id": "model_behavior",
+      "label": "Model enforcement",
+      "type": "choice",
+      "options": [
+        {"value": "advisory", "label": "Advisory prompts only"},
+        {"value": "blocking", "label": "Automated rejection or blocking"}
+      ]
+    },
+    {
+      "id": "human_reviewer",
+      "label": "Named human reviewer for flags",
+      "type": "boolean"
+    },
+    {
+      "id": "override_path",
+      "label": "Documented clinician override path",
+      "type": "boolean"
+    },
+    {
+      "id": "audit_trail",
+      "label": "Audit trail for AI-assisted decisions",
+      "type": "boolean"
+    },
+    {
+      "id": "output_audience",
+      "label": "Primary output audience",
+      "type": "choice",
+      "options": [
+        {"value": "clinician", "label": "Referring clinician"},
+        {"value": "coordinator", "label": "Referral coordinator"},
+        {"value": "patient", "label": "Patient"},
+        {"value": "external", "label": "External organisation"}
+      ]
+    },
+    {
+      "id": "device_status",
+      "label": "Regulatory route",
+      "type": "choice",
+      "options": [
+        {"value": "non_device", "label": "Non-device workflow AI"},
+        {"value": "medical_device", "label": "Regulated medical device"},
+        {"value": "unknown", "label": "Unknown / under review"}
+      ]
+    },
+    {
+      "id": "arabic_support",
+      "label": "Arabic language support required",
+      "type": "boolean"
+    },
+    {
+      "id": "dialect_evaluation",
+      "label": "Dialect variation evaluation planned",
+      "type": "boolean"
+    },
+    {
+      "id": "disability_access",
+      "label": "Disability accessibility required",
+      "type": "boolean"
+    }
+  ],
+  "presets": {
+    "referral_screening": {
+      "label": "Ehalati referral screening (default)",
+      "description": "AI-assisted completeness and appropriateness screening before national referral submission. De-identification on-premises; models may run in Saudi cloud.",
+      "values": {
+        "ai_purpose": "administrative",
+        "health_data": true,
+        "direct_identifiers": true,
+        "free_text": true,
+        "training_data": true,
+        "deployment": "hybrid",
+        "model_behavior": "advisory",
+        "human_reviewer": true,
+        "override_path": true,
+        "audit_trail": true,
+        "output_audience": "clinician",
+        "device_status": "non_device",
+        "arabic_support": true,
+        "dialect_evaluation": false,
+        "disability_access": false
+      }
+    },
+    "referral_blocking": {
+      "label": "Competitor: auto-reject referrals",
+      "description": "Same workflow but vendor auto-rejects incomplete referrals with no human review. Used to demonstrate gap G2.",
+      "values": {
+        "ai_purpose": "administrative",
+        "health_data": true,
+        "direct_identifiers": true,
+        "free_text": true,
+        "training_data": true,
+        "deployment": "hybrid",
+        "model_behavior": "blocking",
+        "human_reviewer": false,
+        "override_path": false,
+        "audit_trail": false,
+        "output_audience": "clinician",
+        "device_status": "non_device",
+        "arabic_support": true,
+        "dialect_evaluation": false,
+        "disability_access": false
+      }
+    }
+  },
+  "node_activation": {
+    "always": ["SRC", "C", "PP", "M", "P", "D", "SINK"]
+  },
+  "concern_rules": [
+    {"node": "SRC", "concern": "referral_content_standard", "when": {"ai_purpose": "administrative"}},
+    {"node": "C", "concern": "data_residency", "when": {"deployment": ["saudi_cloud", "hybrid", "cross_border"]}},
+    {"node": "D", "concern": "data_residency", "when": {"deployment": ["cross_border"]}},
+    {"node": "PP", "concern": "anonymisation", "when": {"health_data": true}},
+    {"node": "PP", "concern": "deidentification_method", "when": {"health_data": true, "direct_identifiers": true}},
+    {"node": "PP", "concern": "reidentification_risk", "when": {"health_data": true, "free_text": true}},
+    {"node": "PP", "concern": "minimum_necessary", "when": {"health_data": true}},
+    {"node": "PP", "concern": "indirect_identifiers", "when": {"health_data": true, "free_text": true}},
+    {"node": "M", "concern": "model_validation", "when": {"training_data": true}},
+    {"node": "M", "concern": "dataset_composition", "when": {"training_data": true}},
+    {"node": "M", "concern": "benchmarking", "when": {"training_data": true}},
+    {"node": "M", "concern": "accuracy_certification", "when": {"training_data": true}},
+    {"node": "M", "concern": "bias_evaluation", "when": {"training_data": true}},
+    {"node": "P", "concern": "human_oversight", "when": {"model_behavior": ["advisory", "blocking"]}},
+    {"node": "P", "concern": "override", "when": {"model_behavior": ["advisory", "blocking"]}},
+    {"node": "P", "concern": "advisory_vs_blocking", "when": {"model_behavior": "blocking"}},
+    {"node": "P", "concern": "threshold_justification", "when": {"model_behavior": "blocking"}},
+    {"node": "P", "concern": "audit_trail", "when": {"audit_trail": true}},
+    {"node": "SINK", "concern": "ai_disclosure", "when": {"output_audience": ["clinician", "coordinator", "patient"]}},
+    {"node": "SINK", "concern": "patient_communication", "when": {"output_audience": "patient"}},
+    {"node": "SINK", "concern": "language_accessibility", "when": {"arabic_support": true}},
+    {"node": "SINK", "concern": "impairment_accessibility", "when": {"disability_access": true}},
+    {"node": "SINK", "concern": "duty_to_explain", "when": {"output_audience": ["clinician", "patient"]}}
+  ],
+  "baseline_concerns": {
+    "SRC": ["consent", "medical_confidentiality", "lawful_basis", "data_provenance"],
+    "C": ["infrastructure_reliability", "availability", "cybersecurity", "input_validation"],
+    "M": [],
+    "P": [],
+    "D": ["permitted_purposes", "data_sharing", "marketing_prohibition", "ai_security"],
+    "SINK": [],
+    "PP": []
+  },
+  "rationales": {
+    "referral_content_standard": "Document workflow AI must know what a complete referral contains.",
+    "data_residency": "Cloud or cross-border processing activates residency obligations.",
+    "anonymisation": "Health data leaves the facility only after anonymisation or de-identification.",
+    "deidentification_method": "Direct identifiers are present before the PP stage.",
+    "reidentification_risk": "Free-text clinical narratives may carry indirect identifiers.",
+    "minimum_necessary": "Health data processing must be limited to what is necessary.",
+    "indirect_identifiers": "Clinician free text can re-identify patients after direct-ID removal.",
+    "model_validation": "A trained model requires validation before deployment.",
+    "dataset_composition": "Training on historical referrals raises dataset composition duties.",
+    "benchmarking": "Model performance must be benchmarked against a referent.",
+    "accuracy_certification": "Operational use implies a need to certify accuracy.",
+    "bias_evaluation": "Historical training data may encode regional or documentation bias.",
+    "human_oversight": "AI influences referral routing and therefore requires oversight.",
+    "override": "Clinicians must be able to override AI-assisted routing decisions.",
+    "advisory_vs_blocking": "Blocking enforcement prevents human review of edge cases.",
+    "threshold_justification": "Automated rejection requires a justified operational threshold.",
+    "audit_trail": "The deployment commits to logging AI-assisted decisions.",
+    "ai_disclosure": "Recipients should know when AI contributed to a judgement.",
+    "patient_communication": "Patient-facing outputs require communication governance.",
+    "language_accessibility": "Arabic support is required for Saudi clinical workflows.",
+    "impairment_accessibility": "Accessibility requirements apply to end-user interfaces.",
+    "duty_to_explain": "Clinicians retain a duty to explain care-related judgements."
+  }
+}

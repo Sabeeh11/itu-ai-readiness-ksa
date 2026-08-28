@@ -119,15 +119,124 @@ def residual_risk(text: str) -> list[tuple[str, str]]:
     return unique
 
 
+def format_referral_document(ref: dict, *, deidentified: bool = False) -> dict:
+    """Human-readable referral view for before/after de-identification."""
+    patient = ref["patient"]
+    referring = ref["referring"]
+    requested = ref["requested"]
+    clinical = ref["clinical"]
+
+    if deidentified:
+        patient_fields = [
+            ("National ID", "[NATIONAL_ID REMOVED]"),
+            ("Date of birth", "[DATE REMOVED]"),
+            ("Phone", "[PHONE REMOVED]"),
+            ("MRN", "[MRN REMOVED]"),
+            ("Name (Arabic)", "[NAME REMOVED]"),
+            ("Name (English)", "[NAME REMOVED]"),
+        ]
+        physician = "[PHYSICIAN REMOVED]"
+        facility = referring["facility"]
+        date = "[DATE REMOVED]"
+    else:
+        patient_fields = [
+            ("National ID", patient["national_id"]),
+            ("Date of birth", patient.get("dob", "")),
+            ("Phone", patient.get("phone", "")),
+            ("MRN", patient.get("mrn", "")),
+            ("Name (Arabic)", patient.get("name_ar", "")),
+            ("Name (English)", patient.get("name_en", "")),
+        ]
+        physician = referring.get("physician", "")
+        facility = referring["facility"]
+        date = ref.get("date", "")
+
+    clinical_lines = []
+    for key, label in CLINICAL_FIELDS:
+        value = clinical.get(key, "").strip()
+        clinical_lines.append({
+            "field": label,
+            "value": value if value else "(absent)",
+            "absent": not bool(value),
+        })
+
+    free_text = ref["free_text"]
+    if deidentified:
+        free_text, _ = deidentify(free_text)
+
+    return {
+        "ref": ref["ref"],
+        "date": date,
+        "patient": patient_fields,
+        "referring": {
+            "facility": facility,
+            "physician": physician,
+            "region": referring.get("region", ""),
+        },
+        "requested": {
+            "specialty": requested.get("specialty", ""),
+            "urgency": requested.get("urgency", ""),
+        },
+        "clinical": clinical_lines,
+        "free_text": free_text,
+    }
+
+
+def analyze_referral(ref: dict) -> dict:
+    """Structured referral analysis for API and CLI."""
+    missing_keys = [
+        key for key, _ in CLINICAL_FIELDS if not ref["clinical"].get(key, "").strip()
+    ]
+    missing_labels = [
+        label for key, label in CLINICAL_FIELDS if key in missing_keys
+    ]
+    present = len(CLINICAL_FIELDS) - len(missing_keys)
+    blob = json.dumps(ref, ensure_ascii=False)
+    _, removed = deidentify(blob)
+    free_text = ref["free_text"]
+    clean_text, _ = deidentify(free_text)
+    risks = [
+        {"snippet": snippet, "reason": why}
+        for snippet, why in residual_risk(free_text)
+    ]
+    return {
+        "ref": ref["ref"],
+        "specialty": ref["requested"]["specialty"],
+        "urgency": ref["requested"]["urgency"],
+        "region": ref["referring"]["region"],
+        "synthetic": True,
+        "document_before": format_referral_document(ref, deidentified=False),
+        "document_after": format_referral_document(ref, deidentified=True),
+        "free_text_before": ref["free_text"],
+        "completeness": {
+            "present": present,
+            "total": len(CLINICAL_FIELDS),
+            "missing_fields": missing_labels,
+            "note": "No published national referral content standard. See gap G11.",
+        },
+        "deidentification": {
+            "direct_identifiers_removed": len(removed),
+            "removed": removed,
+            "structural_fields_dropped": ["name_ar", "name_en", "physician"],
+        },
+        "residual_risk": {
+            "candidate_count": len(risks),
+            "candidates": risks,
+            "free_text_after_deid": clean_text,
+        },
+    }
+
+
 def show(ref: dict, verbose: bool) -> tuple[int, int]:
+    data = analyze_referral(ref)
     print(f"\n{BOLD}{'=' * 74}{OFF}")
-    print(f"{BOLD}{ref['ref']}{OFF}   {ref['requested']['specialty']} · "
-          f"{ref['requested']['urgency']} · {ref['referring']['region']}")
+    print(f"{BOLD}{data['ref']}{OFF}   {data['specialty']} · "
+          f"{data['urgency']} · {data['region']}")
     print(f"{BOLD}{'=' * 74}{OFF}")
 
     # ---- 1. completeness -------------------------------------------------
-    missing = [label for key, label in CLINICAL_FIELDS if not ref["clinical"].get(key, "").strip()]
-    present = len(CLINICAL_FIELDS) - len(missing)
+    missing = data["completeness"]["missing_fields"]
+    present = data["completeness"]["present"]
     colour = GRN if not missing else (YEL if len(missing) < 4 else RED)
     print(f"\n{BOLD}1. COMPLETENESS{OFF}   {colour}{present}/{len(CLINICAL_FIELDS)} clinical fields present{OFF}")
     for label in missing:
@@ -137,8 +246,7 @@ def show(ref: dict, verbose: bool) -> tuple[int, int]:
     print(f"{DIM}     Scored against: no published national standard. See gap G11.{OFF}")
 
     # ---- 2. de-identification -------------------------------------------
-    blob = json.dumps(ref, ensure_ascii=False)
-    _, removed = deidentify(blob)
+    removed = data["deidentification"]["removed"]
     print(f"\n{BOLD}2. DE-IDENTIFICATION{OFF}   {GRN}{len(removed)} direct identifiers removed{OFF}")
     for item in removed[: (99 if verbose else 4)]:
         print(f"     {DIM}{item}{OFF}")
@@ -147,19 +255,18 @@ def show(ref: dict, verbose: bool) -> tuple[int, int]:
     print(f"     {DIM}Structural fields also dropped: name_ar, name_en, physician{OFF}")
 
     # ---- 3. what survives ------------------------------------------------
-    free_text = ref["free_text"]
-    risks = residual_risk(free_text)
+    risks = data["residual_risk"]["candidates"]
     print(f"\n{BOLD}3. RESIDUAL RE-IDENTIFICATION RISK{OFF}   "
           f"{(RED if risks else GRN)}{len(risks)} candidate quasi-identifiers in free text{OFF}")
     if verbose or risks:
         print(f"\n{DIM}     Free text, after de-identification:{OFF}")
-        clean, _ = deidentify(free_text)
+        clean = data["residual_risk"]["free_text_after_deid"]
         for line in [clean[i:i + 66] for i in range(0, len(clean), 66)]:
             print(f"     {line}")
         print()
-    for snippet, why in risks:
-        print(f"     {RED}flag{OFF}  \"{snippet}\"")
-        print(f"           {DIM}{why}{OFF}")
+    for item in risks:
+        print(f"     {RED}flag{OFF}  \"{item['snippet']}\"")
+        print(f"           {DIM}{item['reason']}{OFF}")
     if not risks:
         print(f"     {DIM}none detected{OFF}")
 

@@ -259,21 +259,27 @@ def api_methodology():
             "workflow": {
                 "title": "Referral workflow being assessed",
                 "body": (
-                    "Referral documents are checked for missing clinical information, "
-                    "de-identified on-premises before any further processing, and returned "
-                    "to staff as advisory signals for clinician review."
+                    "An ML screening model checks referral documents for missing clinical "
+                    "information and appropriateness signals. The default preset assumes "
+                    "hybrid deployment: direct identifiers are stripped on-premises before "
+                    "text crosses to a cloud screening service. An on-premises offline path "
+                    "can run the same ML on full referral text inside the facility — removing "
+                    "the separate de-identification export step and satisfying data residency "
+                    "structurally when nothing leaves the hospital."
                 ),
             },
             "insights": {
                 "title": "Insights this prototype delivers now",
                 "body": (
-                    "Working completeness checks, before/after de-identification, residual "
-                    "privacy-risk flags, Y.3172 pipeline coverage, citation-backed policy "
-                    "gaps, and authority-specific recommendations."
+                    "Working completeness checks, deployment architecture comparison, "
+                    "before/after de-identification (hybrid path), residual privacy-risk "
+                    "flags, Y.3172 pipeline coverage, citation-backed policy gaps, and "
+                    "authority-specific recommendations."
                 ),
                 "items": [
                     "Which clinical referral fields are missing from each example",
-                    "Which direct identifiers are removed before further processing",
+                    "How hybrid vs on-premises ML architectures change the privacy boundary",
+                    "Which direct identifiers are removed before cloud processing (hybrid path)",
                     "Which contextual phrases still create re-identification risk",
                     "Which Y.3172 stages and governance concerns apply",
                     "Which concerns are covered and which are policy, scope, method, or currency gaps",
@@ -283,15 +289,45 @@ def api_methodology():
             "readiness_path": {
                 "title": "What is needed for operational readiness?",
                 "body": (
-                    "The next stage is governed model development using authorised MOH/SMARC "
-                    "referral data, clinician-defined labels, external validation, and "
-                    "subgroup evaluation before operational deployment."
+                    "The next stage is governed ML model development using authorised "
+                    "MOH/SMARC referral data, clinician-defined labels, external validation, "
+                    "and subgroup evaluation. On-premises offline deployment removes the "
+                    "cloud export boundary but still requires a published de-identification "
+                    "methodology for any secondary use or audit extracts."
                 ),
+            },
+            "architecture": {
+                "title": "Two deployment architectures",
+                "hybrid": {
+                    "label": "Hybrid (default preset)",
+                    "steps": [
+                        "Clinician drafts a referral inside the healthcare facility",
+                        "On-premises preprocessing removes direct identifiers before text crosses the Level 1 boundary",
+                        "ML screening service in Saudi cloud analyses de-identified clinical content",
+                        "Advisory signal returned to a named clinician who remains responsible",
+                    ],
+                },
+                "on_premises": {
+                    "label": "On-premises offline ML",
+                    "steps": [
+                        "Clinician drafts a referral inside the healthcare facility",
+                        "ML screening model runs entirely on-premises on full referral text — no cloud export",
+                        "No separate de-identification export step required for residency",
+                        "Advisory signal returned to a named clinician who remains responsible",
+                    ],
+                    "note": (
+                        "When referral text never leaves the facility, cross-border residency "
+                        "concerns at the cloud boundary are structurally addressed. Human "
+                        "oversight, audit trails, and contextual quasi-identifiers (G4) still "
+                        "require governance — but the export de-identification stage is no "
+                        "longer the primary control."
+                    ),
+                },
             },
             "data_flow": [
                 "A clinician drafts a referral inside the healthcare facility",
                 "The on-premises preprocessing stage removes direct identifiers before text reaches the screening service or cloud layer",
-                "The screening service analyses de-identified clinical content for completeness and referral-support signals",
+                "The ML screening service analyses de-identified clinical content for completeness and referral-support signals",
                 "An advisory signal is returned to a named clinician, who remains responsible for the decision",
             ],
             "tooltips": {
@@ -337,10 +373,13 @@ def api_methodology():
                 },
                 {
                     "title": "Proof on a document",
-                    "subtitle": "See why privacy preprocessing matters before referral text is analysed further.",
+                    "subtitle": "See how architecture choice affects privacy controls on a real referral shape.",
                     "explain": (
-                        "Direct identifiers are removed on-premises before the screening service sees the text. "
-                        "The comparison shows whether that control is sufficient — contextual phrases can still identify a patient."
+                        "The hybrid path removes direct identifiers on-premises before the ML "
+                        "screening service sees the text — but contextual phrases can still "
+                        "identify a patient (gap G4). An on-premises offline ML path processes "
+                        "full referral text inside the facility, removing the export "
+                        "de-identification step when nothing crosses the cloud boundary."
                     ),
                 },
                 {

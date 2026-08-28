@@ -107,7 +107,7 @@
   "presets": {
     "referral_screening": {
       "label": "Ehalati referral screening (default)",
-      "description": "AI-assisted completeness and appropriateness screening before national referral submission. De-identification on-premises; models may run in Saudi cloud.",
+      "description": "AI-assisted completeness and appropriateness screening before national referral submission. Hybrid: de-identification on-premises before Saudi cloud ML. See on-premises preset for offline alternative.",
       "values": {
         "ai_purpose": "administrative",
         "health_data": true,
@@ -115,6 +115,27 @@
         "free_text": true,
         "training_data": true,
         "deployment": "hybrid",
+        "model_behavior": "advisory",
+        "human_reviewer": true,
+        "override_path": true,
+        "audit_trail": true,
+        "output_audience": "clinician",
+        "device_status": "non_device",
+        "arabic_support": true,
+        "dialect_evaluation": false,
+        "disability_access": false
+      }
+    },
+    "referral_onprem_ml": {
+      "label": "On-premises ML (no cloud export)",
+      "description": "ML screening runs fully inside the facility on full referral text. No cloud boundary — the export de-identification step is not required for residency.",
+      "values": {
+        "ai_purpose": "administrative",
+        "health_data": true,
+        "direct_identifiers": true,
+        "free_text": true,
+        "training_data": true,
+        "deployment": "on_premises",
         "model_behavior": "advisory",
         "human_reviewer": true,
         "override_path": true,

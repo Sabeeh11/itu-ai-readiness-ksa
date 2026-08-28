@@ -50,14 +50,43 @@ The shape matters more than the number. SRC and C are almost entirely covered �
 
 ## Running it
 
-### Browser demo (recommended for judges)
+### Prerequisites
+
+- **Python 3.10+** (3.11 or 3.12 recommended)
+- No API keys, cloud accounts, or network access required at query time
+
+### Web server (recommended for judges)
+
+From the repository root:
 
 ```bash
+# 1. Create a virtual environment (optional but recommended)
+python3 -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
+
+# 2. Install dependencies
 pip install -r requirements.txt
-python3 src/demo_server.py           # → http://localhost:8080
+
+# 3. Start the demo server
+python3 src/demo_server.py
 ```
 
-The web UI walks through a **5-step guided journey**: what this tool is, describe your deployment, see results with full Y.3172 coverage, proof on a synthetic referral document, and authority-specific recommendations. Click **Start demo tour** for presenter copy. Advanced reference material (full pipeline matrix, corpus search, scenarios) is under **Reference material**.
+The server prints:
+
+```
+Saudi Health AI Readiness Assessor
+Open http://localhost:8080
+```
+
+Open **http://localhost:8080** in your browser. The server binds to `127.0.0.1:8080` and serves the static UI plus JSON APIs from the local corpus.
+
+**What you will see**
+
+- A **5-step guided journey**: what this tool is → configure the referral workflow → results with Y.3172 coverage → proof on a synthetic referral → authority-specific recommendations
+- **Start demo tour** in the header for presenter copy
+- **Knowledge base** in the header for all 29 policy instruments, evidence, corpus search, scenarios, and the full pipeline matrix
+
+Press `Ctrl+C` in the terminal to stop the server.
 
 No API keys, no network at query time, no LLM.
 

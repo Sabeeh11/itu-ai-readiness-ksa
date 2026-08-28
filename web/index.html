@@ -12,28 +12,16 @@
       <h1>Saudi Health AI Readiness Assessor</h1>
       <p class="tagline">ITU AI Readiness Hackathon KSA 2026 · Health domain</p>
     </div>
-    <button id="tour-btn" class="btn btn-accent">Start demo tour</button>
+    <div class="topbar-actions">
+      <button type="button" id="knowledge-base-btn" class="btn btn-kb">Knowledge base</button>
+      <button id="tour-btn" class="btn btn-accent">Start demo tour</button>
+    </div>
   </header>
 
   <div class="stepper-bar" id="stepper-bar">
     <div class="stepper-track" id="stepper-track"></div>
     <p class="stepper-label" id="stepper-label">Step 1 of 5 · What is this?</p>
   </div>
-
-  <nav class="ref-nav">
-    <button type="button" class="btn btn-sources" id="view-sources-btn">Sources &amp; resources</button>
-    <details class="ref-dropdown">
-      <summary>More reference material</summary>
-      <div class="ref-links">
-        <button type="button" data-ref="evidence">Evidence</button>
-        <button type="button" data-ref="pipeline">Full pipeline matrix</button>
-        <button type="button" data-ref="readiness">AI Readiness factors</button>
-        <button type="button" data-ref="scenarios">Scenarios</button>
-        <button type="button" data-ref="search">Search corpus</button>
-        <button type="button" data-ref="corpus">Policy instruments</button>
-      </div>
-    </details>
-  </nav>
 
   <main id="main">
     <!-- Step 1 -->
@@ -54,7 +42,7 @@
         <h3>Published sources</h3>
         <p class="meta">Evidence and policy instruments cited in this assessment.</p>
         <div id="sources-preview-list"></div>
-        <button type="button" class="btn" id="view-all-sources">View all 29 policy instruments</button>
+        <button type="button" class="btn" id="view-all-sources">Browse full knowledge base</button>
       </section>
     </section>
 
@@ -115,7 +103,7 @@
       <section class="sources-preview">
         <h3>Published sources</h3>
         <div id="sources-step5-list"></div>
-        <button type="button" class="btn" id="view-all-sources-5">View all policy instruments with links</button>
+        <button type="button" class="btn" id="view-all-sources-5">Browse full knowledge base</button>
       </section>
       <h3>AI Readiness factors</h3>
       <div id="factors-grid" class="cards"></div>
@@ -126,50 +114,55 @@
       </div>
     </section>
 
-    <!-- Reference panels -->
-    <section id="evidence" class="panel ref-panel">
-      <h2>Why this use case matters</h2>
-      <div id="evidence-list"></div>
-      <div id="future-validation" class="card"></div>
-    </section>
-
-    <section id="pipeline" class="panel ref-panel">
-      <h2>Full Y.3172 pipeline coverage (all 35 concerns)</h2>
-      <p id="pipeline-headline" class="headline"></p>
-      <div id="coverage-matrix"></div>
-    </section>
-
-    <section id="readiness" class="panel ref-panel">
-      <h2>AI Readiness dimensions in depth</h2>
-      <div id="dimensions-list"></div>
-    </section>
-
-    <section id="scenarios" class="panel ref-panel">
-      <h2>Evaluation scenarios</h2>
-      <div id="scenario-list" class="cards"></div>
-      <div id="scenario-detail" class="card hidden"></div>
-    </section>
-
-    <section id="search" class="panel ref-panel">
-      <h2>Ask the knowledge base</h2>
-      <div class="toolbar">
-        <input id="search-input" type="text" placeholder="e.g. re-identification risk assessment" />
-        <button id="search-btn" class="btn btn-primary">Search</button>
+    <!-- Knowledge base hub -->
+    <section id="knowledge-base" class="panel kb-panel">
+      <button type="button" class="btn back-to-demo" id="kb-back">← Back to assessment</button>
+      <h2>Knowledge base</h2>
+      <p class="lead" id="kb-intro">29 policy instruments, published evidence, searchable corpus, evaluation scenarios, and full Y.3172 coverage — the evidence layer behind every assessment.</p>
+      <nav class="kb-nav" id="kb-nav">
+        <button type="button" class="kb-tab active" data-kb="kb-corpus">Policy instruments</button>
+        <button type="button" class="kb-tab" data-kb="kb-evidence">Evidence</button>
+        <button type="button" class="kb-tab" data-kb="kb-search">Search</button>
+        <button type="button" class="kb-tab" data-kb="kb-pipeline">Pipeline matrix</button>
+        <button type="button" class="kb-tab" data-kb="kb-scenarios">Scenarios</button>
+        <button type="button" class="kb-tab" data-kb="kb-readiness">Readiness dimensions</button>
+      </nav>
+      <div class="kb-section active" id="kb-corpus">
+        <div class="toolbar">
+          <span id="corpus-count"></span>
+          <button id="export-corpus-kb" class="btn">Download KB JSON</button>
+        </div>
+        <table id="corpus-table">
+          <thead>
+            <tr><th>Issuer</th><th>Instrument</th><th>Binding</th><th>Provenance</th><th>Link</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </div>
-      <div id="search-results"></div>
-    </section>
-
-    <section id="corpus" class="panel ref-panel">
-      <h2>Policy knowledge base</h2>
-      <div class="toolbar">
-        <span id="corpus-count"></span>
+      <div class="kb-section" id="kb-evidence">
+        <h3>Why this use case matters</h3>
+        <div id="evidence-list"></div>
+        <div id="future-validation" class="card"></div>
       </div>
-      <table id="corpus-table">
-        <thead>
-          <tr><th>Issuer</th><th>Instrument</th><th>Binding</th><th>Provenance</th><th>Link</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div class="kb-section" id="kb-search">
+        <div class="toolbar">
+          <input id="search-input" type="text" placeholder="e.g. re-identification risk assessment" />
+          <button id="search-btn" class="btn btn-primary">Search</button>
+        </div>
+        <div id="search-results"></div>
+      </div>
+      <div class="kb-section" id="kb-pipeline">
+        <h3>Full Y.3172 pipeline coverage (all 35 concerns)</h3>
+        <p id="pipeline-headline" class="headline"></p>
+        <div id="coverage-matrix"></div>
+      </div>
+      <div class="kb-section" id="kb-scenarios">
+        <div id="scenario-list" class="cards"></div>
+        <div id="scenario-detail" class="card hidden"></div>
+      </div>
+      <div class="kb-section" id="kb-readiness">
+        <div id="dimensions-list"></div>
+      </div>
     </section>
   </main>
 

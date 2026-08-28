@@ -33,6 +33,14 @@ body {
 }
 .topbar h1 { margin: 0; font-size: 1.4rem; }
 .tagline { margin: 0.2rem 0 0; opacity: 0.85; font-size: 0.95rem; }
+.topbar-actions { display: flex; gap: 0.5rem; align-items: center; flex-shrink: 0; }
+.btn-kb {
+  background: #fff;
+  color: var(--navy);
+  border-color: #fff;
+  font-weight: 600;
+}
+.btn-kb:hover { background: #eef2f8; }
 
 .stepper-bar {
   background: #fff;
@@ -60,33 +68,33 @@ body {
 .stepper-dot.active { background: var(--navy); color: #fff; border-color: var(--navy); }
 .stepper-dot.done { background: var(--accent); color: #fff; border-color: var(--accent); }
 .stepper-label { margin: 0; font-weight: 600; color: var(--navy); font-size: 1rem; }
+.stepper-bar.hidden { display: none; }
 
-.ref-nav {
+.kb-panel .lead { color: var(--muted); margin-top: 0; }
+.kb-nav {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  background: #eef2f8;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 1rem 0 1.25rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--border);
-  padding: 0.35rem 1.5rem;
-  font-size: 0.9rem;
 }
-.btn-sources {
-  background: var(--navy);
-  color: #fff;
-  border-color: var(--navy);
-  font-weight: 600;
-}
-.ref-dropdown summary { cursor: pointer; color: var(--accent); font-weight: 600; }
-.ref-links { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.5rem; }
-.ref-links button {
+.kb-tab {
   border: 1px solid var(--border);
   background: #fff;
-  padding: 0.3rem 0.6rem;
+  padding: 0.4rem 0.75rem;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
 }
-.ref-links button:hover { background: var(--navy); color: #fff; }
+.kb-tab:hover { background: #eef2f8; }
+.kb-tab.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+.kb-section { display: none; }
+.kb-section.active { display: block; }
+.back-to-demo { margin-bottom: 1rem; }
+.arch-box .arch-note { margin: 0.75rem 0 0; }
 
 main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 .panel { display: none; }
@@ -408,6 +416,6 @@ th { background: var(--navy); color: #fff; }
 }
 
 @media print {
-  .topbar, .stepper-bar, .ref-nav, .step-footer, .tour { display: none; }
+  .topbar, .stepper-bar, .step-footer, .tour { display: none; }
   .panel { display: block !important; page-break-inside: avoid; }
 }

@@ -206,10 +206,14 @@ check("corpus export has document_count", export["document_count"] == len(kb.doc
 
 page = client.get("/")
 check("index page serves", page.status_code == 200 and b"Saudi Health AI Readiness Assessor" in page.data)
+check("index has knowledge base nav", b"knowledge-base-btn" in page.data and b"Knowledge base" in page.data)
 check("methodology endpoint has steps", len(client.get("/api/methodology").get_json()["steps"]) == 5)
 methodology = client.get("/api/methodology").get_json()
 check("methodology has workflow and insights", "workflow" in methodology and "insights" in methodology)
+check("methodology has architecture paths", "architecture" in methodology and "on_premises" in methodology["architecture"])
 check("methodology has no negations strip", "negations" not in methodology)
+schema_data = client.get("/api/assessment/schema").get_json()
+check("on-prem ML preset exists", "referral_onprem_ml" in schema_data["presets"])
 
 print("\n" + "=" * 62)
 if failed:

@@ -36,8 +36,8 @@ const TOUR = [
   },
   {
     step: 3,
-    title: "Why preprocessing matters",
-    script: "Identifiers are removed on-premises before the screening service sees the text. Yet contextual phrases can still identify a patient. This is gap G4 in concrete form.",
+    title: "Why architecture matters",
+    script: "The default hybrid path strips identifiers before cloud screening. An on-premises offline ML path can process full referral text inside the facility — removing the export de-identification step and satisfying residency structurally. Contextual re-identification risk still needs a published method (G4).",
   },
   {
     step: 4,
@@ -70,6 +70,8 @@ function showPanel(id) {
 function goToStep(index, { skipAction = false } = {}) {
   currentStep = Math.max(0, Math.min(index, STEPS.length - 1));
   const step = STEPS[currentStep];
+  $("#stepper-bar").classList.remove("hidden");
+  $("#step-footer").classList.remove("hidden");
   showPanel(step.id);
   updateStepper();
   $("#step-back").disabled = currentStep === 0;
@@ -115,8 +117,29 @@ function renderExplainPanels() {
   $("#insights-list").innerHTML = methodology.insights.items.map((item) => `<li>${item}</li>`).join("");
   $("#readiness-path-title").textContent = methodology.readiness_path.title;
   $("#readiness-path-body").textContent = methodology.readiness_path.body;
-  if ($("#data-flow")) {
-    $("#data-flow").innerHTML = `<h3>Intended data flow</h3><ol class="method-list">${methodology.data_flow.map((s) => `<li>${s}</li>`).join("")}</ol>`;
+  renderDataFlow();
+}
+
+function renderDataFlow() {
+  const el = $("#data-flow");
+  if (!el || !methodology) return;
+  if (methodology.architecture) {
+    const arch = methodology.architecture;
+    el.innerHTML = `
+      <h3>${arch.title}</h3>
+      <div class="two-box compact arch-box">
+        <article class="card workflow-card">
+          <h4>${arch.hybrid.label}</h4>
+          <ol class="method-list">${arch.hybrid.steps.map((s) => `<li>${s}</li>`).join("")}</ol>
+        </article>
+        <article class="card built-card">
+          <h4>${arch.on_premises.label}</h4>
+          <ol class="method-list">${arch.on_premises.steps.map((s) => `<li>${s}</li>`).join("")}</ol>
+          <p class="meta arch-note">${arch.on_premises.note}</p>
+        </article>
+      </div>`;
+  } else {
+    el.innerHTML = `<h3>Intended data flow</h3><ol class="method-list">${methodology.data_flow.map((s) => `<li>${s}</li>`).join("")}</ol>`;
   }
 }
 
@@ -178,8 +201,12 @@ async function runAssessment() {
 }
 
 function renderFraming() {
+  const deployment = lastAssessment?.input?.deployment;
+  const onPrem = deployment === "on_premises";
   $("#results-framing").innerHTML = `
-    <article class="card workflow-card"><h4>Referral workflow</h4><p>Completeness check, on-premises de-identification, advisory output to staff.</p></article>
+    <article class="card workflow-card"><h4>Referral workflow</h4><p>${onPrem
+      ? "ML completeness screening on full referral text inside the facility — no cloud export."
+      : "Completeness check, on-premises de-identification, advisory output to staff."}</p></article>
     <article class="card insights-card"><h4>Assessment insights</h4><p>Pipeline coverage, material blockers, and authority-specific recommendations from 29 policy instruments.</p></article>`;
 }
 
@@ -470,22 +497,22 @@ function exportJson(data, filename) {
   a.click();
 }
 
-function showRefPanel(id) {
+function showKnowledgeBase(tabId = "kb-corpus") {
   $$(".panel").forEach((p) => p.classList.remove("active"));
-  const panel = $(`#${id}`);
-  panel.classList.add("active");
-  if (!panel.querySelector(".back-to-demo")) {
-    const back = document.createElement("button");
-    back.type = "button";
-    back.className = "btn back-to-demo";
-    back.textContent = "← Back to demo";
-    back.addEventListener("click", hideRefPanels);
-    panel.prepend(back);
-  }
+  $("#knowledge-base").classList.add("active");
+  showKbTab(tabId);
+  $("#stepper-bar").classList.add("hidden");
   $("#step-footer").classList.add("hidden");
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function hideRefPanels() {
+function showKbTab(tabId) {
+  $$(".kb-tab").forEach((t) => t.classList.toggle("active", t.dataset.kb === tabId));
+  $$(".kb-section").forEach((s) => s.classList.toggle("active", s.id === tabId));
+}
+
+function hideKnowledgeBase() {
+  $("#stepper-bar").classList.remove("hidden");
   $("#step-footer").classList.remove("hidden");
   goToStep(currentStep);
 }
@@ -530,19 +557,20 @@ async function init() {
   $("#export-corpus").addEventListener("click", async () => {
     exportJson(await api("/api/corpus/export"), "knowledge_base.json");
   });
+  $("#export-corpus-kb").addEventListener("click", async () => {
+    exportJson(await api("/api/corpus/export"), "knowledge_base.json");
+  });
   $("#search-btn").addEventListener("click", () => doSearch($("#search-input").value));
   $("#search-input").addEventListener("keydown", (e) => {
     if (e.key === "Enter") doSearch($("#search-input").value);
   });
-  $$(".ref-links button").forEach((btn) => {
-    btn.addEventListener("click", () => showRefPanel(btn.dataset.ref));
+  $("#knowledge-base-btn").addEventListener("click", () => showKnowledgeBase("kb-corpus"));
+  $("#kb-back").addEventListener("click", hideKnowledgeBase);
+  $$(".kb-tab").forEach((tab) => {
+    tab.addEventListener("click", () => showKbTab(tab.dataset.kb));
   });
-  $("#view-sources-btn").addEventListener("click", () => showRefPanel("corpus"));
-  $("#view-all-sources").addEventListener("click", () => showRefPanel("corpus"));
-  $("#view-all-sources-5").addEventListener("click", () => showRefPanel("corpus"));
-  document.querySelector(".ref-dropdown")?.addEventListener("toggle", (e) => {
-    if (!e.target.open) hideRefPanels();
-  });
+  $("#view-all-sources").addEventListener("click", () => showKnowledgeBase("kb-corpus"));
+  $("#view-all-sources-5").addEventListener("click", () => showKnowledgeBase("kb-corpus"));
 
   $("#tour-btn").addEventListener("click", startTour);
   $("#tour-close").addEventListener("click", () => $("#tour-overlay").classList.add("hidden"));

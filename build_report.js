@@ -24,6 +24,9 @@ const t = (text, o = {}) => new TextRun({ text, bold: o.bold, italics: o.italics
 const link = (text, url) =>
   new ExternalHyperlink({ children: [new TextRun({ text, size: 16, color: ACCENT, underline: {} })], link: url });
 
+const linkBody = (text, url) =>
+  new ExternalHyperlink({ children: [new TextRun({ text, size: 20, color: ACCENT, underline: {} })], link: url });
+
 const h1 = (text) =>
   new Paragraph({
     heading: HeadingLevel.HEADING_1,
@@ -179,7 +182,7 @@ const doc = new Document({
       FILL("Team name"), FILL("Members name"),
       rich([t("Solution name: ", { bold: true }), t("Referral Screening Governance Gap Analyser")], { after: 60 }),
       FILL("Contact details"),
-      rich([t("Repository: ", { bold: true }), t("[ TO COMPLETE — GitHub URL ]", { color: "B00000", bold: true })], { after: 60 }),
+      rich([t("Repository: ", { bold: true }), linkBody("GitHub link", "https://github.com/Sabeeh11/itu-ai-readiness-ksa")], { after: 60 }),
       rich([t("Demo video: ", { bold: true }), t("[ TO COMPLETE — link, 7 min max ]", { color: "B00000", bold: true })], { after: 240 }),
 
       h1("1. Introduction"),
@@ -197,6 +200,11 @@ const doc = new Document({
       p("The system reads a draft referral and returns a completeness score naming the specific fields absent, together with an advisory appropriateness flag. Nothing is auto-rejected; every flag is routed to a named human reviewer who may override it without justification. Because referral documents contain names, national ID numbers, contact details and dates of birth, a de-identification stage runs inside the sending facility before the model reads anything, and only de-identified text crosses the facility boundary."),
       p("We claim reviewer time saved, more consistent application of screening criteria across regions, and a structured record of return reasons. We do not claim improved clinical outcomes, because no evidence in the world literature supports such a claim for this class of system."),
       p("The addressed gaps in existing solutions and the evaluation scenarios in section 4 correspond directly: inconsistency across regions is tested by S3, the absence of a content standard by S5, and the risk of automated rejection without human review by S4.", { italics: true }),
+
+      h2("2.4 The software submitted"),
+      p("The analyser is delivered in two forms over one engine. A command-line tool prints the node-by-node coverage matrix, the gap register and the five evaluation scenarios. A browser interface presents the same analysis as a five-step assessment: a proposed health AI system is described through fifteen structured questions — advisory or blocking enforcement, named human reviewer, documented override path, audit trail, deployment location, regulatory route — and the analyser activates the governance concerns that that design raises, tests each against the corpus, and returns the resulting gaps grouped by the authority that owns them. The referral system described in this submission is one profile among many the tool accepts; a second built-in profile reproduces scenario S4, the competitor that rejects referrals automatically with no human review."),
+      p("Two design decisions carry the evidential weight. First, whether an instrument governs a given concern is a curated legal judgement recorded per document in the governs field of data/corpus.json, not an inference from retrieval score. Retrieval supplies the supporting passage and its citation; it does not decide the question. An earlier version inferred coverage from similarity alone and failed in both directions — missing Article 21 of the Law of Practicing Healthcare Professions on medical confidentiality, and simultaneously crediting IS0303 with a de-identification method it does not contain. A judgement recorded in a data file can be opened and contested line by line; a similarity threshold cannot be argued with. Second, retrieval is TF-IDF: no API key, no network at query time and no stochastic component, so the same query returns the same citations on any machine. Every assessment is stamped with a hash of the corpus file, so any result can be tied to the exact evidence base that produced it."),
+      p("The repository carries a self-test of 71 checks asserting that every command runs, that the figures printed on screen are the figures written in this report, and that all sample referral data is unmistakably synthetic. The tool returns a policy-readiness assessment against the included corpus. It is not legal advice, regulatory approval, or evidence of clinical safety, and it says so on every result it produces."),
 
       h1("3. Mapped documents"),
       h2("3.1 Mapping to the ITU-T Y.3172 machine learning pipeline"),
@@ -257,7 +265,7 @@ const doc = new Document({
       bullet("Y.3172's P node carries no notion of advisory versus blocking enforcement — a distinction that determines whether human oversight is real, as scenario S4 demonstrates."),
 
       h2("5.2 Knowledge base scalability"),
-      p("The knowledge base is structured so that jurisdiction is a field, not an assumption. Adding a country means adding its instruments with node tags; the coverage analysis, the gap classification and the scenarios run unchanged. The cross-jurisdiction contrast that produces the G4 finding — Saudi duty against HIPAA method — is the same operation applied to two corpora, and generalises to any pair of jurisdictions."),
+      p("The knowledge base is structured so that jurisdiction is a field, not an assumption. Adding a country means adding its instruments with node tags; the coverage analysis, the gap classification and the scenarios run unchanged. The cross-jurisdiction contrast that produces the G4 finding — Saudi duty against HIPAA method — is the same operation applied to two corpora, and generalises to any pair of jurisdictions. The assessment interface already accepts an arbitrary health AI profile rather than this one, so extending the tool to a new system is a matter of answering its questions differently, and extending it to a new country is a matter of adding instruments."),
 
       h2("5.3 Limitations stated openly"),
       bullet("The Saudi referral-completeness evidence is from 2007 and predates the e-referral rollout. No post-2015 Saudi study measuring referral letter completeness was located; whether the problem persists is an open question, and measuring it is itself a valid result."),

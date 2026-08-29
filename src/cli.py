@@ -213,7 +213,8 @@ def cmd_run(kb: KnowledgeBase, scenario_id: str) -> None:
             if c.get("currency_warning"):
                 flags.append(f"CURRENCY: {c['currency_warning']}")
             suffix = f"  [{'; '.join(flags)}]" if flags else "  [binding, in scope]"
-            print(f"{DIM}{wrap(f'- {c['doc_id']}: {c['title']}{suffix}', 6)}{OFF}")
+            entry = "- " + c["doc_id"] + ": " + c["title"] + suffix
+            print(f"{DIM}{wrap(entry, 6)}{OFF}")
             print(f"{DIM}{wrap(c['url'], 8)}{OFF}")
 
     print(f"\n{BOLD}FINDING{OFF}")

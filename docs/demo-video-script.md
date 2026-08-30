@@ -25,7 +25,7 @@ Read this aloud while clicking through the **5-step browser demo**. Timings are 
 
 ## 0:40 — 1:25 · Step 2: Describe your AI
 
-> Click **Start assessment**. The Ehalati referral-screening preset is preloaded. These choices tell us which governance rules apply — advisory versus blocking, on-premises de-identification, hybrid cloud.
+> Click **Start assessment**. The Ehalati referral-screening preset is preloaded — a fixed profile, not free-form knobs. Hybrid de-identification, advisory output, named clinician.
 >
 > Saudi Arabia processed seven hundred and fifty-five thousand e-referrals in twenty twenty-three to twenty-four. The Ministry's own Medical Referrals Centre recommends AI triage. We built for that use case.
 

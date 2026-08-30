@@ -357,10 +357,11 @@ def api_methodology():
                 },
                 {
                     "title": "Assess the referral workflow",
-                    "subtitle": "Configure how patient data is handled, where processing occurs, and how outputs affect referrals.",
+                    "subtitle": "Pick a fixed deployment preset. The profile is locked so the same choice always yields the same result.",
                     "explain": (
-                        "These choices determine which governance concerns apply to the referral-screening "
-                        "workflow. Changing advisory output to blocking activates additional human-oversight concerns."
+                        "Three deterministic scenarios: Ehalati referral screening (default), on-premises ML, "
+                        "and competitor auto-reject. Each preset activates a fixed set of governance concerns — "
+                        "switching to auto-reject lights up human-oversight gaps that the default leaves voluntary."
                     ),
                 },
                 {

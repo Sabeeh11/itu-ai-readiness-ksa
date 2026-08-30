@@ -25,7 +25,7 @@ const TOUR = [
   {
     step: 1,
     title: "Assess the referral workflow",
-    script: "The Ehalati preset is preloaded. Configure how patient data is handled, where processing occurs, and whether outputs advise or block referrals.",
+    script: "The Ehalati preset is preloaded. Three fixed scenarios — default screening, on-premises ML, and competitor auto-reject. Pick one and run; the profile is locked so the result is always the same.",
     action: () => applyPreset("referral_screening"),
   },
   {
@@ -108,7 +108,7 @@ function renderExplainPanels() {
         el.innerHTML += `<ol class="method-list">${methodology.how.map((h) => `<li>${h}</li>`).join("")}</ol>`;
       }
       if (i === 1) {
-        el.innerHTML += `<p class="flow-hint">Workflow choices → activated concerns → policy corpus check</p>`;
+        el.innerHTML += `<p class="flow-hint">Fixed preset → activated concerns → policy corpus check</p>`;
       }
     }
   });
@@ -143,39 +143,41 @@ function renderDataFlow() {
   }
 }
 
-function buildForm(fields, values) {
-  const form = $("#assessment-form");
-  form.innerHTML = "";
-  for (const field of fields) {
-    const div = document.createElement("div");
-    div.className = "field";
-    if (field.type === "boolean") {
-      div.innerHTML = `<label><input type="checkbox" name="${field.id}" ${values[field.id] ? "checked" : ""}> ${field.label}</label>`;
-    } else {
-      const opts = (field.options || []).map((o) =>
-        `<option value="${o.value}" ${values[field.id] === o.value ? "selected" : ""}>${o.label}</option>`
-      ).join("");
-      div.innerHTML = `<label>${field.label}<select name="${field.id}">${opts}</select></label>`;
-    }
-    form.appendChild(div);
-  }
+function fieldDisplayValue(field, value) {
+  if (field.type === "boolean") return value ? "Yes" : "No";
+  const opt = (field.options || []).find((o) => o.value === value);
+  return opt ? opt.label : String(value ?? "—");
 }
 
-function readForm() {
-  const values = {};
-  for (const el of $$("#assessment-form [name]")) {
-    if (el.type === "checkbox") values[el.name] = el.checked;
-    else values[el.name] = el.value;
+function renderPresetProfile(presetId) {
+  const el = $("#preset-profile");
+  if (!el || !schema) return;
+  const preset = schema.presets[presetId];
+  if (!preset) {
+    el.innerHTML = "";
+    return;
   }
-  return values;
+  const rows = schema.fields.map((field) => `
+    <div class="preset-row">
+      <dt>${field.label}</dt>
+      <dd>${fieldDisplayValue(field, preset.values[field.id])}</dd>
+    </div>`).join("");
+  el.innerHTML = `
+    <h3>${preset.label}</h3>
+    <p class="meta">${preset.description || ""}</p>
+    <dl class="preset-grid">${rows}</dl>`;
+}
+
+function selectedPresetId() {
+  return $("#preset-select")?.value || "referral_screening";
 }
 
 function applyPreset(presetId) {
   const preset = schema?.presets[presetId];
   if (!preset) return;
-  buildForm(schema.fields, preset.values);
   const sel = $("#preset-select");
   if (sel) sel.value = presetId;
+  renderPresetProfile(presetId);
 }
 
 async function loadSchema() {
@@ -189,7 +191,10 @@ async function loadSchema() {
 }
 
 async function runAssessment() {
-  const values = readForm();
+  const presetId = selectedPresetId();
+  const preset = schema?.presets[presetId];
+  if (!preset) throw new Error(`Unknown preset: ${presetId}`);
+  const values = { ...preset.values };
   lastAssessment = await api("/api/assessment", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -429,7 +434,6 @@ async function loadScenarios() {
   $("#scenario-list").innerHTML = data.scenarios.map((s) => `
     <article class="card scenario-card" data-id="${s.id}">
       <h4>${s.id}: ${s.title}</h4>
-      <p class="meta">[${s.kind}]</p>
       <p>${s.question}</p>
     </article>`).join("");
   $$(".scenario-card").forEach((card) => {

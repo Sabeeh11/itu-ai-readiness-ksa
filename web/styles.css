@@ -198,23 +198,36 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   border-radius: 6px;
 }
 
-.advanced-options { margin-top: 1rem; }
-.advanced-options summary { cursor: pointer; font-weight: 600; color: var(--accent); margin-bottom: 0.75rem; }
-
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-top: 0.75rem;
+.preset-lock-note {
+  margin: 0.75rem 0 0;
+  color: var(--muted, #5c6570);
+  font-size: 0.95rem;
 }
-.field {
+.preset-profile {
+  margin-top: 1rem;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 0.75rem 1rem;
+  padding: 1rem 1.1rem;
 }
-.field label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
-.field select { width: 100%; padding: 0.4rem; font-size: 1rem; }
+.preset-profile h3 { margin: 0 0 0.35rem; }
+.preset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.65rem 1.25rem;
+  margin: 0.85rem 0 0;
+}
+.preset-row { margin: 0; }
+.preset-row dt {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted, #5c6570);
+  margin: 0;
+}
+.preset-row dd {
+  margin: 0.15rem 0 0;
+  font-weight: 600;
+}
 
 .stats {
   display: flex;

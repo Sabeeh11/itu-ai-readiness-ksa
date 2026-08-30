@@ -14,7 +14,6 @@ let schema = null;
 let methodology = null;
 let overview = null;
 let lastAssessment = null;
-let expandedNode = null;
 
 const TOUR = [
   {
@@ -224,8 +223,8 @@ function renderLegend() {
 }
 
 function renderPipeline(pipeline) {
+  const tipText = methodology?.tooltips?.y3172 || "ITU standard defining where AI sits in a data pipeline";
   const nodes = pipeline.map((n) => {
-    const expanded = expandedNode === n.node;
     const concerns = (n.concerns || []).map((c) => `
       <div class="concern-item">
         ${badge(c.gap_kind || c.status)}
@@ -234,29 +233,21 @@ function renderPipeline(pipeline) {
         ${c.gap_id ? `<div class="meta">Gap ${c.gap_id}${c.recommendation ? ` · ${c.recommendation}` : ""}</div>` : ""}
       </div>`).join("");
     return `
-      <div class="pipe-node level${n.level} ${n.gap_count ? "has-gap" : ""} ${expanded ? "expanded" : ""}" data-node="${n.node}">
-        <button type="button" class="pipe-btn">
+      <div class="pipe-node level${n.level} ${n.gap_count ? "has-gap" : ""} expanded" data-node="${n.node}">
+        <div class="pipe-header">
           <span class="code">${n.node}</span>
           <span class="pipe-label">${n.label}</span>
           <span class="meta">${n.concern_count} concern(s) · ${n.gap_count} gap(s)</span>
-        </button>
-        ${expanded ? `<div class="pipe-concerns">${concerns || "<p class='meta'>No concerns activated for this node.</p>"}</div>` : ""}
+        </div>
+        <div class="pipe-concerns">${concerns || "<p class='meta'>No concerns activated for this node.</p>"}</div>
       </div>`;
   }).join("");
 
   $("#pipeline-map").innerHTML = `
-    <h3>Y.3172 pipeline <span class="tip" title="${methodology?.tooltips?.y3172 || ""}">?</span></h3>
-    <p class="meta">Click a node to see all activated concerns. Level 1 boundary at PP — identifiers never cross to Level 2.</p>
+    <h3>Y.3172 pipeline <span class="tip" tabindex="0" role="img" aria-label="${tipText}">?<span class="tip-text">${tipText}</span></span></h3>
+    <p class="meta">All activated concerns shown per node. Level 1 boundary at PP — identifiers never cross to Level 2.</p>
     <div class="pipeline">${nodes}</div>
     <div class="level-boundary"><span>Level 1 (on-premises)</span><span>Level 2 (cloud / model)</span></div>`;
-
-  $$(".pipe-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const node = btn.closest(".pipe-node").dataset.node;
-      expandedNode = expandedNode === node ? null : node;
-      renderPipeline(pipeline);
-    });
-  });
 }
 
 function renderResults(data) {

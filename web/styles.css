@@ -290,16 +290,12 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 .pipe-node.level1 { border-color: var(--accent); }
 .pipe-node.has-gap { border-color: var(--red); }
 .pipe-node.expanded { flex: 1 1 100%; }
-.pipe-btn {
+.pipe-header {
   width: 100%;
   text-align: center;
-  background: none;
-  border: none;
   padding: 0.6rem;
-  cursor: pointer;
-  font: inherit;
 }
-.pipe-btn .code { font-weight: 700; display: block; }
+.pipe-header .code { font-weight: 700; display: block; }
 .pipe-label { display: block; font-size: 0.82rem; }
 .pipe-concerns {
   border-top: 1px solid var(--border);
@@ -368,6 +364,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
 .badge-limitation { background: #e8e8e8; color: #555; }
 
 .tip {
+  position: relative;
   display: inline-block;
   width: 1.1rem;
   height: 1.1rem;
@@ -378,6 +375,45 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
   color: #fff;
   font-size: 0.75rem;
   cursor: help;
+  vertical-align: middle;
+}
+.tip-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 0.4rem);
+  transform: translateX(-50%);
+  z-index: 20;
+  width: max-content;
+  max-width: 16rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  background: var(--navy, #1a2b4a);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+  white-space: normal;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  pointer-events: none;
+  transition: opacity 0.12s ease, visibility 0.12s ease;
+}
+.tip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border: 5px solid transparent;
+  border-top-color: var(--navy, #1a2b4a);
+}
+.tip:hover .tip-text,
+.tip:focus .tip-text,
+.tip:focus-visible .tip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 table { width: 100%; border-collapse: collapse; background: var(--card); }

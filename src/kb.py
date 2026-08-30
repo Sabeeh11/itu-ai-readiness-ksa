@@ -1,7 +1,7 @@
 """
 Knowledge base: chunking, indexing and retrieval over the policy corpus.
 
-Retrieval is TF-IDF over character and word n-grams. This is a deliberate
+Retrieval is Term Frequency-Inverse Document Frequency (TF-IDF) over character and word n-grams. This is a deliberate
 choice, not a limitation: the hackathon requires that every output be traceable
 back to a document in the knowledge base, and a sparse lexical index makes that
 traceability exact and reproducible. There is no API key, no network call at

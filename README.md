@@ -129,7 +129,7 @@ Making the judgement explicit is the stronger position. It sits in a data file a
 
 The same applies to gap *classification*. Whether an on-point instrument is scope-limited is read from the corpus, not from what retrieval happened to surface — an earlier version derived it from the top-k hits and misclassified two M-node findings as policy gaps purely because one instrument had no extract file to match against.
 
-Retrieval itself is TF-IDF: no API key, no network at query time, no stochastic component. The same query returns the same citations on any machine. Concerns are searched using descriptive phrasings held in `corpus.json` rather than bare slugs — searching `human_oversight` misses the instrument that says *"enhance users' performance, not replace them"*, which is precisely the wording that matters.
+Retrieval itself is Term Frequency-Inverse Document Frequency (TF-IDF): no API key, no network at query time, no stochastic component. The same query returns the same citations on any machine. Concerns are searched using descriptive phrasings held in `corpus.json` rather than bare slugs — searching `human_oversight` misses the instrument that says *"enhance users' performance, not replace them"*, which is precisely the wording that matters.
 
 ---
 

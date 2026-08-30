@@ -130,7 +130,7 @@ Start on http://localhost:8080, Step 1.
 *Header: Knowledge base.*
 
 - 29 instruments: issuer, binding, provenance, URL. JSON download.
-- Search “re-identification risk assessment.” Same query, same citations, every time. TF-IDF. No network. No model.
+- Search “re-identification risk assessment.” Same query, same citations, every time. Term Frequency-Inverse Document Frequency (TF-IDF). No network. No model.
 - Pipeline matrix: all 35 concerns, not only this workflow.
 - Scenarios: S2 = mayor’s brother. S4 = competitor who does not ask.
 

@@ -233,7 +233,7 @@ function renderPipeline(pipeline) {
         ${c.gap_id ? `<div class="meta">Gap ${c.gap_id}${c.recommendation ? ` · ${c.recommendation}` : ""}</div>` : ""}
       </div>`).join("");
     return `
-      <div class="pipe-node level${n.level} ${n.gap_count ? "has-gap" : ""} expanded" data-node="${n.node}">
+      <div class="pipe-node expanded" data-node="${n.node}">
         <div class="pipe-header">
           <span class="code">${n.node}</span>
           <span class="pipe-label">${n.label}</span>

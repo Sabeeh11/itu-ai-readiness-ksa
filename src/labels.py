@@ -2,6 +2,18 @@
 
 from __future__ import annotations
 
+# Standard ITU-T Y.3172 node names (what the letter codes mean).
+NODE_NAMES: dict[str, str] = {
+    "SRC": "Source",
+    "C": "Collector",
+    "PP": "Preprocessor",
+    "M": "Model",
+    "P": "Policy",
+    "D": "Distributor",
+    "SINK": "Target",
+}
+
+# Use-case role of each node in this referral-screening deployment.
 NODE_LABELS: dict[str, str] = {
     "SRC": "Referral drafted at clinic",
     "C": "On-premises intake gateway",
@@ -87,6 +99,10 @@ AUTHORITY_BY_GAP: dict[str, str] = {
 
 def concern_label(concern: str) -> str:
     return CONCERN_LABELS.get(concern, concern.replace("_", " ").title())
+
+
+def node_name(node: str) -> str:
+    return NODE_NAMES.get(node, node)
 
 
 def node_label(node: str) -> str:

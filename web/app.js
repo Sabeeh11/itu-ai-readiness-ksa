@@ -14,6 +14,69 @@ let schema = null;
 let methodology = null;
 let overview = null;
 let lastAssessment = null;
+const NODE_NAMES = {
+  SRC: "Source",
+  C: "Collector",
+  PP: "Preprocessor",
+  M: "Model",
+  P: "Policy",
+  D: "Distributor",
+  SINK: "Target",
+};
+
+// Local copy of corpus known_gaps so tooltips work even if /api/gaps is stale.
+const GAP_REGISTER = {
+  G1: { node: "M", node_name: "Model", authority: "SFDA", statement: "No Saudi health-sector AI governance policy for non-device AI" },
+  G2: { node: "P", node_name: "Policy", authority: "SFDA / MOH", statement: "No general human-in-the-loop or override obligation outside the medical-device route" },
+  G3: { node: "SRC", node_name: "Source", authority: "MOH / Saudi Health Council", statement: "No Saudi statute on electronic health records as such" },
+  G4: { node: "PP", node_name: "Preprocessor", authority: "SDAIA", statement: "Anonymisation and re-identification risk assessment are mandated with no published method" },
+  G5: { node: "M", node_name: "Model", authority: "SFDA", statement: "No Saudi regime validates or benchmarks health-AI model performance" },
+  G6: { node: "SINK", node_name: "Target", authority: "MOH / SDAIA", statement: "No governance of AI output disclosure or communication" },
+  G7: { node: "C", node_name: "Collector", authority: "NHIC / MOH", statement: "Governing telehealth instrument lapsed 31 Dec 2021 with no successor" },
+  G9: { node: "SINK", node_name: "Target", authority: "MOH / SDAIA", statement: "Nothing addresses Arabic dialect variation or accessibility in health AI" },
+  G10: { node: "D", node_name: "Distributor", authority: "NCA", statement: "AI is entirely absent from the national cybersecurity baseline" },
+  G11: { node: "SRC", node_name: "Source", authority: "MOH / Saudi Health Council", statement: "No national standard defines what a complete referral document must contain" },
+};
+
+let gapRegister = { ...GAP_REGISTER };
+
+function escapeHtml(text) {
+  return String(text ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function gapAbbr(id) {
+  if (!id) return "";
+  const entry = gapRegister[id] || GAP_REGISTER[id];
+  const statement = entry?.statement || "";
+  const meta = entry ? [entry.node_name || NODE_NAMES[entry.node], entry.authority].filter(Boolean).join(" · ") : "";
+  const tip = escapeHtml(statement ? (meta ? `${statement} (${meta})` : statement) : `No definition available for ${id}`);
+  return `<span class="gap-abbr" tabindex="0">${escapeHtml(id)}<span class="gap-abbr-tip">${tip}</span></span>`;
+}
+
+function linkifyGaps(text) {
+  if (!text) return "";
+  return escapeHtml(text).replace(/\bG\d+\b/g, (id) => gapAbbr(id));
+}
+
+async function ensureGapRegister() {
+  try {
+    const data = await api("/api/gaps");
+    if (data.register && Object.keys(data.register).length) {
+      gapRegister = { ...GAP_REGISTER, ...data.register };
+    }
+  } catch (_) {
+    gapRegister = { ...GAP_REGISTER };
+  }
+  return gapRegister;
+}
+
+function nodeDisplayName(node, name) {
+  return name || NODE_NAMES[node] || node;
+}
 
 const TOUR = [
   {
@@ -102,9 +165,9 @@ function renderExplainPanels() {
     const sub = $(`#subtitle-${i + 1}`);
     if (sub) sub.textContent = s.subtitle;
     if (el) {
-      el.innerHTML = `<h3>How this works</h3><p>${s.explain}</p>`;
+      el.innerHTML = `<h3>How this works</h3><p>${linkifyGaps(s.explain)}</p>`;
       if (i === 2) {
-        el.innerHTML += `<ol class="method-list">${methodology.how.map((h) => `<li>${h}</li>`).join("")}</ol>`;
+        el.innerHTML += `<ol class="method-list">${methodology.how.map((h) => `<li>${linkifyGaps(h)}</li>`).join("")}</ol>`;
       }
       if (i === 1) {
         el.innerHTML += `<p class="flow-hint">Fixed preset → activated concerns → policy corpus check</p>`;
@@ -134,7 +197,7 @@ function renderDataFlow() {
         <article class="card built-card">
           <h4>${arch.on_premises.label}</h4>
           <ol class="method-list">${arch.on_premises.steps.map((s) => `<li>${s}</li>`).join("")}</ol>
-          <p class="meta arch-note">${arch.on_premises.note}</p>
+          <p class="meta arch-note">${linkifyGaps(arch.on_premises.note)}</p>
         </article>
       </div>`;
   } else {
@@ -225,18 +288,19 @@ function renderLegend() {
 function renderPipeline(pipeline) {
   const tipText = methodology?.tooltips?.y3172 || "ITU standard defining where AI sits in a data pipeline";
   const nodes = pipeline.map((n) => {
+    const name = nodeDisplayName(n.node, n.name);
     const concerns = (n.concerns || []).map((c) => `
       <div class="concern-item">
         ${badge(c.gap_kind || c.status)}
         <strong>${c.concern_label}</strong>
         <div class="meta">${c.rationale}</div>
-        ${c.gap_id ? `<div class="meta">Gap ${c.gap_id}${c.recommendation ? ` · ${c.recommendation}` : ""}</div>` : ""}
+        ${c.gap_id ? `<div class="meta">Gap ${gapAbbr(c.gap_id)}${c.recommendation ? ` · ${escapeHtml(c.recommendation)}` : ""}</div>` : ""}
       </div>`).join("");
     return `
       <div class="pipe-node expanded" data-node="${n.node}">
         <div class="pipe-header">
-          <span class="code">${n.node}</span>
-          <span class="pipe-label">${n.label}</span>
+          <span class="pipe-title"><span class="code">${escapeHtml(n.node)}</span> - ${escapeHtml(name)}</span>
+          <span class="pipe-label">${escapeHtml(n.label || "")}</span>
           <span class="meta">${n.concern_count} concern(s) · ${n.gap_count} gap(s)</span>
         </div>
         <div class="pipe-concerns">${concerns || "<p class='meta'>No concerns activated for this node.</p>"}</div>
@@ -245,7 +309,7 @@ function renderPipeline(pipeline) {
 
   $("#pipeline-map").innerHTML = `
     <h3>Y.3172 pipeline <span class="tip" tabindex="0" role="img" aria-label="${tipText}">?<span class="tip-text">${tipText}</span></span></h3>
-    <p class="meta">All activated concerns shown per node. Level 1 boundary at PP — identifiers never cross to Level 2.</p>
+    <p class="meta">All activated concerns shown per node. Level 1 boundary at Preprocessor (PP) — identifiers never cross to Level 2.</p>
     <div class="pipeline">${nodes}</div>
     <div class="level-boundary"><span>Level 1 (on-premises)</span><span>Level 2 (cloud / model)</span></div>`;
 }
@@ -275,10 +339,10 @@ function renderResults(data) {
     ? `<h3>Top material blockers</h3>` + data.material_blockers.map((b) => `
         <div class="finding-row">
           ${badge(b.gap_kind || b.status)}
-          <strong>${b.node_label} / ${b.concern_label}</strong>
-          <div class="meta">${b.statement || b.rationale}</div>
-          ${b.recommendation ? `<div>→ ${b.recommendation}</div>` : ""}
-          ${b.authority ? `<div class="meta">Authority: ${b.authority}</div>` : ""}
+          <strong>${b.gap_id ? `${gapAbbr(b.gap_id)} · ` : ""}${escapeHtml(b.node)} (${escapeHtml(b.node_name || b.node_label)}) / ${escapeHtml(b.concern_label)}</strong>
+          <div class="meta">${escapeHtml(b.statement || b.rationale)}</div>
+          ${b.recommendation ? `<div>→ ${escapeHtml(b.recommendation)}</div>` : ""}
+          ${b.authority ? `<div class="meta">Authority: ${escapeHtml(b.authority)}</div>` : ""}
         </div>`).join("")
     : "";
 
@@ -310,12 +374,13 @@ function renderDocument(doc, title, highlightRemoved) {
 }
 
 async function showReferral(index) {
+  await ensureGapRegister();
   const data = await api(`/api/referrals/${index}`);
   $("#referral-detail").innerHTML = `
     <div class="referral-header">
-      <h3>${data.ref}</h3>
+      <h3>${escapeHtml(data.ref)}</h3>
       <p>Completeness: ${data.completeness.present}/${data.completeness.total} clinical fields
-         ${data.completeness.missing_fields.length ? `(missing: ${data.completeness.missing_fields.join(", ")})` : ""}</p>
+         ${data.completeness.missing_fields.length ? `(missing: ${escapeHtml(data.completeness.missing_fields.join(", "))})` : ""}</p>
       <p>${data.deidentification.direct_identifiers_removed} direct identifiers removed ·
          ${data.residual_risk.candidate_count} quasi-identifier(s) survive</p>
     </div>
@@ -325,9 +390,9 @@ async function showReferral(index) {
     </div>
     ${data.residual_risk.candidates.map((c) => `
       <div class="finding-row flagged">
-        ${badge("method_gap")} "${c.snippet}" — ${c.reason}
+        ${badge("method_gap")} "${escapeHtml(c.snippet)}" — ${escapeHtml(c.reason)}
       </div>`).join("")}
-    <p class="disclaimer">This illustrates gap G4: Saudi law requires permanent anonymisation but publishes no method to adjudicate residual risk. ${data.completeness.note}</p>`;
+    <p class="disclaimer">${linkifyGaps(`This illustrates gap G4: Saudi law requires permanent anonymisation but publishes no method to adjudicate residual risk. ${data.completeness.note}`)}</p>`;
 }
 
 async function loadOverview() {
@@ -384,7 +449,7 @@ async function loadCoverage() {
   const data = await api("/api/coverage");
   $("#coverage-matrix").innerHTML = data.nodes.map((node) => `
     <div class="card">
-      <h3>${node.node} — ${node.label}</h3>
+      <h3><span class="code">${escapeHtml(node.node)}</span> - ${escapeHtml(nodeDisplayName(node.node, node.name))} · ${escapeHtml(node.label)}</h3>
       ${node.concerns.map((c) => `
         <div class="finding-row">
           ${badge(c.status)} <strong>${c.concern_label}</strong>
@@ -397,17 +462,17 @@ async function loadReadiness() {
   const data = await api("/api/readiness");
   $("#factors-grid").innerHTML = data.factors.map((f) => `
     <article class="card">
-      <h4>${f.label} <span class="badge badge-${f.contribution === "strong" ? "covered" : "proposed"}">${f.contribution}</span></h4>
-      <p>${f.summary}</p>
+      <h4>${escapeHtml(f.label)} <span class="badge badge-${f.contribution === "strong" ? "covered" : "proposed"}">${escapeHtml(f.contribution)}</span></h4>
+      <p>${linkifyGaps(f.summary)}</p>
     </article>`).join("");
   $("#dimensions-list").innerHTML = data.dimensions.map((d) => `
     <div class="card">
-      <h4>${d.id}: ${d.label}</h4>
-      <p class="meta">Factors: ${d.factors.join(", ")}</p>
-      <p><em>${d.measures}</em></p>
-      <p>${d.addressed}</p>
+      <h4>${escapeHtml(d.id)}: ${escapeHtml(d.label)}</h4>
+      <p class="meta">Factors: ${escapeHtml(d.factors.join(", "))}</p>
+      <p><em>${linkifyGaps(d.measures)}</em></p>
+      <p>${linkifyGaps(d.addressed)}</p>
     </div>`).join("");
-  $("#standards-gaps").innerHTML = data.standards_gaps.map((s) => `<li>${s}</li>`).join("");
+  $("#standards-gaps").innerHTML = data.standards_gaps.map((s) => `<li>${linkifyGaps(s)}</li>`).join("");
 }
 
 async function loadReferrals() {
@@ -433,10 +498,10 @@ async function loadScenarios() {
       const detail = $("#scenario-detail");
       detail.classList.remove("hidden");
       detail.innerHTML = `
-        <h3>${result.scenario.id}: ${result.scenario.title}</h3>
-        <ol>${result.scenario.steps.map((s) => `<li>${s}</li>`).join("")}</ol>
-        <p><strong>Question:</strong> ${result.scenario.question}</p>
-        <p><strong>Finding:</strong> ${result.expected_finding}</p>
+        <h3>${escapeHtml(result.scenario.id)}: ${escapeHtml(result.scenario.title)}</h3>
+        <ol>${result.scenario.steps.map((s) => `<li>${linkifyGaps(s)}</li>`).join("")}</ol>
+        <p><strong>Question:</strong> ${linkifyGaps(result.scenario.question)}</p>
+        <p><strong>Finding:</strong> ${linkifyGaps(result.expected_finding)}</p>
         <p>${result.unmet_count} of ${result.total_count} concerns ungoverned or without a published method.</p>`;
     });
   });
@@ -444,15 +509,16 @@ async function loadScenarios() {
 
 async function loadGaps() {
   const data = await api("/api/gaps");
+  if (data.register) gapRegister = data.register;
   $("#gaps-by-authority").innerHTML = Object.entries(data.by_authority).map(([auth, gaps]) => `
     <div class="card">
-      <h3>${auth}</h3>
+      <h3>${escapeHtml(auth)}</h3>
       ${gaps.map((g) => `
         <div class="finding-row">
           ${badge(g.kind.toLowerCase().replace(/ /g, "_"))}
-          <strong>${g.gap_id || ""} ${g.node_label} / ${g.concern_label}</strong>
-          <p>${g.statement}</p>
-          <p class="meta">→ ${g.recommendation}</p>
+          <strong>${g.gap_id ? gapAbbr(g.gap_id) : ""} ${escapeHtml(g.node)}${g.node_name ? ` (${escapeHtml(g.node_name)})` : ""} / ${escapeHtml(g.concern_label)}</strong>
+          <p>${escapeHtml(g.statement)}</p>
+          <p class="meta">→ ${escapeHtml(g.recommendation)}</p>
         </div>`).join("")}
     </div>`).join("");
 }
@@ -532,13 +598,14 @@ async function renderTourStep() {
   const step = TOUR[tourIndex];
   $("#tour-step").textContent = `Step ${tourIndex + 1} of ${TOUR.length}`;
   $("#tour-title").textContent = step.title;
-  $("#tour-script").textContent = step.script;
+  $("#tour-script").innerHTML = linkifyGaps(step.script);
   goToStep(step.step, { skipAction: true });
   if (step.action) await step.action();
 }
 
 async function init() {
   methodology = await api("/api/methodology");
+  await ensureGapRegister();
   renderStepperTrack();
   renderExplainPanels();
   updateStepper();
@@ -580,12 +647,12 @@ async function init() {
   await loadSchema();
   await loadOverview();
   await loadSourcesPreview();
+  await loadReferrals();
   loadEvidence();
   loadCoverage();
   loadReadiness();
-  loadReferrals();
   loadScenarios();
-  loadGaps();
+  await loadGaps();
   loadCorpus();
 }
 

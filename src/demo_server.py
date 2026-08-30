@@ -18,7 +18,7 @@ from cli import run_scenario  # noqa: E402
 from evidence import evidence_payload  # noqa: E402
 from gapfinder import analyse, METHOD_GAP, POLICY_GAP, SCOPE_GAP, CURRENCY_GAP  # noqa: E402
 from kb import KnowledgeBase  # noqa: E402
-from labels import AUTHORITY_BY_GAP, concern_label, node_label  # noqa: E402
+from labels import AUTHORITY_BY_GAP, concern_label, node_label, node_name  # noqa: E402
 from readiness import readiness_payload  # noqa: E402
 from referral_demo import analyze_referral, load as load_referrals  # noqa: E402
 
@@ -112,7 +112,7 @@ def api_coverage():
                     "scoped_out": f.scoped_out,
                 }
             )
-        nodes.append({"node": node, "label": node_label(node), "concerns": items})
+        nodes.append({"node": node, "name": node_name(node), "label": node_label(node), "concerns": items})
     return jsonify({"nodes": nodes})
 
 
@@ -134,11 +134,21 @@ def api_gaps():
             {
                 **asdict(gap),
                 "concern_label": concern_label(gap.concern),
+                "node_name": node_name(gap.node) if gap.node != "-" else gap.node,
                 "node_label": node_label(gap.node) if gap.node != "-" else gap.node,
                 "authority": authority,
             }
         )
-    return jsonify({"gaps": [asdict(g) for g in gaps], "by_authority": grouped})
+    register = {}
+    for gid, gap in k.known_gaps.items():
+        node = gap.get("node", "-")
+        register[gid] = {
+            "node": node,
+            "node_name": node_name(node) if node != "-" else node,
+            "statement": gap.get("statement", ""),
+            "authority": AUTHORITY_BY_GAP.get(gid, "General"),
+        }
+    return jsonify({"gaps": [asdict(g) for g in gaps], "by_authority": grouped, "register": register})
 
 
 @app.get("/api/scenarios")

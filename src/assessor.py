@@ -9,7 +9,7 @@ from dataclasses import asdict, dataclass, field
 
 from gapfinder import RECOMMENDATIONS, analyse, classify
 from kb import KnowledgeBase, ConcernFinding
-from labels import AUTHORITY_BY_GAP, concern_label, node_label
+from labels import AUTHORITY_BY_GAP, concern_label, node_label, node_name
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 RULES_PATH = ROOT / "data" / "assessment_rules.json"
@@ -130,6 +130,7 @@ def _serialize_finding(f: FindingResult) -> dict:
     return {
         **asdict(f),
         "concern_label": concern_label(f.concern),
+        "node_name": node_name(f.node),
         "node_label": node_label(f.node),
     }
 
@@ -215,6 +216,7 @@ def assess(values: dict, kb: KnowledgeBase | None = None) -> dict:
         pipeline.append(
             {
                 "node": node,
+                "name": node_name(node),
                 "label": node_label(node),
                 "level": 1 if node in {"SRC", "C", "PP"} else 2,
                 "concern_count": len(node_findings),

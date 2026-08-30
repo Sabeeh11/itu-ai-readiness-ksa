@@ -214,6 +214,9 @@ check("methodology has architecture paths", "architecture" in methodology and "o
 check("methodology has no negations strip", "negations" not in methodology)
 schema_data = client.get("/api/assessment/schema").get_json()
 check("on-prem ML preset exists", "referral_onprem_ml" in schema_data["presets"])
+check("gaps endpoint includes register", "register" in client.get("/api/gaps").get_json() and "G4" in client.get("/api/gaps").get_json()["register"])
+gaps_reg = client.get("/api/gaps").get_json()["register"]["G4"]
+check("gap register G4 has statement", "statement" in gaps_reg and gaps_reg.get("node_name") == "Preprocessor")
 
 print("\n" + "=" * 62)
 if failed:

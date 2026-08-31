@@ -166,8 +166,16 @@ const kbTable = new Table({
   ],
 });
 
-const FILL = (label) =>
-  rich([t(`${label}: `, { bold: true }), t("[ TO COMPLETE ]", { color: "B00000", bold: true })], { after: 60 });
+// Team identity lives in data/team.local.json, which is gitignored, so personal
+// names and contact details never enter the public repository. Absent that file,
+// every field renders as a red [ TO COMPLETE ] placeholder.
+let TEAM = {};
+try { TEAM = JSON.parse(fs.readFileSync("data/team.local.json", "utf8")); } catch (e) { TEAM = {}; }
+
+const FILL = (label, key) =>
+  TEAM[key]
+    ? rich([t(`${label}: `, { bold: true }), t(TEAM[key])], { after: 60 })
+    : rich([t(`${label}: `, { bold: true }), t("[ TO COMPLETE ]", { color: "B00000", bold: true })], { after: 60 });
 
 const doc = new Document({
   numbering: { config: [{ reference: "bul", levels: [{ level: 0, format: "bullet", text: "•", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 340, hanging: 200 } } } }] }] },
@@ -179,12 +187,14 @@ const doc = new Document({
         children: [new TextRun({ text: "AI Readiness Hackathon – KSA Final Submission", bold: true, size: 30, color: HDR })] }),
       p("Health domain · ITU-T Y.3172 machine learning pipeline · AI Readiness Framework 2.0", { italics: true, color: "666666", after: 200 }),
 
-      FILL("Team name"), FILL("Members name"),
-      rich([t("Solution name: ", { bold: true }), t("Referral Screening Governance Gap Analyser")], { after: 60 }),
-      FILL("Contact details"),
+      FILL("Team name", "team"), FILL("Members name", "members"),
+      rich([t("Solution name: ", { bold: true }), t(TEAM.solution || "Referral Screening Governance Gap Analyser")], { after: 60 }),
+      FILL("Contact details", "contact"),
       rich([t("Repository: ", { bold: true }), linkBody("GitHub link", "https://github.com/Sabeeh11/itu-ai-readiness-ksa")], { after: 60 }),
-      rich([t("Knowledge base: ", { bold: true }), linkBody("data/corpus.json", "https://github.com/Sabeeh11/itu-ai-readiness-ksa/blob/main/data/corpus.json"), t(" — 29 instruments with issuer, binding status, node tags and a source link for each; listed in full in Appendix A.")], { after: 60 }),
-      rich([t("Demo video: ", { bold: true }), t("[ TO COMPLETE — link, 7 min max ]", { color: "B00000", bold: true })], { after: 240 }),
+      rich([t("Knowledge base: ", { bold: true }), linkBody("data/ on GitHub", "https://github.com/Sabeeh11/itu-ai-readiness-ksa/tree/main/data"), t(" — corpus.json holds the 29 instruments with issuer, binding status, node tags, governed concerns and a source link for each; extracts/ and text/ hold the indexed text, manifest.json its provenance. Listed for reading in Appendix A.")], { after: 60 }),
+      TEAM.video
+        ? rich([t("Demo video: ", { bold: true }), linkBody("video link", TEAM.video)], { after: 240 })
+        : rich([t("Demo video: ", { bold: true }), t("[ TO COMPLETE — link, 7 min max ]", { color: "B00000", bold: true })], { after: 240 }),
 
       h1("1. Introduction"),
       p("Saudi Arabia operates a national electronic medical referral programme, Ehalati, through the Saudi Medical Appointments and Referrals Centre. It processed 755,145 referrals in 2023–24, a 19.34% increase over 2020–21, and triage within it remains a manual process: cases that are not accepted are reviewed by referrals management staff, and life-saving cases are reviewed by an on-call consultant. In a 2025 peer-reviewed analysis of that system, twelve authors — eight of them affiliated with the Ministry of Health's Medical Referrals Centre, the body that operates it — recommended “integrating AI tools for referral triage to optimize patient allocation, thereby reducing unnecessary transfers.”"),

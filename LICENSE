@@ -1,0 +1,42 @@
+MIT License
+
+Copyright (c) 2026 Health Referrals Gaps Analyzer
+ITU AI Readiness Hackathon — Kingdom of Saudi Arabia
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+THIRD-PARTY MATERIAL
+
+The MIT terms above cover the code, the corpus metadata in data/corpus.json,
+and the analysis in this repository.
+
+They do not cover the policy documents themselves. The files in data/text/ and
+data/extracts/ are text of instruments published by their issuing authorities
+— SDAIA, SFDA, NCA, NDMO, CST, the Ministry of Health, the Saudi Health
+Council, CBAHI, WHO, ITU-T and the US Department of Health and Human Services.
+Copyright in those documents remains with their issuers. They are reproduced
+here so that the reported figures are reproducible without network access to
+hosts that block automated retrieval, and each carries a link to its official
+source in data/corpus.json. Anyone relying on an instrument should read it at
+that source.
+
+All patient data in data/samples/ is synthetic. No real patient, clinician or
+facility record is represented.

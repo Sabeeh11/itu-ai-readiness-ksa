@@ -17,3 +17,6 @@ page-*.jpg
 *.docx
 
 *.docx
+
+# team identity: names and contact details stay off GitHub
+data/team.local.json

@@ -183,6 +183,7 @@ const doc = new Document({
       rich([t("Solution name: ", { bold: true }), t("Referral Screening Governance Gap Analyser")], { after: 60 }),
       FILL("Contact details"),
       rich([t("Repository: ", { bold: true }), linkBody("GitHub link", "https://github.com/Sabeeh11/itu-ai-readiness-ksa")], { after: 60 }),
+      rich([t("Knowledge base: ", { bold: true }), linkBody("data/corpus.json", "https://github.com/Sabeeh11/itu-ai-readiness-ksa/blob/main/data/corpus.json"), t(" — 29 instruments with issuer, binding status, node tags and a source link for each; listed in full in Appendix A.")], { after: 60 }),
       rich([t("Demo video: ", { bold: true }), t("[ TO COMPLETE — link, 7 min max ]", { color: "B00000", bold: true })], { after: 240 }),
 
       h1("1. Introduction"),
